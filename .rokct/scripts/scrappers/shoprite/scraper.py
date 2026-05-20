@@ -659,7 +659,7 @@ async def main():
                 
                 # Try to find and navigate to the next page
                 next_page_url = await page.evaluate("""() => {
-                    // Common selectors for next page links
+                    // First, try to find explicit next button/link
                     const nextSelectors = [
                         'a[aria-label*="next" i]',
                         'a[title*="next" i]',
@@ -682,6 +682,90 @@ async def main():
                             }
                         }
                     }
+                    
+                    // Look for numeric pagination
+                    const pageLinks = document.querySelectorAll('.pagination a, .pager a, [class*="page"] a');
+                    let maxPage = 0;
+                    let currentPageEl = null;
+                    
+                    pageLinks.forEach(link => {
+                        const text = link.textContent.trim();
+                        const pageNum = parseInt(text, 10);
+                        if (!isNaN(pageNum)) {
+                            if (pageNum > maxPage) {
+                                maxPage = pageNum;
+                            }
+                            // Check if this link looks like it's for the current page (often has active class)
+                            if (link.classList.contains('active') || 
+                                link.getAttribute('aria-current') === 'true' ||
+                                link.classList.contains('selected')) {
+                                currentPageEl = link;
+                            }
+                        }
+                    });
+                    
+                    // If we found a current page indicator, look for the next number
+                    if (currentPageEl) {
+                        const currentText = currentPageEl.textContent.trim();
+                        const currentPage = parseInt(currentText, 10);
+                        if (!isNaN(currentPage) && currentPage < maxPage) {
+                            // Look for the link with the next page number
+                            const nextPageNum = currentPage + 1;
+                            for (const link of pageLinks) {
+                                if (link.textContent.trim() === String(nextPageNum)) {
+                                    return link.href;
+                                }
+                            }
+                        }
+                    }
+                    
+                    // Fallback: look for any link with "next" in text content
+                    const allLinks = document.querySelectorAll('a');
+                    for (const link of allLinks) {
+                        const text = link.textContent.toLowerCase();
+                        if ((text.includes('next') || text.includes('»') || text.includes('›')) && 
+                            link.href && !link.href.includes('#')) {
+                            return link.href;
+                        }
+                    }
+                    
+                    return null; // No next page found
+                }""")
+                
+                if not next_page_url:
+                    logger.info("No next page found, stopping pagination")
+                    break
+                    
+                logger.info(f"Navigating to next page: {next_page_url}")
+                try:
+                    await page.goto(next_page_url, wait_until="domcontentloaded", timeout=60000)
+                    await page.wait_for_timeout(3000)
+                    
+                    // Get new product links from the next page
+                    product_links = await page.evaluate("""() => {
+                        const links = new Set();
+                        document.querySelectorAll('a[href*="/p/"]').forEach(a => links.add(a.href));
+
+                        if (links.size === 0) {
+                           document.querySelectorAll('.product-item a, .item-product a').forEach(a => {
+                               if (a.href && !a.href.includes('#')) links.add(a.href);
+                           });
+                        }
+                        return Array.from(links);
+                    }""")
+                    
+                    if (product_links.length === 0) {
+                        logger.warning(f"No product links found on next page")
+                        break
+                    }
+                    
+                    logger.info(f"Found {product_links.length} potential products on next page")
+                    page_num += 1
+                    
+                } catch (e) {
+                    logger.error(`Failed to navigate to next page: ${e}`)
+                    break
+                }
                     
                     // Look for numeric pagination
                     const pageLinks = document.querySelectorAll('.pagination a, .pager a, [class*="page"] a');
