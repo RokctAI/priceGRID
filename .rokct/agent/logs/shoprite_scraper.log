@@ -1,58 +1,417 @@
-2026-05-20 08:22:49,361 [INFO] Running in headed mode
-2026-05-20 08:23:01,261 [INFO] Establishing cookies via https://www.shoprite.co.za
-2026-05-20 08:23:21,061 [INFO] Fetching category page: https://www.shoprite.co.za/c-2256/All-Departments
-2026-05-20 08:23:39,056 [INFO] Final response status: 200
-2026-05-20 08:23:44,104 [INFO] Page title: All Departments | Shoprite ZA
-2026-05-20 08:23:44,112 [INFO] Found 20 potential products on page
-2026-05-20 08:23:44,112 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Rajah-Beef-Madras-Cook-In-Sauce-Sachet-15g/p/10641192EA
-2026-05-20 08:24:02,752 [INFO] Skipping rajah-beef-madras-cook-in-sauce-sachet-15g, card already exists.
-2026-05-20 08:24:02,754 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Rajah-Chicken-Tikka-Cook-In-Sauce-Sachet-15g/p/10641194EA
-2026-05-20 08:24:09,863 [INFO] Skipping rajah-chicken-tikka-cook-in-sauce-sachet-15g, card already exists.
-2026-05-20 08:24:09,864 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Royco-Stew-Mix-For-Chicken-200g/p/10498612EA
-2026-05-20 08:24:17,590 [INFO] Skipping royco-stew-mix-for-chicken-200g, card already exists.
-2026-05-20 08:24:17,590 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Spreads%2C-Honey-and-Preserves/Red-Bicycle-Speculoos-Crunchy-Cookie-Spread-350g/p/10532276EA
-2026-05-20 08:24:25,862 [INFO] Skipping red-bicycle-speculoos-crunchy-cookie-spread-350g, card already exists.
-2026-05-20 08:24:25,862 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Easy-Crispy-Seafood-Coating-Mix-200g/p/10602244EA
-2026-05-20 08:24:32,962 [INFO] Skipping easy-crispy-seafood-coating-mix-200g, card already exists.
-2026-05-20 08:24:32,962 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Robertsons-Indian-Spicy-Lentil-Dhal-Cook-In-Sauce-48g/p/10641181EA
-2026-05-20 08:24:40,183 [INFO] Skipping robertsons-indian-spicy-lentil-dhal-cook-in-sauce-48g, card already exists.
-2026-05-20 08:24:40,183 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Blue-Ribbon-Toaster-White-Bread-700g/p/10456482EA
-2026-05-20 08:24:48,072 [INFO] Skipping blue-ribbon-toaster-white-bread-700g, card already exists.
-2026-05-20 08:24:48,087 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Farmbest-Fresh-Chicken-Braai-Pack-5-Piece-Per-kg/p/10357568KG
-2026-05-20 08:24:55,519 [INFO] Skipping farmbest-fresh-chicken-braai-pack-5-piece-per-kg, card already exists.
-2026-05-20 08:24:55,523 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Crystal-Valley-Full-Cream-Milk-1L/p/10127467EA
-2026-05-20 08:25:04,626 [INFO] Skipping crystal-valley-full-cream-milk-1l, card already exists.
-2026-05-20 08:25:04,626 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Carling-Black-Label-Beer-Bottle-750ml/p/10125600EA
-2026-05-20 08:25:13,511 [INFO] Skipping carling-black-label-beer-bottle-750ml, card already exists.
-2026-05-20 08:25:13,512 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Standard-White-Bread-600g/p/10141145EA
-2026-05-20 08:25:23,156 [INFO] Skipping standard-white-bread-600g, card already exists.
-2026-05-20 08:25:23,156 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Panini-Roll-Single/p/10397287EA
-2026-05-20 08:25:30,262 [INFO] Skipping panini-roll-single, card already exists.
-2026-05-20 08:25:30,262 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Frozen-Food/Frozen-Meat-and-Poultry/County-Fair-Frozen-Chicken-Mixed-Portions-With-Brine-Based-Mixture-5kg/p/10538316EA
-2026-05-20 08:25:40,782 [INFO] Skipping county-fair-frozen-chicken-mixed-portions-with-brine-based-mixture-5kg, card already exists.
-2026-05-20 08:25:40,782 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Standard-Brown-Bread-600g/p/10141147EA
-2026-05-20 08:25:48,937 [INFO] Skipping standard-brown-bread-600g, card already exists.
-2026-05-20 08:25:48,937 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Darling-Fresh-Full-Cream-Milk-Sachet-1L/p/10124889EA
-2026-05-20 08:25:56,247 [INFO] Skipping darling-fresh-full-cream-milk-sachet-1l, card already exists.
-2026-05-20 08:25:56,247 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Crystal-Valley-Full-Cream-Long-Life-Milk-1L/p/10156069EA
-2026-05-20 08:26:04,199 [INFO] Skipping crystal-valley-full-cream-long-life-milk-1l, card already exists.
-2026-05-20 08:26:04,199 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Potatoes-7kg/p/10147186EA
-2026-05-20 08:26:12,211 [INFO] Skipping potatoes-7kg, card already exists.
-2026-05-20 08:26:12,211 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Sugar-and-Sweeteners/Selati-Golden-Brown-Sugar-2kg/p/10156064EA
-2026-05-20 08:26:19,762 [INFO] Found 2 candidate images
-2026-05-20 08:26:20,484 [INFO] Downloaded image: selati-golden-brown-sugar-2kg_0.jpg
-2026-05-20 08:26:21,342 [INFO] Downloaded image: selati-golden-brown-sugar-2kg_1.jpg
-2026-05-20 08:26:21,348 [INFO] Successfully scraped selati-golden-brown-sugar-2kg
-2026-05-20 08:26:22,358 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Rice%2C-Pasta%2C-Noodles-and-Cous-Cous/Ritebrand-Macaroni-500g/p/10139338EA
-2026-05-20 08:26:29,577 [INFO] Found 2 candidate images
-2026-05-20 08:26:30,077 [INFO] Downloaded image: ritebrand-macaroni-500g_0.jpg
-2026-05-20 08:26:30,528 [INFO] Downloaded image: ritebrand-macaroni-500g_1.jpg
-2026-05-20 08:26:30,538 [INFO] Successfully scraped ritebrand-macaroni-500g
-2026-05-20 08:26:31,542 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Canned-Food/Ritebrand-Baked-Beans-in-Tomato-Sauce-410g/p/10137752EA
-2026-05-20 08:26:38,533 [INFO] Found 5 candidate images
-2026-05-20 08:26:38,888 [INFO] Downloaded image: ritebrand-baked-beans-in-tomato-sauce-410g_0.jpg
-2026-05-20 08:26:39,348 [INFO] Downloaded image: ritebrand-baked-beans-in-tomato-sauce-410g_1.jpg
-2026-05-20 08:26:39,862 [INFO] Downloaded image: ritebrand-baked-beans-in-tomato-sauce-410g_2.jpg
-2026-05-20 08:26:40,575 [INFO] Downloaded image: ritebrand-baked-beans-in-tomato-sauce-410g_3.jpg
-2026-05-20 08:26:41,062 [INFO] Downloaded image: ritebrand-baked-beans-in-tomato-sauce-410g_4.jpg
-2026-05-20 08:26:41,070 [INFO] Successfully scraped ritebrand-baked-beans-in-tomato-sauce-410g
+2026-05-20 11:15:22,484 [INFO] Running in headed mode
+2026-05-20 11:15:26,974 [INFO] Establishing cookies via https://www.shoprite.co.za
+2026-05-20 11:15:38,600 [INFO] Fetching category page: https://www.shoprite.co.za/c-2256/All-Departments
+2026-05-20 11:15:49,148 [INFO] Final response status: 200
+2026-05-20 11:15:49,148 [INFO] Page title: All Departments | Shoprite ZA
+2026-05-20 11:15:49,148 [INFO] [Cat page 0] Found 20 product links
+2026-05-20 11:15:49,148 [INFO] Skipping rajah-beef-madras-cook-in-sauce-sachet-15g, card already exists.
+2026-05-20 11:15:49,148 [INFO] Skipping rajah-chicken-tikka-cook-in-sauce-sachet-15g, card already exists.
+2026-05-20 11:15:49,148 [INFO] Skipping royco-stew-mix-for-chicken-200g, card already exists.
+2026-05-20 11:15:49,148 [INFO] Skipping red-bicycle-speculoos-crunchy-cookie-spread-350g, card already exists.
+2026-05-20 11:15:49,148 [INFO] Skipping easy-crispy-seafood-coating-mix-200g, card already exists.
+2026-05-20 11:15:49,148 [INFO] Skipping robertsons-indian-spicy-lentil-dhal-cook-in-sauce-48g, card already exists.
+2026-05-20 11:15:49,155 [INFO] Skipping brown-bread-600g, card already exists.
+2026-05-20 11:15:49,160 [INFO] Skipping blue-ribbon-toaster-white-bread-700g, card already exists.
+2026-05-20 11:15:49,160 [INFO] Skipping farmbest-fresh-chicken-braai-pack-5-piece-per-kg, card already exists.
+2026-05-20 11:15:49,160 [INFO] Skipping crystal-valley-full-cream-milk-1l, card already exists.
+2026-05-20 11:15:49,160 [INFO] Skipping white-bread-600g, card already exists.
+2026-05-20 11:15:49,160 [INFO] Skipping caress-regular-maxi-sanitary-pads-8-pack, card already exists.
+2026-05-20 11:15:49,160 [INFO] Skipping carling-black-label-beer-bottle-750ml, card already exists.
+2026-05-20 11:15:49,164 [INFO] Skipping standard-white-bread-600g, card already exists.
+2026-05-20 11:15:49,164 [INFO] Skipping panini-roll-single, card already exists.
+2026-05-20 11:15:49,164 [INFO] Skipping county-fair-frozen-chicken-mixed-portions-with-brine-based-mixture-5kg, card already exists.
+2026-05-20 11:15:49,164 [INFO] Skipping standard-brown-bread-600g, card already exists.
+2026-05-20 11:15:49,164 [INFO] Skipping darling-fresh-full-cream-milk-sachet-1l, card already exists.
+2026-05-20 11:15:49,164 [INFO] Skipping crystal-valley-full-cream-long-life-milk-1l, card already exists.
+2026-05-20 11:15:49,164 [INFO] Skipping potatoes-7kg, card already exists.
+2026-05-20 11:15:49,164 [INFO] [Cat page 1] Loading: https://www.shoprite.co.za/c-2256/All-Departments?q=%3Arelevance%3AbrowseAllStoresFacetOff%3AbrowseAllStoresFacetOff&page=1
+2026-05-20 11:16:00,928 [INFO] [Cat page 1] 20 new links | 40 total seen
+2026-05-20 11:16:00,929 [INFO] Skipping selati-golden-brown-sugar-2kg, card already exists.
+2026-05-20 11:16:00,930 [INFO] Skipping ritebrand-macaroni-500g, card already exists.
+2026-05-20 11:16:00,932 [INFO] Skipping ritebrand-baked-beans-in-tomato-sauce-410g, card already exists.
+2026-05-20 11:16:00,938 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Long-Life-Milk-and-Dairy-Alternatives/Ritebrand-Full-Cream-Milk-1L/p/10156109EA
+2026-05-20 11:16:18,802 [INFO] Found 4 candidate images
+2026-05-20 11:16:19,529 [INFO] Downloaded image: ritebrand-full-cream-milk-1l_0.jpg
+2026-05-20 11:16:19,839 [INFO] Downloaded image: ritebrand-full-cream-milk-1l_1.jpg
+2026-05-20 11:16:20,477 [INFO] Downloaded image: ritebrand-full-cream-milk-1l_2.jpg
+2026-05-20 11:16:21,793 [INFO] Downloaded image: ritebrand-full-cream-milk-1l_3.jpg
+2026-05-20 11:16:21,894 [INFO] Successfully scraped ritebrand-full-cream-milk-1l
+2026-05-20 11:16:22,009 [INFO] [1 scraped] ritebrand-full-cream-milk-1l
+2026-05-20 11:16:23,208 [INFO] Skipping blue-ribbon-sliced-white-bread-700g, card already exists.
+2026-05-20 11:16:23,209 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Carrots-1kg/p/10152390EA
+2026-05-20 11:16:31,908 [INFO] Found 2 candidate images
+2026-05-20 11:16:32,543 [INFO] Downloaded image: carrots-1kg_0.jpg
+2026-05-20 11:16:33,153 [INFO] Downloaded image: carrots-1kg_1.jpg
+2026-05-20 11:16:33,157 [INFO] Successfully scraped carrots-1kg
+2026-05-20 11:16:33,158 [INFO] [2 scraped] carrots-1kg
+2026-05-20 11:16:34,171 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Salad%2C-Herbs-and-Dip/Avocado/p/10145186EA
+2026-05-20 11:16:42,625 [INFO] Found 5 candidate images
+2026-05-20 11:16:43,096 [INFO] Downloaded image: avocado_0.jpg
+2026-05-20 11:16:43,701 [INFO] Downloaded image: avocado_1.jpg
+2026-05-20 11:16:44,416 [INFO] Downloaded image: avocado_2.jpg
+2026-05-20 11:16:45,039 [INFO] Downloaded image: avocado_3.jpg
+2026-05-20 11:16:45,852 [INFO] Downloaded image: avocado_4.jpg
+2026-05-20 11:16:45,856 [INFO] Successfully scraped avocado
+2026-05-20 11:16:45,857 [INFO] [3 scraped] avocado
+2026-05-20 11:16:46,867 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Rice%2C-Pasta%2C-Noodles-and-Cous-Cous/Ritebrand-Spaghetti-500g/p/10139337EA
+2026-05-20 11:16:53,547 [INFO] Found 5 candidate images
+2026-05-20 11:16:53,957 [INFO] Downloaded image: ritebrand-spaghetti-500g_0.jpg
+2026-05-20 11:16:54,449 [INFO] Downloaded image: ritebrand-spaghetti-500g_1.jpg
+2026-05-20 11:16:55,162 [INFO] Downloaded image: ritebrand-spaghetti-500g_2.jpg
+2026-05-20 11:16:55,781 [INFO] Downloaded image: ritebrand-spaghetti-500g_3.jpg
+2026-05-20 11:16:56,593 [INFO] Downloaded image: ritebrand-spaghetti-500g_4.jpg
+2026-05-20 11:16:56,598 [INFO] Successfully scraped ritebrand-spaghetti-500g
+2026-05-20 11:16:56,598 [INFO] [4 scraped] ritebrand-spaghetti-500g
+2026-05-20 11:16:57,605 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Fruit/Bananas-Per-kg/p/10145033KG
+2026-05-20 11:17:07,017 [INFO] Found 2 candidate images
+2026-05-20 11:17:08,062 [INFO] Downloaded image: bananas-per-kg_0.jpg
+2026-05-20 11:17:08,683 [INFO] Downloaded image: bananas-per-kg_1.jpg
+2026-05-20 11:17:08,685 [INFO] Successfully scraped bananas-per-kg
+2026-05-20 11:17:08,686 [INFO] [5 scraped] bananas-per-kg
+2026-05-20 11:17:09,694 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Sugar-and-Sweeteners/Huletts-White-Sugar-2-5kg/p/10141796EA
+2026-05-20 11:17:17,820 [INFO] Found 2 candidate images
+2026-05-20 11:17:18,920 [INFO] Downloaded image: huletts-white-sugar-25kg_0.jpg
+2026-05-20 11:17:19,448 [INFO] Downloaded image: huletts-white-sugar-25kg_1.jpg
+2026-05-20 11:17:19,450 [INFO] Successfully scraped huletts-white-sugar-25kg
+2026-05-20 11:17:19,452 [INFO] [6 scraped] huletts-white-sugar-2-5kg
+2026-05-20 11:17:20,456 [INFO] Skipping coca-cola-original-taste-less-sugar-soft-drink-2l, card already exists.
+2026-05-20 11:17:20,457 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/County-Fair-Fresh-Chicken-5-Piece-Braaipack-Per-kg/p/10224500KG
+2026-05-20 11:17:27,174 [INFO] Found 2 candidate images
+2026-05-20 11:17:27,942 [INFO] Downloaded image: county-fair-fresh-chicken-5-piece-braaipack-per-kg_0.jpg
+2026-05-20 11:17:28,554 [INFO] Downloaded image: county-fair-fresh-chicken-5-piece-braaipack-per-kg_1.jpg
+2026-05-20 11:17:28,557 [INFO] Successfully scraped county-fair-fresh-chicken-5-piece-braaipack-per-kg
+2026-05-20 11:17:28,558 [INFO] [7 scraped] county-fair-fresh-chicken-5-piece-braaipack-per-kg
+2026-05-20 11:17:29,568 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Castle-Lager-Beer-Bottle-750ml/p/10125599EA
+2026-05-20 11:17:40,148 [INFO] Found 7 candidate images
+2026-05-20 11:17:40,636 [INFO] Downloaded image: castle-lager-beer-bottle-750ml_0.jpg
+2026-05-20 11:17:41,214 [INFO] Downloaded image: castle-lager-beer-bottle-750ml_1.jpg
+2026-05-20 11:17:41,938 [INFO] Downloaded image: castle-lager-beer-bottle-750ml_2.jpg
+2026-05-20 11:17:42,548 [INFO] Downloaded image: castle-lager-beer-bottle-750ml_3.jpg
+2026-05-20 11:17:43,363 [INFO] Downloaded image: castle-lager-beer-bottle-750ml_4.jpg
+2026-05-20 11:17:43,948 [INFO] Downloaded image: castle-lager-beer-bottle-750ml_5.jpg
+2026-05-20 11:17:44,569 [INFO] Downloaded image: castle-lager-beer-bottle-750ml_6.jpg
+2026-05-20 11:17:44,644 [INFO] Successfully scraped castle-lager-beer-bottle-750ml
+2026-05-20 11:17:44,645 [INFO] [8 scraped] castle-lager-beer-bottle-750ml
+2026-05-20 11:17:45,659 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Nulaid-Large-Eggs-18-Pack/p/10125869EA
+2026-05-20 11:17:54,392 [INFO] Found 2 candidate images
+2026-05-20 11:17:55,783 [INFO] Downloaded image: nulaid-large-eggs-18-pack_0.jpg
+2026-05-20 11:17:56,347 [INFO] Downloaded image: nulaid-large-eggs-18-pack_1.jpg
+2026-05-20 11:17:56,351 [INFO] Successfully scraped nulaid-large-eggs-18-pack
+2026-05-20 11:17:56,352 [INFO] [9 scraped] nulaid-large-eggs-18-pack
+2026-05-20 11:17:57,367 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Onions-1kg/p/10241181EA
+2026-05-20 11:18:06,937 [INFO] Found 2 candidate images
+2026-05-20 11:18:07,462 [INFO] Downloaded image: onions-1kg_0.jpg
+2026-05-20 11:18:08,181 [INFO] Downloaded image: onions-1kg_1.jpg
+2026-05-20 11:18:08,184 [INFO] Successfully scraped onions-1kg
+2026-05-20 11:18:08,184 [INFO] [10 scraped] onions-1kg
+2026-05-20 11:18:09,197 [INFO] Skipping ritebrand-smooth-peanut-butter-400g, card already exists.
+2026-05-20 11:18:09,198 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/SASKO-More-Slices-White-Bread-700g/p/10241927EA
+2026-05-20 11:18:19,351 [INFO] Found 2 candidate images
+2026-05-20 11:18:20,467 [INFO] Downloaded image: sasko-more-slices-white-bread-700g_0.jpg
+2026-05-20 11:18:21,394 [INFO] Downloaded image: sasko-more-slices-white-bread-700g_1.jpg
+2026-05-20 11:18:21,398 [INFO] Successfully scraped sasko-more-slices-white-bread-700g
+2026-05-20 11:18:21,398 [INFO] [11 scraped] sasko-more-slices-white-bread-700g
+2026-05-20 11:18:22,401 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Baking/Anchor-Instant-Yeast-10g/p/10143785EA
+2026-05-20 11:18:32,982 [INFO] Found 2 candidate images
+2026-05-20 11:18:33,487 [INFO] Downloaded image: anchor-instant-yeast-10g_0.jpg
+2026-05-20 11:18:34,091 [INFO] Downloaded image: anchor-instant-yeast-10g_1.jpg
+2026-05-20 11:18:34,091 [INFO] Successfully scraped anchor-instant-yeast-10g
+2026-05-20 11:18:34,093 [INFO] [12 scraped] anchor-instant-yeast-10g
+2026-05-20 11:18:35,100 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Robertsons-Coarse-Black-Pepper-Compound-Envelope-7g/p/10132087EA
+2026-05-20 11:18:43,669 [INFO] Found 2 candidate images
+2026-05-20 11:18:44,421 [INFO] Downloaded image: robertsons-coarse-black-pepper-compound-envelope-7g_0.jpg
+2026-05-20 11:18:45,242 [INFO] Downloaded image: robertsons-coarse-black-pepper-compound-envelope-7g_1.jpg
+2026-05-20 11:18:45,246 [INFO] Successfully scraped robertsons-coarse-black-pepper-compound-envelope-7g
+2026-05-20 11:18:45,247 [INFO] [13 scraped] robertsons-coarse-black-pepper-compound-envelope-7g
+2026-05-20 11:18:46,256 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Canned-Food/KOO-Baked-Beans-in-Tomato-Sauce-400g/p/10126789EA
+2026-05-20 11:18:56,308 [INFO] Found 5 candidate images
+2026-05-20 11:18:57,028 [INFO] Downloaded image: koo-baked-beans-in-tomato-sauce-400g_0.jpg
+2026-05-20 11:18:57,951 [INFO] Downloaded image: koo-baked-beans-in-tomato-sauce-400g_1.jpg
+2026-05-20 11:18:58,771 [INFO] Downloaded image: koo-baked-beans-in-tomato-sauce-400g_2.jpg
+2026-05-20 11:18:59,479 [INFO] Downloaded image: koo-baked-beans-in-tomato-sauce-400g_3.jpg
+2026-05-20 11:19:00,407 [INFO] Downloaded image: koo-baked-beans-in-tomato-sauce-400g_4.jpg
+2026-05-20 11:19:00,413 [INFO] Successfully scraped koo-baked-beans-in-tomato-sauce-400g
+2026-05-20 11:19:00,415 [INFO] [14 scraped] koo-baked-beans-in-tomato-sauce-400g
+2026-05-20 11:19:01,416 [INFO] [Cat page 2] Loading: https://www.shoprite.co.za/c-2256/All-Departments?q=%3Arelevance%3AbrowseAllStoresFacetOff%3AbrowseAllStoresFacetOff&page=2
+2026-05-20 11:19:14,513 [INFO] [Cat page 2] 20 new links | 60 total seen
+2026-05-20 11:19:14,558 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Rice%2C-Pasta%2C-Noodles-and-Cous-Cous/Ritebrand-Medium-Grain-Parboiled-White-Rice-2kg/p/10130255EA
+2026-05-20 11:19:26,463 [INFO] Found 2 candidate images
+2026-05-20 11:19:27,249 [INFO] Downloaded image: ritebrand-medium-grain-parboiled-white-rice-2kg_0.jpg
+2026-05-20 11:19:27,660 [INFO] Downloaded image: ritebrand-medium-grain-parboiled-white-rice-2kg_1.jpg
+2026-05-20 11:19:27,663 [INFO] Successfully scraped ritebrand-medium-grain-parboiled-white-rice-2kg
+2026-05-20 11:19:27,665 [INFO] [15 scraped] ritebrand-medium-grain-parboiled-white-rice-2kg
+2026-05-20 11:19:28,685 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Rice%2C-Pasta%2C-Noodles-and-Cous-Cous/Spekko-Long-Grain-Parboiled-White-Rice-2kg/p/10133205EA
+2026-05-20 11:19:37,927 [INFO] Found 2 candidate images
+2026-05-20 11:19:38,697 [INFO] Downloaded image: spekko-long-grain-parboiled-white-rice-2kg_0.jpg
+2026-05-20 11:19:39,408 [INFO] Downloaded image: spekko-long-grain-parboiled-white-rice-2kg_1.jpg
+2026-05-20 11:19:39,417 [INFO] Successfully scraped spekko-long-grain-parboiled-white-rice-2kg
+2026-05-20 11:19:39,427 [INFO] [16 scraped] spekko-long-grain-parboiled-white-rice-2kg
+2026-05-20 11:19:40,440 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Blue-Ribbon-Sliced-Brown-Bread-700g/p/10136371EA
+2026-05-20 11:19:49,260 [INFO] Found 5 candidate images
+2026-05-20 11:19:49,858 [INFO] Downloaded image: blue-ribbon-sliced-brown-bread-700g_0.jpg
+2026-05-20 11:19:50,470 [INFO] Downloaded image: blue-ribbon-sliced-brown-bread-700g_1.jpg
+2026-05-20 11:19:51,097 [INFO] Downloaded image: blue-ribbon-sliced-brown-bread-700g_2.jpg
+2026-05-20 11:19:51,798 [INFO] Downloaded image: blue-ribbon-sliced-brown-bread-700g_3.jpg
+2026-05-20 11:19:52,625 [INFO] Downloaded image: blue-ribbon-sliced-brown-bread-700g_4.jpg
+2026-05-20 11:19:52,628 [INFO] Successfully scraped blue-ribbon-sliced-brown-bread-700g
+2026-05-20 11:19:52,633 [INFO] [17 scraped] blue-ribbon-sliced-brown-bread-700g
+2026-05-20 11:19:53,647 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Medium-Half-Cabbage/p/10133089PK3
+2026-05-20 11:20:02,385 [INFO] Found 5 candidate images
+2026-05-20 11:20:03,068 [INFO] Downloaded image: medium-half-cabbage_0.jpg
+2026-05-20 11:20:03,900 [INFO] Downloaded image: medium-half-cabbage_1.jpg
+2026-05-20 11:20:04,779 [INFO] Downloaded image: medium-half-cabbage_2.jpg
+2026-05-20 11:20:05,428 [INFO] Downloaded image: medium-half-cabbage_3.jpg
+2026-05-20 11:20:06,191 [INFO] Downloaded image: medium-half-cabbage_4.jpg
+2026-05-20 11:20:06,250 [INFO] Successfully scraped medium-half-cabbage
+2026-05-20 11:20:06,256 [INFO] [18 scraped] medium-half-cabbage
+2026-05-20 11:20:07,267 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Drinks/Soft-Drinks/Cola/Coca-Cola-Original-Taste-Less-Sugar-Soft-Drink-1-5L/p/10141470EA
+2026-05-20 11:20:16,394 [INFO] Found 2 candidate images
+2026-05-20 11:20:16,779 [INFO] Downloaded image: coca-cola-original-taste-less-sugar-soft-drink-15l_0.jpg
+2026-05-20 11:20:17,601 [INFO] Downloaded image: coca-cola-original-taste-less-sugar-soft-drink-15l_1.jpg
+2026-05-20 11:20:17,607 [INFO] Successfully scraped coca-cola-original-taste-less-sugar-soft-drink-15l
+2026-05-20 11:20:17,609 [INFO] [19 scraped] coca-cola-original-taste-less-sugar-soft-drink-1-5l
+2026-05-20 11:20:18,614 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Golden-Yolk-Medium-Eggs-18-Pack/p/10714975EA
+2026-05-20 11:20:30,177 [INFO] Found 5 candidate images
+2026-05-20 11:20:30,928 [INFO] Downloaded image: golden-yolk-medium-eggs-18-pack_0.jpg
+2026-05-20 11:20:31,678 [INFO] Downloaded image: golden-yolk-medium-eggs-18-pack_1.jpg
+2026-05-20 11:20:32,121 [INFO] Downloaded image: golden-yolk-medium-eggs-18-pack_2.jpg
+2026-05-20 11:20:32,554 [INFO] Downloaded image: golden-yolk-medium-eggs-18-pack_3.jpg
+2026-05-20 11:20:33,069 [INFO] Downloaded image: golden-yolk-medium-eggs-18-pack_4.jpg
+2026-05-20 11:20:33,071 [INFO] Successfully scraped golden-yolk-medium-eggs-18-pack
+2026-05-20 11:20:33,072 [INFO] [20 scraped] golden-yolk-medium-eggs-18-pack
+2026-05-20 11:20:34,079 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/From-our-Bakery/Sweet-Bread-600g/p/10531399EA
+2026-05-20 11:20:43,107 [INFO] Found 5 candidate images
+2026-05-20 11:20:43,719 [INFO] Downloaded image: sweet-bread-600g_0.jpg
+2026-05-20 11:20:44,438 [INFO] Downloaded image: sweet-bread-600g_1.jpg
+2026-05-20 11:20:45,169 [INFO] Downloaded image: sweet-bread-600g_2.jpg
+2026-05-20 11:20:45,782 [INFO] Downloaded image: sweet-bread-600g_3.jpg
+2026-05-20 11:20:47,106 [INFO] Downloaded image: sweet-bread-600g_4.jpg
+2026-05-20 11:20:47,109 [INFO] Successfully scraped sweet-bread-600g
+2026-05-20 11:20:47,109 [INFO] [21 scraped] sweet-bread-600g
+2026-05-20 11:20:48,111 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Table-Condiments-and-Dressings/Ritebrand-Mayonnaise-750g/p/10141784EA
+2026-05-20 11:20:58,111 [INFO] Found 5 candidate images
+2026-05-20 11:20:59,080 [INFO] Downloaded image: ritebrand-mayonnaise-750g_0.jpg
+2026-05-20 11:20:59,694 [INFO] Downloaded image: ritebrand-mayonnaise-750g_1.jpg
+2026-05-20 11:21:00,617 [INFO] Downloaded image: ritebrand-mayonnaise-750g_2.jpg
+2026-05-20 11:21:01,251 [INFO] Downloaded image: ritebrand-mayonnaise-750g_3.jpg
+2026-05-20 11:21:01,718 [INFO] Downloaded image: ritebrand-mayonnaise-750g_4.jpg
+2026-05-20 11:21:01,726 [INFO] Successfully scraped ritebrand-mayonnaise-750g
+2026-05-20 11:21:01,726 [INFO] [22 scraped] ritebrand-mayonnaise-750g
+2026-05-20 11:21:02,729 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Yoghurt/Crystal-Valley-Strawberry%2C-Peach-and-Apricot-and-Mixed-Berry-Flavoured-Smooth-Low-Fat-Dairy-Snack-6-x-75g/p/10644904EA
+2026-05-20 11:21:11,727 [INFO] Found 2 candidate images
+2026-05-20 11:21:12,399 [WARNING] Failed to download image https://www.shoprite.co.za/medias/10644904EA-checkers515Wx515H.webp?context=bWFzdGVyfGltYWdlc3wyODIxMHxpbWFnZS93ZWJwfGltYWdlcy9oYWMvaDZhLzEyNTcwMjQxMTcxNDg2LndlYnB8OTAzY2VlYWE4Y2YyZjRkYWQ5NzE2NWE5MWFkODQwNDlmZjI1ZGI0NTk2ZjFhNTUxNTg2NjQ5ZTlkNzZmZGVhNg: [Errno 2] No such file or directory: 'products/crystal-valley-strawberry-peach-amp-apricot-amp-mixed-berry-flavoured-smooth-low-fat-dairy-snack-6-x-75g/images/crystal-valley-strawberry-peach-amp-apricot-amp-mixed-berry-flavoured-smooth-low-fat-dairy-snack-6-x-75g_0.jpg'
+2026-05-20 11:21:13,098 [WARNING] Failed to download image https://www.shoprite.co.za/medias/10644904EA-checkers515Wx515H.webp?context=bWFzdGVyfGltYWdlc3wyODIxMHxpbWFnZS93ZWJwfGltYWdlcy9oYWMvaDZhLzEyNTcwMjQxMTcxNDg2LndlYnB8OTAzY2VlYWE4Y2YyZjRkYWQ5NzE2NWE5MWFkODQwNDlmZjI1ZGI0NTk2ZjFhNTUxNTg2NjQ5ZTlkNzZmZGVhNg: [Errno 2] No such file or directory: 'products/crystal-valley-strawberry-peach-amp-apricot-amp-mixed-berry-flavoured-smooth-low-fat-dairy-snack-6-x-75g/images/crystal-valley-strawberry-peach-amp-apricot-amp-mixed-berry-flavoured-smooth-low-fat-dairy-snack-6-x-75g_0.jpg'
+2026-05-20 11:21:13,098 [ERROR] Error scraping https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Yoghurt/Crystal-Valley-Strawberry%2C-Peach-and-Apricot-and-Mixed-Berry-Flavoured-Smooth-Low-Fat-Dairy-Snack-6-x-75g/p/10644904EA: [Errno 2] No such file or directory: 'products/crystal-valley-strawberry-peach-amp-apricot-amp-mixed-berry-flavoured-smooth-low-fat-dairy-snack-6-x-75g/crystal-valley-strawberry-peach-amp-apricot-amp-mixed-berry-flavoured-smooth-low-fat-dairy-snack-6-x-75g_card.md'
+2026-05-20 11:21:13,098 [ERROR] Exception for https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Yoghurt/Crystal-Valley-Strawberry%2C-Peach-and-Apricot-and-Mixed-Berry-Flavoured-Smooth-Low-Fat-Dairy-Snack-6-x-75g/p/10644904EA: [Errno 2] No such file or directory: 'products/crystal-valley-strawberry-peach-amp-apricot-amp-mixed-berry-flavoured-smooth-low-fat-dairy-snack-6-x-75g/crystal-valley-strawberry-peach-amp-apricot-amp-mixed-berry-flavoured-smooth-low-fat-dairy-snack-6-x-75g_card.md'
+2026-05-20 11:21:14,109 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Hamburger-Roll/p/10151456EA
+2026-05-20 11:21:23,000 [INFO] Found 5 candidate images
+2026-05-20 11:21:23,659 [INFO] Downloaded image: hamburger-roll_0.jpg
+2026-05-20 11:21:24,271 [INFO] Downloaded image: hamburger-roll_1.jpg
+2026-05-20 11:21:24,980 [INFO] Downloaded image: hamburger-roll_2.jpg
+2026-05-20 11:21:25,603 [INFO] Downloaded image: hamburger-roll_3.jpg
+2026-05-20 11:21:26,519 [INFO] Downloaded image: hamburger-roll_4.jpg
+2026-05-20 11:21:26,519 [INFO] Successfully scraped hamburger-roll
+2026-05-20 11:21:26,521 [INFO] [23 scraped] hamburger-roll
+2026-05-20 11:21:27,540 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Baking/SASKO-Cake-Wheat-Flour-Bag-2-5kg/p/10137552EA
+2026-05-20 11:21:37,114 [INFO] Found 5 candidate images
+2026-05-20 11:21:37,790 [INFO] Downloaded image: sasko-cake-wheat-flour-bag-25kg_0.jpg
+2026-05-20 11:21:38,509 [INFO] Downloaded image: sasko-cake-wheat-flour-bag-25kg_1.jpg
+2026-05-20 11:21:39,233 [INFO] Downloaded image: sasko-cake-wheat-flour-bag-25kg_2.jpg
+2026-05-20 11:21:39,733 [INFO] Downloaded image: sasko-cake-wheat-flour-bag-25kg_3.jpg
+2026-05-20 11:21:40,347 [INFO] Downloaded image: sasko-cake-wheat-flour-bag-25kg_4.jpg
+2026-05-20 11:21:40,354 [INFO] Successfully scraped sasko-cake-wheat-flour-bag-25kg
+2026-05-20 11:21:40,354 [INFO] [24 scraped] sasko-cake-wheat-flour-bag-2-5kg
+2026-05-20 11:21:41,371 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Yoghurt/Crystal-Valley-Strawberry%2C-Vanilla-and-Granadilla-Flavoured-Smooth-Low-Fat-Dairy-Snack-6-x-75g/p/10644905EA
+2026-05-20 11:21:49,949 [INFO] Found 2 candidate images
+2026-05-20 11:21:50,580 [INFO] Downloaded image: crystal-valley-strawberry-vanilla-amp-granadilla-flavoured-smooth-low-fat-dairy-snack-6-x-75g_0.jpg
+2026-05-20 11:21:51,107 [INFO] Downloaded image: crystal-valley-strawberry-vanilla-amp-granadilla-flavoured-smooth-low-fat-dairy-snack-6-x-75g_1.jpg
+2026-05-20 11:21:51,112 [INFO] Successfully scraped crystal-valley-strawberry-vanilla-amp-granadilla-flavoured-smooth-low-fat-dairy-snack-6-x-75g
+2026-05-20 11:21:51,112 [INFO] [25 scraped] crystal-valley-strawberry%2c-vanilla-and-granadilla-flavoured-smooth-low-fat-dairy-snack-6-x-75g
+2026-05-20 11:21:52,112 [INFO] Skipping farmbest-fresh-chicken-braai-pack-650g, card already exists.
+2026-05-20 11:21:52,112 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Darling-Amasi-Maas-Bottle-2L/p/10131335EA
+2026-05-20 11:21:59,830 [INFO] Found 2 candidate images
+2026-05-20 11:22:00,283 [INFO] Downloaded image: darling-amasi-maas-bottle-2l_0.jpg
+2026-05-20 11:22:00,842 [INFO] Downloaded image: darling-amasi-maas-bottle-2l_1.jpg
+2026-05-20 11:22:00,843 [INFO] Successfully scraped darling-amasi-maas-bottle-2l
+2026-05-20 11:22:00,845 [INFO] [26 scraped] darling-amasi-maas-bottle-2l
+2026-05-20 11:22:01,853 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Medium-Cabbage-Head/p/10133089EA
+2026-05-20 11:22:09,701 [INFO] Found 2 candidate images
+2026-05-20 11:22:10,340 [INFO] Downloaded image: medium-cabbage-head_0.jpg
+2026-05-20 11:22:10,862 [INFO] Downloaded image: medium-cabbage-head_1.jpg
+2026-05-20 11:22:10,862 [INFO] Successfully scraped medium-cabbage-head
+2026-05-20 11:22:10,862 [INFO] [27 scraped] medium-cabbage-head
+2026-05-20 11:22:11,876 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Long-Life-Milk-and-Dairy-Alternatives/Ritebrand-Long-Life-Full-Cream-Milk-6-x-1L/p/10156109PK1
+2026-05-20 11:22:19,892 [INFO] Found 5 candidate images
+2026-05-20 11:22:20,796 [INFO] Downloaded image: ritebrand-long-life-full-cream-milk-6-x-1l_0.jpg
+2026-05-20 11:22:21,513 [INFO] Downloaded image: ritebrand-long-life-full-cream-milk-6-x-1l_1.jpg
+2026-05-20 11:22:22,441 [INFO] Downloaded image: ritebrand-long-life-full-cream-milk-6-x-1l_2.jpg
+2026-05-20 11:22:23,493 [INFO] Downloaded image: ritebrand-long-life-full-cream-milk-6-x-1l_3.jpg
+2026-05-20 11:22:24,015 [INFO] Downloaded image: ritebrand-long-life-full-cream-milk-6-x-1l_4.jpg
+2026-05-20 11:22:24,020 [INFO] Successfully scraped ritebrand-long-life-full-cream-milk-6-x-1l
+2026-05-20 11:22:24,020 [INFO] [28 scraped] ritebrand-long-life-full-cream-milk-6-x-1l
+2026-05-20 11:22:25,032 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Pot-O%27-Gold-Tomato-Paste-50g/p/10212842EA
+2026-05-20 11:22:34,595 [INFO] Found 2 candidate images
+2026-05-20 11:22:35,435 [INFO] Downloaded image: pot-o039-gold-tomato-paste-50g_0.jpg
+2026-05-20 11:22:36,453 [INFO] Downloaded image: pot-o039-gold-tomato-paste-50g_1.jpg
+2026-05-20 11:22:36,454 [INFO] Successfully scraped pot-o039-gold-tomato-paste-50g
+2026-05-20 11:22:36,455 [INFO] [29 scraped] pot-o%27-gold-tomato-paste-50g
+2026-05-20 11:22:37,468 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Fruit/Bananas-650g/p/10148833EA
+2026-05-20 11:22:46,057 [INFO] Found 2 candidate images
+2026-05-20 11:22:46,571 [INFO] Downloaded image: bananas-650g_0.jpg
+2026-05-20 11:22:47,055 [INFO] Downloaded image: bananas-650g_1.jpg
+2026-05-20 11:22:47,120 [INFO] Successfully scraped bananas-650g
+2026-05-20 11:22:47,121 [INFO] [30 scraped] bananas-650g
+2026-05-20 11:22:48,134 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Canned-Food/Ritebrand-Pilchards-In-Tomato-Sauce-Can-400g/p/10417425EA
+2026-05-20 11:22:55,322 [INFO] Found 2 candidate images
+2026-05-20 11:22:56,114 [INFO] Downloaded image: ritebrand-pilchards-in-tomato-sauce-can-400g_0.jpg
+2026-05-20 11:22:56,638 [INFO] Downloaded image: ritebrand-pilchards-in-tomato-sauce-can-400g_1.jpg
+2026-05-20 11:22:56,639 [INFO] Successfully scraped ritebrand-pilchards-in-tomato-sauce-can-400g
+2026-05-20 11:22:56,640 [INFO] [31 scraped] ritebrand-pilchards-in-tomato-sauce-can-400g
+2026-05-20 11:22:57,647 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Frozen-Food/Frozen-Chips%2C-Potatoes-and-Rice/Ritebrand-Frozen-Straight-Cut-Potato-Chips-1kg/p/10126230EA
+2026-05-20 11:23:05,223 [INFO] Found 2 candidate images
+2026-05-20 11:23:05,945 [INFO] Downloaded image: ritebrand-frozen-straight-cut-potato-chips-1kg_0.jpg
+2026-05-20 11:23:06,572 [INFO] Downloaded image: ritebrand-frozen-straight-cut-potato-chips-1kg_1.jpg
+2026-05-20 11:23:06,575 [INFO] Successfully scraped ritebrand-frozen-straight-cut-potato-chips-1kg
+2026-05-20 11:23:06,577 [INFO] [32 scraped] ritebrand-frozen-straight-cut-potato-chips-1kg
+2026-05-20 11:23:07,594 [INFO] [Cat page 3] Loading: https://www.shoprite.co.za/c-2256/All-Departments?q=%3Arelevance%3AbrowseAllStoresFacetOff%3AbrowseAllStoresFacetOff&page=3
+2026-05-20 11:23:22,988 [INFO] [Cat page 3] 20 new links | 80 total seen
+2026-05-20 11:23:22,988 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/D%27Lite-Pure-Cooking-Oil-2L/p/10225789EA
+2026-05-20 11:23:32,878 [INFO] Found 5 candidate images
+2026-05-20 11:23:33,393 [INFO] Downloaded image: d039lite-pure-cooking-oil-2l_0.jpg
+2026-05-20 11:23:33,907 [INFO] Downloaded image: d039lite-pure-cooking-oil-2l_1.jpg
+2026-05-20 11:23:34,622 [INFO] Downloaded image: d039lite-pure-cooking-oil-2l_2.jpg
+2026-05-20 11:23:35,137 [INFO] Downloaded image: d039lite-pure-cooking-oil-2l_3.jpg
+2026-05-20 11:23:35,958 [INFO] Downloaded image: d039lite-pure-cooking-oil-2l_4.jpg
+2026-05-20 11:23:35,960 [INFO] Successfully scraped d039lite-pure-cooking-oil-2l
+2026-05-20 11:23:35,962 [INFO] [33 scraped] d%27lite-pure-cooking-oil-2l
+2026-05-20 11:23:36,976 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Salad%2C-Herbs-and-Dip/English-Cucumber-1s/p/10145817EA
+2026-05-20 11:23:43,051 [INFO] Found 2 candidate images
+2026-05-20 11:23:43,732 [INFO] Downloaded image: english-cucumber-1s_0.jpg
+2026-05-20 11:23:44,553 [INFO] Downloaded image: english-cucumber-1s_1.jpg
+2026-05-20 11:23:44,557 [INFO] Successfully scraped english-cucumber-1s
+2026-05-20 11:23:44,557 [INFO] [34 scraped] english-cucumber-1s
+2026-05-20 11:23:45,560 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Farmbest-Fresh-Chicken-Breasts-Per-kg/p/10187706KG
+2026-05-20 11:23:52,387 [INFO] Found 5 candidate images
+2026-05-20 11:23:52,852 [INFO] Downloaded image: farmbest-fresh-chicken-breasts-per-kg_0.jpg
+2026-05-20 11:23:53,463 [INFO] Downloaded image: farmbest-fresh-chicken-breasts-per-kg_1.jpg
+2026-05-20 11:23:54,092 [INFO] Downloaded image: farmbest-fresh-chicken-breasts-per-kg_2.jpg
+2026-05-20 11:23:54,690 [INFO] Downloaded image: farmbest-fresh-chicken-breasts-per-kg_3.jpg
+2026-05-20 11:23:55,302 [INFO] Downloaded image: farmbest-fresh-chicken-breasts-per-kg_4.jpg
+2026-05-20 11:23:55,304 [INFO] Successfully scraped farmbest-fresh-chicken-breasts-per-kg
+2026-05-20 11:23:55,305 [INFO] [35 scraped] farmbest-fresh-chicken-breasts-per-kg
+2026-05-20 11:23:56,314 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/White-Hotdog-Rolls-6-Pack/p/10151458PK1
+2026-05-20 11:24:03,109 [INFO] Found 2 candidate images
+2026-05-20 11:24:03,803 [INFO] Downloaded image: white-hotdog-rolls-6-pack_0.jpg
+2026-05-20 11:24:04,314 [INFO] Downloaded image: white-hotdog-rolls-6-pack_1.jpg
+2026-05-20 11:24:04,317 [INFO] Successfully scraped white-hotdog-rolls-6-pack
+2026-05-20 11:24:04,318 [INFO] [36 scraped] white-hotdog-rolls-6-pack
+2026-05-20 11:24:05,326 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Frozen-Food/Frozen-Meat-and-Poultry/Farmer%27s-Choice-Frozen-Chicken-Mixed-Portions-5kg/p/10248591EA
+2026-05-20 11:24:12,598 [INFO] Found 2 candidate images
+2026-05-20 11:24:13,118 [INFO] Downloaded image: farmer039s-choice-frozen-chicken-mixed-portions-5kg_0.jpg
+2026-05-20 11:24:13,631 [INFO] Downloaded image: farmer039s-choice-frozen-chicken-mixed-portions-5kg_1.jpg
+2026-05-20 11:24:13,632 [INFO] Successfully scraped farmer039s-choice-frozen-chicken-mixed-portions-5kg
+2026-05-20 11:24:13,632 [INFO] [37 scraped] farmer%27s-choice-frozen-chicken-mixed-portions-5kg
+2026-05-20 11:24:14,637 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/White-Hamburger-Rolls-6-Pack/p/10151456PK1
+2026-05-20 11:24:22,550 [INFO] Found 5 candidate images
+2026-05-20 11:24:23,034 [INFO] Downloaded image: white-hamburger-rolls-6-pack_0.jpg
+2026-05-20 11:24:23,404 [INFO] Downloaded image: white-hamburger-rolls-6-pack_1.jpg
+2026-05-20 11:24:23,927 [INFO] Downloaded image: white-hamburger-rolls-6-pack_2.jpg
+2026-05-20 11:24:24,332 [INFO] Downloaded image: white-hamburger-rolls-6-pack_3.jpg
+2026-05-20 11:24:24,816 [INFO] Downloaded image: white-hamburger-rolls-6-pack_4.jpg
+2026-05-20 11:24:24,822 [INFO] Successfully scraped white-hamburger-rolls-6-pack
+2026-05-20 11:24:24,822 [INFO] [38 scraped] white-hamburger-rolls-6-pack
+2026-05-20 11:24:25,825 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Pork-Pack-Per-kg/p/10151892KG
+2026-05-20 11:24:32,621 [INFO] Found 2 candidate images
+2026-05-20 11:24:33,341 [INFO] Downloaded image: pork-pack-per-kg_0.jpg
+2026-05-20 11:24:34,085 [INFO] Downloaded image: pork-pack-per-kg_1.jpg
+2026-05-20 11:24:34,139 [INFO] Successfully scraped pork-pack-per-kg
+2026-05-20 11:24:34,139 [INFO] [39 scraped] pork-pack-per-kg
+2026-05-20 11:24:35,153 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Crown-Blended-Cooking-Oil-750ml/p/10126761EA
+2026-05-20 11:24:42,058 [INFO] Found 5 candidate images
+2026-05-20 11:24:42,529 [INFO] Downloaded image: crown-blended-cooking-oil-750ml_0.jpg
+2026-05-20 11:24:43,432 [INFO] Downloaded image: crown-blended-cooking-oil-750ml_1.jpg
+2026-05-20 11:24:44,556 [INFO] Downloaded image: crown-blended-cooking-oil-750ml_2.jpg
+2026-05-20 11:24:45,381 [INFO] Downloaded image: crown-blended-cooking-oil-750ml_3.jpg
+2026-05-20 11:24:46,095 [INFO] Downloaded image: crown-blended-cooking-oil-750ml_4.jpg
+2026-05-20 11:24:46,096 [INFO] Successfully scraped crown-blended-cooking-oil-750ml
+2026-05-20 11:24:46,096 [INFO] [40 scraped] crown-blended-cooking-oil-750ml
+2026-05-20 11:24:47,093 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Rhodes-Quality-Tomato-Paste-50g/p/10351880EA
+2026-05-20 11:24:54,053 [INFO] Found 2 candidate images
+2026-05-20 11:24:54,590 [INFO] Downloaded image: rhodes-quality-tomato-paste-50g_0.jpg
+2026-05-20 11:24:55,213 [INFO] Downloaded image: rhodes-quality-tomato-paste-50g_1.jpg
+2026-05-20 11:24:55,217 [INFO] Successfully scraped rhodes-quality-tomato-paste-50g
+2026-05-20 11:24:55,217 [INFO] [41 scraped] rhodes-quality-tomato-paste-50g
+2026-05-20 11:24:56,230 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Beef-Potjiekos-Per-kg/p/10149770KG
+2026-05-20 11:25:03,772 [INFO] Found 2 candidate images
+2026-05-20 11:25:04,737 [INFO] Downloaded image: beef-potjiekos-per-kg_0.jpg
+2026-05-20 11:25:05,684 [INFO] Downloaded image: beef-potjiekos-per-kg_1.jpg
+2026-05-20 11:25:05,695 [INFO] Successfully scraped beef-potjiekos-per-kg
+2026-05-20 11:25:05,695 [INFO] [42 scraped] beef-potjiekos-per-kg
+2026-05-20 11:25:06,702 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Carling-Black-Label-Beer-Can-500ml/p/10541856EA
+2026-05-20 11:25:14,212 [INFO] Found 7 candidate images
+2026-05-20 11:25:14,768 [INFO] Downloaded image: carling-black-label-beer-can-500ml_0.jpg
+2026-05-20 11:25:15,081 [INFO] Downloaded image: carling-black-label-beer-can-500ml_1.jpg
+2026-05-20 11:25:15,792 [INFO] Downloaded image: carling-black-label-beer-can-500ml_2.jpg
+2026-05-20 11:25:16,388 [INFO] Downloaded image: carling-black-label-beer-can-500ml_3.jpg
+2026-05-20 11:25:17,013 [INFO] Downloaded image: carling-black-label-beer-can-500ml_4.jpg
+2026-05-20 11:25:17,415 [INFO] Downloaded image: carling-black-label-beer-can-500ml_5.jpg
+2026-05-20 11:25:18,002 [INFO] Downloaded image: carling-black-label-beer-can-500ml_6.jpg
+2026-05-20 11:25:18,004 [INFO] Successfully scraped carling-black-label-beer-can-500ml
+2026-05-20 11:25:18,004 [INFO] [43 scraped] carling-black-label-beer-can-500ml
+2026-05-20 11:25:19,024 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Canned-Food/Lucky-Star-Pilchards-in-Tomato-Sauce-400g/p/10185083EA
+2026-05-20 11:25:25,851 [INFO] Found 5 candidate images
+2026-05-20 11:25:26,453 [INFO] Downloaded image: lucky-star-pilchards-in-tomato-sauce-400g_0.jpg
+2026-05-20 11:25:27,153 [INFO] Downloaded image: lucky-star-pilchards-in-tomato-sauce-400g_1.jpg
+2026-05-20 11:25:28,077 [INFO] Downloaded image: lucky-star-pilchards-in-tomato-sauce-400g_2.jpg
+2026-05-20 11:25:28,604 [INFO] Downloaded image: lucky-star-pilchards-in-tomato-sauce-400g_3.jpg
+2026-05-20 11:25:29,722 [INFO] Downloaded image: lucky-star-pilchards-in-tomato-sauce-400g_4.jpg
+2026-05-20 11:25:29,725 [INFO] Successfully scraped lucky-star-pilchards-in-tomato-sauce-400g
+2026-05-20 11:25:29,725 [INFO] [44 scraped] lucky-star-pilchards-in-tomato-sauce-400g
+2026-05-20 11:25:30,736 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Cooked-Meats%2C-Sandwich-Fillers-and-Deli/Vegetable-Soup-250ml/p/10636777EA
+2026-05-20 11:25:37,763 [INFO] Found 2 candidate images
+2026-05-20 11:25:38,391 [INFO] Downloaded image: vegetable-soup-250ml_0.jpg
+2026-05-20 11:25:38,756 [INFO] Downloaded image: vegetable-soup-250ml_1.jpg
+2026-05-20 11:25:38,757 [INFO] Successfully scraped vegetable-soup-250ml
+2026-05-20 11:25:38,758 [INFO] [45 scraped] vegetable-soup-250ml
+2026-05-20 11:25:39,761 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Marvello-70%25-Fat-Spread-500g/p/10153949EA
+2026-05-20 11:25:46,657 [INFO] Found 5 candidate images
+2026-05-20 11:25:47,141 [INFO] Downloaded image: marvello-70-fat-spread-500g_0.jpg
+2026-05-20 11:25:47,637 [INFO] Downloaded image: marvello-70-fat-spread-500g_1.jpg
+2026-05-20 11:25:48,152 [INFO] Downloaded image: marvello-70-fat-spread-500g_2.jpg
+2026-05-20 11:25:48,668 [INFO] Downloaded image: marvello-70-fat-spread-500g_3.jpg
+2026-05-20 11:25:49,482 [INFO] Downloaded image: marvello-70-fat-spread-500g_4.jpg
+2026-05-20 11:25:49,486 [INFO] Successfully scraped marvello-70-fat-spread-500g
+2026-05-20 11:25:49,486 [INFO] [46 scraped] marvello-70%25-fat-spread-500g
+2026-05-20 11:25:50,490 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Breakfast-Cereals%2C-Porridge-and-Pap/Super-White-Super-Maize-Meal-2-5kg/p/10335895EA
+2026-05-20 11:25:57,681 [INFO] Found 5 candidate images
+2026-05-20 11:25:58,392 [INFO] Downloaded image: super-white-super-maize-meal-25kg_0.jpg
+2026-05-20 11:25:59,305 [INFO] Downloaded image: super-white-super-maize-meal-25kg_1.jpg
+2026-05-20 11:26:00,022 [INFO] Downloaded image: super-white-super-maize-meal-25kg_2.jpg
+2026-05-20 11:26:00,543 [INFO] Downloaded image: super-white-super-maize-meal-25kg_3.jpg
+2026-05-20 11:26:01,559 [INFO] Downloaded image: super-white-super-maize-meal-25kg_4.jpg
+2026-05-20 11:26:01,560 [INFO] Successfully scraped super-white-super-maize-meal-25kg
+2026-05-20 11:26:01,561 [INFO] [47 scraped] super-white-super-maize-meal-2-5kg
+2026-05-20 11:26:02,566 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Doughnuts%2C-Fresh-Cookies-and-Iced-Buns/Dessert-Buns-6-Pack/p/10152503EA
+2026-05-20 11:26:10,776 [INFO] Found 2 candidate images
+2026-05-20 11:26:11,457 [INFO] Downloaded image: dessert-buns-6-pack_0.jpg
+2026-05-20 11:26:12,078 [INFO] Downloaded image: dessert-buns-6-pack_1.jpg
+2026-05-20 11:26:12,109 [INFO] Successfully scraped dessert-buns-6-pack
+2026-05-20 11:26:12,110 [INFO] [48 scraped] dessert-buns-6-pack
+2026-05-20 11:26:13,106 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/White-Hot-Dog-Roll-Single/p/10151458EA
+2026-05-20 11:26:21,671 [INFO] Found 2 candidate images
+2026-05-20 11:26:23,386 [INFO] Downloaded image: white-hot-dog-roll-single_0.jpg
+2026-05-20 11:26:24,299 [INFO] Downloaded image: white-hot-dog-roll-single_1.jpg
+2026-05-20 11:26:24,302 [INFO] Successfully scraped white-hot-dog-roll-single
+2026-05-20 11:26:24,302 [INFO] [49 scraped] white-hot-dog-roll-single
+2026-05-20 11:26:25,308 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Ol%C3%A9-20%25-Fat-Bread-Spread-500g/p/10150754EA
+2026-05-20 11:26:34,094 [INFO] Found 7 candidate images
+2026-05-20 11:26:35,084 [INFO] Downloaded image: olé-20-fat-bread-spread-500g_0.jpg
+2026-05-20 11:26:35,434 [INFO] Downloaded image: olé-20-fat-bread-spread-500g_1.jpg
+2026-05-20 11:26:36,168 [INFO] Downloaded image: olé-20-fat-bread-spread-500g_2.jpg
+2026-05-20 11:26:37,193 [INFO] Downloaded image: olé-20-fat-bread-spread-500g_3.jpg
+2026-05-20 11:26:37,916 [INFO] Downloaded image: olé-20-fat-bread-spread-500g_4.jpg
+2026-05-20 11:26:38,552 [INFO] Downloaded image: olé-20-fat-bread-spread-500g_5.jpg
+2026-05-20 11:26:39,070 [INFO] Downloaded image: olé-20-fat-bread-spread-500g_6.jpg
+2026-05-20 11:26:39,075 [INFO] Successfully scraped olé-20-fat-bread-spread-500g
+2026-05-20 11:26:39,075 [INFO] [50 scraped] ol%c3%a9-20%25-fat-bread-spread-500g
+2026-05-20 11:26:40,399 [INFO] Reached limit of 50 new products scraped

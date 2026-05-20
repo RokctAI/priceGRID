@@ -97,24 +97,18 @@ def get_product_name_from_url(url: str) -> Optional[str]:
         resp = requests.get(url, headers=headers, timeout=10)
         if resp.status_code != 200:
             return None
-        # Try to find product name in common patterns
         html = resp.text
-        # Look for h1 tag
-        import re
         h1_match = re.search(r'<h1[^>]*>(.*?)</h1>', html, re.IGNORECASE | re.DOTALL)
         if h1_match:
             name = re.sub(r'<[^>]+>', '', h1_match.group(1)).strip()
             if name:
                 return name
-        # Look for meta tag with property og:title
         og_title_match = re.search(r'<meta[^>]*property=["\']og:title["\'][^>]*content=["\']([^"\']*)["\']', html, re.IGNORECASE)
         if og_title_match:
             return og_title_match.group(1).strip()
-        # Look for title tag
         title_match = re.search(r'<title[^>]*>(.*?)</title>', html, re.IGNORECASE | re.DOTALL)
         if title_match:
             title = re.sub(r'<[^>]+>', '', title_match.group(1)).strip()
-            # Remove common suffixes like " | Shoprite" etc.
             title = re.sub(r'\s*[\|\-]\s*.*$', '', title)
             if title:
                 return title
@@ -132,7 +126,6 @@ def extract_price_from_page(data: Dict[str, Any]) -> Dict[str, Optional[Any]]:
     insider = data.get('insider_product')
     if insider:
         price_now = insider.get('unit_sale_price')
-        # Check for NaN or None
         if price_now is not None and str(price_now).lower() != 'nan':
             try:
                 price_now = f"{float(price_now):.2f}"
@@ -202,7 +195,6 @@ async def get_stealthy_page(context):
         elif hasattr(playwright_stealth, 'stealth_async'):
             await playwright_stealth.stealth_async(page)
         elif hasattr(playwright_stealth, 'stealth'):
-            # In some versions stealth is a function, in others it might be a module
             if callable(playwright_stealth.stealth):
                 res = playwright_stealth.stealth(page)
                 if asyncio.iscoroutine(res):
@@ -210,7 +202,6 @@ async def get_stealthy_page(context):
     except Exception as e:
         logger.warning(f"Could not apply playwright-stealth: {e}")
 
-    # Additional manual overrides to further mask automation
     await page.add_init_script("""
         Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
         Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});
@@ -240,14 +231,12 @@ async def scrape_product(page, url: str) -> bool:
                 const headers = Array.from(document.querySelectorAll('h2, h3, th, td, strong, span'));
                 const target = headers.find(h => h.innerText.trim().toLowerCase() === headerText.toLowerCase());
                 if (target) {
-                    // Try to find the content in the next sibling or parent's next sibling
                     let content = target.nextElementSibling?.innerText.trim();
                     if (!content) {
                         content = target.parentElement?.nextElementSibling?.innerText.trim();
                     }
                     return content;
                 }
-                // Fallback: search for text in the whole body if it follows a specific pattern
                 const bodyText = document.body.innerText;
                 const regex = new RegExp(headerText + '\\\\s+([^\\\\n]+)', 'i');
                 const match = bodyText.match(regex);
@@ -276,7 +265,6 @@ async def scrape_product(page, url: str) -> bool:
                 imageSources.add(window.insider_object.product.product_image_url);
             }
 
-            // Targeted selectors for product images and thumbnails
             const imageSelectors = [
                 '.pdp__image img',
                 '.pdp__thumbnails img',
@@ -296,7 +284,6 @@ async def scrape_product(page, url: str) -> bool:
                 [src, original, zoom, dataSrc].forEach(url => {
                     if (url && (url.includes('/medias/') || url.includes('/products/')) && !url.includes('error.png')) {
                         const lowUrl = url.toLowerCase();
-                        // Filter out common UI elements/social icons
                         const isBlacklisted = blacklist.some(term => lowUrl.includes(term));
                         if (!isBlacklisted) imageSources.add(url);
                     }
@@ -307,7 +294,6 @@ async def scrape_product(page, url: str) -> bool:
             if (targetElements.length > 0) {
                 targetElements.forEach(processElement);
             } else {
-                // Fallback if no specific containers found
                 document.querySelectorAll('img, [data-zoom-image], [data-original-src]').forEach(processElement);
             }
 
@@ -481,45 +467,42 @@ async def scrape_product(page, url: str) -> bool:
 def extract_slug_from_url(url: str) -> Optional[str]:
     """
     Extract a product slug from a Shoprite product URL.
-    The slug is derived from the product name portion of the URL path,
-    which appears to be pre-slugified (e.g., .../Rajah-Beef-Madras-Cook-In-Sauce-Sachet-15g/p/10641192EA).
-    Returns slug if URL matches product pattern, None otherwise.
     """
     try:
         parsed = urlparse(url)
         path = parsed.path
-        
-        # Look for /p/ pattern in path
+
         if '/p/' not in path:
             return None
-            
-        # Extract the part before /p/
+
         before_p = path.split('/p/', 1)[0]
-        
-        # Extract the last segment before /p/ (this should be the slugified product name)
         segments = [seg for seg in before_p.split('/') if seg]
         if not segments:
             return None
-            
-        slug_part = segments[-1]  # Get the last non-empty segment
-        
-        # The slug in the URL appears to already be properly formatted
-        # (hyphenated, lowercase, etc.), but let's ensure consistency
-        slug_part = slug_part.lower()
-        
-        # Replace underscores with hyphens
+
+        slug_part = segments[-1].lower()
         slug_part = slug_part.replace('_', '-')
-        
-        # Remove any double hyphens
         while '--' in slug_part:
             slug_part = slug_part.replace('--', '-')
-            
-        # Remove leading/trailing hyphens
         slug_part = slug_part.strip('-')
-        
+
         return slug_part if slug_part else None
     except Exception:
         return None
+
+
+JS_GET_PRODUCT_LINKS = """() => {
+    const links = new Set();
+    document.querySelectorAll('a[href*="/p/"]').forEach(a => links.add(a.href));
+    if (links.size === 0) {
+        document.querySelectorAll('.product-item a, .item-product a').forEach(a => {
+            if (a.href && !a.href.includes('#')) links.add(a.href);
+        });
+    }
+    return Array.from(links);
+}"""
+
+
 
 
 async def main():
@@ -552,35 +535,48 @@ async def main():
             ]
         )
         context = await get_hardened_context(browser, headless=args.headless)
+        # Two separate pages: cat_page browses category listings, page scrapes products.
+        # Keeping them separate prevents product-page session state from poisoning
+        # category pagination (which caused ?page=1 to return the same 20 results).
+        cat_page = await get_stealthy_page(context)
         page = await get_stealthy_page(context)
 
         await asyncio.sleep(random.uniform(1, 3))
         logger.info(f"Establishing cookies via {BASE_URL}")
         try:
-            await page.goto(BASE_URL, wait_until="domcontentloaded", timeout=30000)
+            await cat_page.goto(BASE_URL, wait_until="domcontentloaded", timeout=30000)
             await asyncio.sleep(random.uniform(2, 4))
         except Exception as e:
             logger.warning(f"Failed to load home page: {e}")
 
-        logger.info(f"Fetching category page: {cat_url}")
-        try:
+        # cat_page is recreated fresh for each category page fetch to avoid
+        # session/cache state causing repeated results across pages.
+        _cat_page_holder = [cat_page]
+
+        async def fetch_category_page(url):
+            nonlocal cat_page
+            # Close the old tab and open a fresh one
+            try:
+                await _cat_page_holder[0].close()
+            except Exception:
+                pass
+            fresh = await get_stealthy_page(context)
+            _cat_page_holder[0] = fresh
+            cat_page = fresh
+
             response = None
             for attempt in range(3):
                 try:
-                    response = await page.goto(cat_url, wait_until="domcontentloaded", timeout=60000)
+                    response = await cat_page.goto(url, wait_until="domcontentloaded", timeout=60000)
                     if response and response.status == 200:
                         break
-                    logger.warning(f"Attempt {attempt + 1} failed with status: {response.status if response else 'No Response'}")
+                    logger.warning(f"Attempt {attempt + 1} status: {response.status if response else 'No Response'}")
                     await asyncio.sleep(random.uniform(2, 5))
-                except Exception as e:
-                    logger.warning(f"Attempt {attempt + 1} exception: {e}")
+                except Exception as exc:
+                    logger.warning(f"Attempt {attempt + 1} exception: {exc}")
                     await asyncio.sleep(random.uniform(2, 5))
-
-            logger.info(f"Final response status: {response.status if response else 'No Response'}")
-
-            await page.wait_for_timeout(5000)
-
-            page_info = await page.evaluate("""() => {
+            await cat_page.wait_for_timeout(4000)
+            info = await cat_page.evaluate("""() => {
                 const text = document.body.innerText.toLowerCase();
                 return {
                     title: document.title,
@@ -590,7 +586,14 @@ async def main():
                     htmlSnippet: document.body.innerHTML.substring(0, 500)
                 };
             }""")
+            links = await cat_page.evaluate(JS_GET_PRODUCT_LINKS)
+            return info, links, response
 
+        logger.info(f"Fetching category page: {cat_url}")
+        try:
+            page_info, product_links, response = await fetch_category_page(cat_url)
+
+            logger.info(f"Final response status: {response.status if response else 'No Response'}")
             logger.info(f"Page title: {page_info['title']}")
             if page_info['isBlocked']:
                 logger.error("Detected bot blocking or access denial page.")
@@ -599,287 +602,84 @@ async def main():
 
             if "/p/" in cat_url:
                 product_links = [cat_url]
-            else:
-                product_links = await page.evaluate("""() => {
-                    const links = new Set();
-                    document.querySelectorAll('a[href*="/p/"]').forEach(a => links.add(a.href));
-
-                    if (links.size === 0) {
-                       document.querySelectorAll('.product-item a, .item-product a').forEach(a => {
-                           if (a.href && !a.href.includes('#')) links.add(a.href);
-                       });
-                    }
-                    return Array.from(links);
-                }""")
 
             if len(product_links) == 0:
                 logger.warning(f"No product links found. Total <a> tags on page: {page_info['linkCount']}")
                 logger.debug(f"Page HTML Snippet: {page_info['htmlSnippet']}")
                 screenshot_path = f".rokct/agent/logs/category_debug_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
-                await page.screenshot(path=screenshot_path)
+                await cat_page.screenshot(path=screenshot_path)
                 logger.info(f"Saved debug screenshot to {screenshot_path}")
 
-            logger.info(f"Found {len(product_links)} potential products on page")
             scraped_count = 0
-            page_num = 1
-            
-            while True:
-                # Process products on current page
-                for link in product_links:
-                    # Check if product card already exists without viewing the page
-                    url_slug = extract_slug_from_url(link)
-                    if url_slug:
-                        product_dir = f"products/{url_slug}"
-                        card_path = f"{product_dir}/{url_slug}_card.md"
-                        if os.path.exists(card_path):
-                            logger.info(f"Skipping {url_slug}, card already exists.")
-                            continue  # Skip to next link without viewing page
+            seen_links: set = set(product_links)
+            cat_page_num = 0   # page=0 is the initial load; increments to 1, 2, ...
+            pending: list = list(product_links)
 
-                    # Check limit after determining we need to scrape this product
+            logger.info(f"[Cat page {cat_page_num}] Found {len(pending)} product links")
+
+            def build_page_url(pnum: int) -> str:
+                """Return the correct paginated URL for this Shoprite category."""
+                from urllib.parse import urlparse, urlunparse
+                parsed = urlparse(cat_url)
+                base_path = parsed.path  # e.g. /c-2256/All-Departments
+                base_without_query = urlunparse(parsed._replace(query='', fragment=''))
+                if pnum == 0:
+                    return base_without_query
+                # Shoprite pagination format: ?q=:relevance:browseAllStoresFacetOff:browseAllStoresFacetOff&page=N
+                return f"{base_without_query}?q=%3Arelevance%3AbrowseAllStoresFacetOff%3AbrowseAllStoresFacetOff&page={pnum}" 
+
+            while True:
+                # ── Process whatever is in the pending queue ──────────────────
+                while pending:
+                    link = pending.pop(0)
+
                     if args.limit > 0 and scraped_count >= args.limit:
                         logger.info(f"Reached limit of {args.limit} new products scraped")
-                        return  # Exit the function entirely when limit is reached
+                        await browser.close()
+                        return
+
+                    url_slug = extract_slug_from_url(link)
+                    if url_slug:
+                        card_path = f"products/{url_slug}/{url_slug}_card.md"
+                        if os.path.exists(card_path):
+                            logger.info(f"Skipping {url_slug}, card already exists.")
+                            continue
 
                     status = await scrape_product(page, link)
                     if status == "scraped":
                         scraped_count += 1
-                        logger.info(f"Scraped {scraped_count} new products so far")
+                        logger.info(f"[{scraped_count} scraped] {url_slug or link}")
                         await asyncio.sleep(1)
                     elif status == "skipped":
-                        # Don't increment scraped_count, don't sleep (or sleep less)
                         continue
                     else:
-                        # failure
                         await asyncio.sleep(1)
-                
-                # If we've reached the limit, break out of the loop
+
+                # ── After draining the queue, move to next catalogue page ─────
                 if args.limit > 0 and scraped_count >= args.limit:
                     logger.info(f"Reached limit of {args.limit} new products scraped")
                     break
-                
-                # Try to find and navigate to the next page
-                next_page_url = await page.evaluate("""() => {
-                    // First, try to find explicit next button/link
-                    const nextSelectors = [
-                        'a[aria-label*="next" i]',
-                        'a[title*="next" i]',
-                        '.pagination__next',
-                        '.next',
-                        '[data-testid="pagination-next"]',
-                        'a.pagination__next',
-                        'li.next a'
-                    ];
-                    
-                    for (let i = 0; i < nextSelectors.length; i++) {
-                        const selector = nextSelectors[i];
-                        const els = document.querySelectorAll(selector);
-                        for (let j = 0; j < els.length; j++) {
-                            const el = els[j];
-                            if (el.href && !el.href.includes('#')) {
-                                // Check if it contains next-related text
-                                const text = el.textContent.toLowerCase();
-                                if (text.includes('next') || text.includes('»') || text.includes('›')) {
-                                    return el.href;
-                                }
-                            }
-                        }
-                    }
-                    
-                    // Look for numeric pagination
-                    const pageLinks = document.querySelectorAll('.pagination a, .pager a, [class*="page"] a');
-                    let maxPage = 0;
-                    let currentPageEl = null;
-                    
-                    for (let k = 0; k < pageLinks.length; k++) {
-                        const link = pageLinks[k];
-                        const text = link.textContent.trim();
-                        const pageNum = parseInt(text, 10);
-                        if (!isNaN(pageNum)) {
-                            if (pageNum > maxPage) {
-                                maxPage = pageNum;
-                            }
-                            // Check if this link looks like it's for the current page (often has active class)
-                            if (link.classList.contains('active') || 
-                                link.getAttribute('aria-current') === 'true' ||
-                                link.classList.contains('selected')) {
-                                currentPageEl = link;
-                            }
-                        }
-                    }
-                    
-                    // If we found a current page indicator, look for the next number
-                    if (currentPageEl) {
-                        const currentText = currentPageEl.textContent.trim();
-                        const currentPage = parseInt(currentText, 10);
-                        if (!isNaN(currentPage) && currentPage < maxPage) {
-                            // Look for the link with the next page number
-                            const nextPageNum = currentPage + 1;
-                            for (let l = 0; l < pageLinks.length; l++) {
-                                const link = pageLinks[l];
-                                if (link.textContent.trim() === String(nextPageNum)) {
-                                    return link.href;
-                                }
-                            }
-                        }
-                    }
-                    
-                    // Fallback: look for any link with "next" in text content
-                    const allLinks = document.querySelectorAll('a');
-                    for (let m = 0; m < allLinks.length; m++) {
-                        const link = allLinks[m];
-                        const text = link.textContent.toLowerCase();
-                        if ((text.includes('next') || text.includes('»') || text.includes('›')) && 
-                            link.href && !link.href.includes('#')) {
-                            return link.href;
-                        }
-                    }
-                    
-                    return null; // No next page found
-                }""")
-                
-                if not next_page_url:
-                    logger.info("No next page found, stopping pagination")
-                    break
-                    
-                logger.info(f"Navigating to next page: {next_page_url}")
-                try:
-                    await page.goto(next_page_url, wait_until="domcontentloaded", timeout=60000)
-                    await page.wait_for_timeout(3000)
-                    
-                    // Get new product links from the next page
-                    product_links = await page.evaluate("""() => {
-                        const links = new Set();
-                        document.querySelectorAll('a[href*="/p/"]').forEach(a => links.add(a.href));
-                        
-                        if (links.size === 0) {
-                            document.querySelectorAll('.product-item a, .item-product a').forEach(a => {
-                                if (a.href && !a.href.includes('#')) links.add(a.href);
-                            });
-                        }
-                        return Array.from(links);
-                    }""")
-                    
-                    if (product_links.length === 0) {
-                        logger.warning(f"No product links found on next page")
-                        break
-                    }
-                    
-                    logger.info(f"Found {product_links.length} potential products on next page")
-                    page_num += 1
-                    
-                } catch (e) {
-                    logger.error(f"Failed to navigate to next page: {e}")
-                    break
-                }
-                try:
-                    await page.goto(next_page_url, wait_until="domcontentloaded", timeout=60000)
-                    await page.wait_for_timeout(3000)
-                    
-                    # Get new product links from the next page
-                    product_links = await page.evaluate("""() => {
-                        const links = new Set();
-                        document.querySelectorAll('a[href*="/p/"]').forEach(a => links.add(a.href));
-                        
-                        if (links.size === 0) {
-                            document.querySelectorAll('.product-item a, .item-product a').forEach(a => {
-                                if (a.href && !a.href.includes('#')) links.add(a.href);
-                            });
-                        }
-                        return Array.from(links);
-                    }""")
-                    
-                    if len(product_links) == 0:
-                        logger.warning(f"No product links found on next page")
-                        break
-                        
-                    logger.info(f"Found {len(product_links)} potential products on next page")
-                    page_num += 1
-                    
-                except Exception as e:
-                    logger.error(f"Failed to navigate to next page: {e}")
-                    break
-                }
-                    
-                    // Look for numeric pagination
-                    const pageLinks = document.querySelectorAll('.pagination a, .pager a, [class*="page"] a');
-                    let maxPage = 0;
-                    let currentPageEl = null;
-                    
-                    pageLinks.forEach(link => {
-                        const text = link.textContent.trim();
-                        const pageNum = parseInt(text, 10);
-                        if (!isNaN(pageNum)) {
-                            if (pageNum > maxPage) {
-                                maxPage = pageNum;
-                            }
-                            // Check if this link looks like it's for the current page (often has active class)
-                            if (link.classList.contains('active') || 
-                                link.getAttribute('aria-current') === 'true' ||
-                                link.classList.contains('selected')) {
-                                currentPageEl = link;
-                            }
-                        }
-                    });
-                    
-                    // If we found a current page indicator, look for the next number
-                    if (currentPageEl) {
-                        const currentText = currentPageEl.textContent.trim();
-                        const currentPage = parseInt(currentText, 10);
-                        if (!isNaN(currentPage) && currentPage < maxPage) {
-                            // Look for the link with the next page number
-                            const nextPageNum = currentPage + 1;
-                            for (const link of pageLinks) {
-                                if (link.textContent.trim() === String(nextPageNum)) {
-                                    return link.href;
-                                }
-                            }
-                        }
-                    }
-                    
-                    // Fallback: look for any link with "next" in text content
-                    const allLinks = document.querySelectorAll('a');
-                    for (const link of allLinks) {
-                        const text = link.textContent.toLowerCase();
-                        if ((text.includes('next') || text.includes('»') || text.includes('›')) && 
-                            link.href && !link.href.includes('#')) {
-                            return link.href;
-                        }
-                    }
-                    
-                    return null; // No next page found
-                }""")
-                
-                if not next_page_url:
-                    logger.info("No next page found, stopping pagination")
-                    break
-                    
-                logger.info(f"Navigating to next page: {next_page_url}")
-                try:
-                    await page.goto(next_page_url, wait_until="domcontentloaded", timeout=60000)
-                    await page.wait_for_timeout(3000)
-                    
-                    # Get new product links from the next page
-                    product_links = await page.evaluate("""() => {
-                        const links = new Set();
-                        document.querySelectorAll('a[href*="/p/"]').forEach(a => links.add(a.href));
 
-                        if (links.size === 0) {
-                           document.querySelectorAll('.product-item a, .item-product a').forEach(a => {
-                               if (a.href && !a.href.includes('#')) links.add(a.href);
-                           });
-                        }
-                        return Array.from(links);
-                    }""")
-                    
-                    if len(product_links) == 0:
-                        logger.warning(f"No product links found on next page")
+                cat_page_num += 1
+                next_cat_url = build_page_url(cat_page_num)
+                logger.info(f"[Cat page {cat_page_num}] Loading: {next_cat_url}")
+
+                try:
+                    _, all_links, _ = await fetch_category_page(next_cat_url)
+                    new_links = [lnk for lnk in all_links if lnk not in seen_links]
+
+                    if not new_links:
+                        logger.info(f"[Cat page {cat_page_num}] No new product links -- end of catalogue.")
                         break
-                        
-                    logger.info(f"Found {len(product_links)} potential products on next page")
-                    page_num += 1
-                    
+
+                    for lnk in new_links:
+                        seen_links.add(lnk)
+                        pending.append(lnk)
+
+                    logger.info(f"[Cat page {cat_page_num}] {len(new_links)} new links | {len(seen_links)} total seen")
+
                 except Exception as e:
-                    logger.error(f"Failed to navigate to next page: {e}")
+                    logger.error(f"[Cat page {cat_page_num}] Failed to load: {e}")
                     break
 
         except Exception as e:
