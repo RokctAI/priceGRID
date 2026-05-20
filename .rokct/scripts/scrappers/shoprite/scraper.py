@@ -663,8 +663,6 @@ async def main():
                     const nextSelectors = [
                         'a[aria-label*="next" i]',
                         'a[title*="next" i]',
-                        'a:has-text("Next")',
-                        'a:has-text("»")',
                         '.pagination__next',
                         '.next',
                         '[data-testid="pagination-next"]',
@@ -673,16 +671,22 @@ async def main():
                     ];
                     
                     for (const selector of nextSelectors) {
-                        const el = document.querySelector(selector);
-                        if (el && el.href && !el.href.includes('#')) {
-                            return el.href;
+                        const els = document.querySelectorAll(selector);
+                        for (const el of els) {
+                            if (el.href && !el.href.includes('#')) {
+                                // Check if it contains next-related text
+                                const text = el.textContent.toLowerCase();
+                                if (text.includes('next') || text.includes('»') || text.includes('›')) {
+                                    return el.href;
+                                }
+                            }
                         }
                     }
                     
                     // Look for numeric pagination
                     const pageLinks = document.querySelectorAll('.pagination a, .pager a, [class*="page"] a');
                     let maxPage = 0;
-                    let currentPageLink = null;
+                    let currentPageEl = null;
                     
                     pageLinks.forEach(link => {
                         const text = link.textContent.trim();
@@ -695,14 +699,14 @@ async def main():
                             if (link.classList.contains('active') || 
                                 link.getAttribute('aria-current') === 'true' ||
                                 link.classList.contains('selected')) {
-                                currentPageLink = link;
+                                currentPageEl = link;
                             }
                         }
                     });
                     
                     // If we found a current page indicator, look for the next number
-                    if (currentPageLink) {
-                        const currentText = currentPageLink.textContent.trim();
+                    if (currentPageEl) {
+                        const currentText = currentPageEl.textContent.trim();
                         const currentPage = parseInt(currentText, 10);
                         if (!isNaN(currentPage) && currentPage < maxPage) {
                             // Look for the link with the next page number
@@ -712,6 +716,16 @@ async def main():
                                     return link.href;
                                 }
                             }
+                        }
+                    }
+                    
+                    // Fallback: look for any link with "next" in text content
+                    const allLinks = document.querySelectorAll('a');
+                    for (const link of allLinks) {
+                        const text = link.textContent.toLowerCase();
+                        if ((text.includes('next') || text.includes('»') || text.includes('›')) && 
+                            link.href && !link.href.includes('#')) {
+                            return link.href;
                         }
                     }
                     
