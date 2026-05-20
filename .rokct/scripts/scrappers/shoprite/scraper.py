@@ -481,6 +481,8 @@ async def scrape_product(page, url: str) -> bool:
 def extract_slug_from_url(url: str) -> Optional[str]:
     """
     Extract a product slug from a Shoprite product URL.
+    The slug is derived from the product name portion of the URL path,
+    which appears to be pre-slugified (e.g., .../Rajah-Beef-Madras-Cook-In-Sauce-Sachet-15g/p/10641192EA).
     Returns slug if URL matches product pattern, None otherwise.
     """
     try:
@@ -491,20 +493,21 @@ def extract_slug_from_url(url: str) -> Optional[str]:
         if '/p/' not in path:
             return None
             
-        # Extract the part after /p/
-        slug_part = path.split('/p/', 1)[1]
+        # Extract the part before /p/
+        before_p = path.split('/p/', 1)[0]
         
-        # Remove any trailing slash
-        slug_part = slug_part.rstrip('/')
-        
-        if not slug_part:
+        # Extract the last segment before /p/ (this should be the slugified product name)
+        segments = [seg for seg in before_p.split('/') if seg]
+        if not segments:
             return None
             
-        # Basic cleaning similar to slugify but preserve URL structure
-        # Remove query parameters and fragments if they somehow got in path
-        slug_part = slug_part.split('?')[0].split('#')[0]
+        slug_part = segments[-1]  # Get the last non-empty segment
         
-        # Replace underscores with hyphens for consistency
+        # The slug in the URL appears to already be properly formatted
+        # (hyphenated, lowercase, etc.), but let's ensure consistency
+        slug_part = slug_part.lower()
+        
+        # Replace underscores with hyphens
         slug_part = slug_part.replace('_', '-')
         
         # Remove any double hyphens
