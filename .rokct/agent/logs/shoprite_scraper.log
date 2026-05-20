@@ -1,0 +1,73 @@
+2026-05-20 03:21:16,234 [INFO] Running in headed mode
+2026-05-20 03:21:26,774 [INFO] Establishing cookies via https://www.shoprite.co.za
+2026-05-20 03:21:43,101 [INFO] Fetching category page: https://www.shoprite.co.za/c-2256/All-Departments
+2026-05-20 03:21:48,969 [INFO] Final response status: 200
+2026-05-20 03:21:55,435 [INFO] Page title: All Departments | Shoprite ZA
+2026-05-20 03:21:55,477 [INFO] Found 20 potential products on page
+2026-05-20 03:21:55,477 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Rajah-Beef-Madras-Cook-In-Sauce-Sachet-15g/p/10641192EA
+2026-05-20 03:22:02,254 [INFO] Skipping rajah-beef-madras-cook-in-sauce-sachet-15g, card already exists.
+2026-05-20 03:22:02,257 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Rajah-Chicken-Tikka-Cook-In-Sauce-Sachet-15g/p/10641194EA
+2026-05-20 03:22:08,848 [INFO] Skipping rajah-chicken-tikka-cook-in-sauce-sachet-15g, card already exists.
+2026-05-20 03:22:08,854 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Royco-Stew-Mix-For-Chicken-200g/p/10498612EA
+2026-05-20 03:22:15,176 [INFO] Skipping royco-stew-mix-for-chicken-200g, card already exists.
+2026-05-20 03:22:15,176 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Spreads%2C-Honey-and-Preserves/Red-Bicycle-Speculoos-Crunchy-Cookie-Spread-350g/p/10532276EA
+2026-05-20 03:22:21,035 [INFO] Skipping red-bicycle-speculoos-crunchy-cookie-spread-350g, card already exists.
+2026-05-20 03:22:21,037 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Easy-Crispy-Seafood-Coating-Mix-200g/p/10602244EA
+2026-05-20 03:22:27,406 [INFO] Skipping easy-crispy-seafood-coating-mix-200g, card already exists.
+2026-05-20 03:22:27,406 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Robertsons-Indian-Spicy-Lentil-Dhal-Cook-In-Sauce-48g/p/10641181EA
+2026-05-20 03:22:33,840 [INFO] Skipping robertsons-indian-spicy-lentil-dhal-cook-in-sauce-48g, card already exists.
+2026-05-20 03:22:33,840 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Spreads%2C-Honey-and-Preserves/Ritebrand-Smooth-Peanut-Butter-400g/p/10125075EA
+2026-05-20 03:22:39,534 [INFO] Found 5 candidate images
+2026-05-20 03:22:40,249 [INFO] Downloaded image: ritebrand-smooth-peanut-butter-400g_0.jpg
+2026-05-20 03:22:40,576 [INFO] Downloaded image: ritebrand-smooth-peanut-butter-400g_1.jpg
+2026-05-20 03:22:40,975 [INFO] Downloaded image: ritebrand-smooth-peanut-butter-400g_2.jpg
+2026-05-20 03:22:41,340 [INFO] Downloaded image: ritebrand-smooth-peanut-butter-400g_3.jpg
+2026-05-20 03:22:41,806 [INFO] Downloaded image: ritebrand-smooth-peanut-butter-400g_4.jpg
+2026-05-20 03:22:41,810 [INFO] Successfully scraped ritebrand-smooth-peanut-butter-400g
+2026-05-20 03:22:42,822 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Brown-Bread-600g/p/10810522EA
+2026-05-20 03:22:48,671 [INFO] Skipping brown-bread-600g, card already exists.
+2026-05-20 03:22:48,671 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Blue-Ribbon-Toaster-White-Bread-700g/p/10456482EA
+2026-05-20 03:22:53,487 [INFO] Skipping blue-ribbon-toaster-white-bread-700g, card already exists.
+2026-05-20 03:22:53,490 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Farmbest-Fresh-Chicken-Braai-Pack-5-Piece-Per-kg/p/10357568KG
+2026-05-20 03:22:57,999 [INFO] Skipping farmbest-fresh-chicken-braai-pack-5-piece-per-kg, card already exists.
+2026-05-20 03:22:58,000 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Crystal-Valley-Full-Cream-Milk-1L/p/10127467EA
+2026-05-20 03:23:02,544 [INFO] Found 5 candidate images
+2026-05-20 03:23:02,991 [INFO] Downloaded image: crystal-valley-full-cream-milk-1l_0.jpg
+2026-05-20 03:23:03,961 [INFO] Downloaded image: crystal-valley-full-cream-milk-1l_1.jpg
+2026-05-20 03:23:04,960 [INFO] Downloaded image: crystal-valley-full-cream-milk-1l_2.jpg
+2026-05-20 03:23:05,524 [INFO] Downloaded image: crystal-valley-full-cream-milk-1l_3.jpg
+2026-05-20 03:23:05,904 [INFO] Downloaded image: crystal-valley-full-cream-milk-1l_4.jpg
+2026-05-20 03:23:05,905 [INFO] Successfully scraped crystal-valley-full-cream-milk-1l
+2026-05-20 03:23:06,908 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/White-Bread-600g/p/10810523EA
+2026-05-20 03:23:11,716 [INFO] Found 5 candidate images
+2026-05-20 03:23:12,224 [INFO] Downloaded image: white-bread-600g_0.jpg
+2026-05-20 03:23:12,612 [INFO] Downloaded image: white-bread-600g_1.jpg
+2026-05-20 03:23:13,134 [INFO] Downloaded image: white-bread-600g_2.jpg
+2026-05-20 03:23:13,505 [INFO] Downloaded image: white-bread-600g_3.jpg
+2026-05-20 03:23:13,920 [INFO] Downloaded image: white-bread-600g_4.jpg
+2026-05-20 03:23:13,926 [INFO] Successfully scraped white-bread-600g
+2026-05-20 03:23:14,934 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Toiletries/Sanitary-Protection/Sanitary-Pads-and-Panty-Liners/Caress-Regular-Maxi-Sanitary-Pads-8-Pack/p/10730757EA
+2026-05-20 03:23:19,851 [INFO] Skipping caress-regular-maxi-sanitary-pads-8-pack, card already exists.
+2026-05-20 03:23:19,851 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Standard-White-Bread-600g/p/10141145EA
+2026-05-20 03:23:24,330 [INFO] Skipping standard-white-bread-600g, card already exists.
+2026-05-20 03:23:24,332 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Carling-Black-Label-Beer-Bottle-750ml/p/10125600EA
+2026-05-20 03:23:30,181 [INFO] Skipping carling-black-label-beer-bottle-750ml, card already exists.
+2026-05-20 03:23:30,185 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Panini-Roll-Single/p/10397287EA
+2026-05-20 03:23:35,310 [INFO] Skipping panini-roll-single, card already exists.
+2026-05-20 03:23:35,310 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Frozen-Food/Frozen-Meat-and-Poultry/County-Fair-Frozen-Chicken-Mixed-Portions-With-Brine-Based-Mixture-5kg/p/10538316EA
+2026-05-20 03:23:40,124 [INFO] Skipping county-fair-frozen-chicken-mixed-portions-with-brine-based-mixture-5kg, card already exists.
+2026-05-20 03:23:40,124 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Darling-Fresh-Full-Cream-Milk-Sachet-1L/p/10124889EA
+2026-05-20 03:23:45,314 [INFO] Skipping darling-fresh-full-cream-milk-sachet-1l, card already exists.
+2026-05-20 03:23:45,314 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Standard-Brown-Bread-600g/p/10141147EA
+2026-05-20 03:23:50,302 [INFO] Found 2 candidate images
+2026-05-20 03:23:50,861 [INFO] Downloaded image: standard-brown-bread-600g_0.jpg
+2026-05-20 03:23:51,194 [INFO] Downloaded image: standard-brown-bread-600g_1.jpg
+2026-05-20 03:23:51,196 [INFO] Successfully scraped standard-brown-bread-600g
+2026-05-20 03:23:52,202 [INFO] Scraping product: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Crystal-Valley-Full-Cream-Long-Life-Milk-1L/p/10156069EA
+2026-05-20 03:23:57,999 [INFO] Found 5 candidate images
+2026-05-20 03:23:58,948 [INFO] Downloaded image: crystal-valley-full-cream-long-life-milk-1l_0.jpg
+2026-05-20 03:23:59,281 [INFO] Downloaded image: crystal-valley-full-cream-long-life-milk-1l_1.jpg
+2026-05-20 03:24:00,086 [INFO] Downloaded image: crystal-valley-full-cream-long-life-milk-1l_2.jpg
+2026-05-20 03:24:00,484 [INFO] Downloaded image: crystal-valley-full-cream-long-life-milk-1l_3.jpg
+2026-05-20 03:24:01,107 [INFO] Downloaded image: crystal-valley-full-cream-long-life-milk-1l_4.jpg
+2026-05-20 03:24:01,120 [INFO] Successfully scraped crystal-valley-full-cream-long-life-milk-1l

@@ -7,7 +7,7 @@ import argparse
 import datetime
 import re
 from typing import Optional, Dict, Any, List
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 import requests
 import time
 from playwright.async_api import async_playwright
@@ -82,6 +82,45 @@ def slugify(text: str) -> str:
     text = re.sub(r'[\s_-]+', '-', text)
     text = text.strip('-')
     return text
+
+
+def get_product_name_from_url(url: str) -> Optional[str]:
+    """
+    Attempt to extract product name from URL using a lightweight HTTP request.
+    Returns product name if successful, None otherwise.
+    """
+    try:
+        headers = {
+            "User-Agent": random.choice(USER_AGENTS),
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        }
+        resp = requests.get(url, headers=headers, timeout=10)
+        if resp.status_code != 200:
+            return None
+        # Try to find product name in common patterns
+        html = resp.text
+        # Look for h1 tag
+        import re
+        h1_match = re.search(r'<h1[^>]*>(.*?)</h1>', html, re.IGNORECASE | re.DOTALL)
+        if h1_match:
+            name = re.sub(r'<[^>]+>', '', h1_match.group(1)).strip()
+            if name:
+                return name
+        # Look for meta tag with property og:title
+        og_title_match = re.search(r'<meta[^>]*property=["\']og:title["\'][^>]*content=["\']([^"\']*)["\']', html, re.IGNORECASE)
+        if og_title_match:
+            return og_title_match.group(1).strip()
+        # Look for title tag
+        title_match = re.search(r'<title[^>]*>(.*?)</title>', html, re.IGNORECASE | re.DOTALL)
+        if title_match:
+            title = re.sub(r'<[^>]+>', '', title_match.group(1)).strip()
+            # Remove common suffixes like " | Shoprite" etc.
+            title = re.sub(r'\s*[\|\-]\s*.*$', '', title)
+            if title:
+                return title
+    except Exception as e:
+        logger.debug(f"Failed to extract product name from {url}: {e}")
+    return None
 
 def extract_price_from_page(data: Dict[str, Any]) -> Dict[str, Optional[Any]]:
     """
@@ -439,6 +478,47 @@ async def scrape_product(page, url: str) -> bool:
         failure_logger.error(f"Exception for {url}: {e}")
         return False
 
+def extract_slug_from_url(url: str) -> Optional[str]:
+    """
+    Extract a product slug from a Shoprite product URL.
+    Returns slug if URL matches product pattern, None otherwise.
+    """
+    try:
+        parsed = urlparse(url)
+        path = parsed.path
+        
+        # Look for /p/ pattern in path
+        if '/p/' not in path:
+            return None
+            
+        # Extract the part after /p/
+        slug_part = path.split('/p/', 1)[1]
+        
+        # Remove any trailing slash
+        slug_part = slug_part.rstrip('/')
+        
+        if not slug_part:
+            return None
+            
+        # Basic cleaning similar to slugify but preserve URL structure
+        # Remove query parameters and fragments if they somehow got in path
+        slug_part = slug_part.split('?')[0].split('#')[0]
+        
+        # Replace underscores with hyphens for consistency
+        slug_part = slug_part.replace('_', '-')
+        
+        # Remove any double hyphens
+        while '--' in slug_part:
+            slug_part = slug_part.replace('--', '-')
+            
+        # Remove leading/trailing hyphens
+        slug_part = slug_part.strip('-')
+        
+        return slug_part if slug_part else None
+    except Exception:
+        return None
+
+
 async def main():
     parser = argparse.ArgumentParser(description="PriceGrid Product Scraper")
     parser.add_argument("--category", type=str, default="All-Departments", help="Category to scrape")
@@ -541,6 +621,15 @@ async def main():
             for link in product_links:
                 if args.limit > 0 and scraped_count >= args.limit:
                     break
+
+                # Check if product card already exists without viewing the page
+                url_slug = extract_slug_from_url(link)
+                if url_slug:
+                    product_dir = f"products/{url_slug}"
+                    card_path = f"{product_dir}/{url_slug}_card.md"
+                    if os.path.exists(card_path):
+                        logger.info(f"Skipping {url_slug}, card already exists.")
+                        continue  # Skip to next link without viewing page
 
                 status = await scrape_product(page, link)
                 if status == "scraped":
