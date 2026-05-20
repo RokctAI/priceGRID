@@ -621,30 +621,135 @@ async def main():
 
             logger.info(f"Found {len(product_links)} potential products on page")
             scraped_count = 0
-            for link in product_links:
-                # Check if product card already exists without viewing the page
-                url_slug = extract_slug_from_url(link)
-                if url_slug:
-                    product_dir = f"products/{url_slug}"
-                    card_path = f"{product_dir}/{url_slug}_card.md"
-                    if os.path.exists(card_path):
-                        logger.info(f"Skipping {url_slug}, card already exists.")
-                        continue  # Skip to next link without viewing page
+            page_num = 1
+            
+            while True:
+                # Process products on current page
+                for link in product_links:
+                    # Check if product card already exists without viewing the page
+                    url_slug = extract_slug_from_url(link)
+                    if url_slug:
+                        product_dir = f"products/{url_slug}"
+                        card_path = f"{product_dir}/{url_slug}_card.md"
+                        if os.path.exists(card_path):
+                            logger.info(f"Skipping {url_slug}, card already exists.")
+                            continue  # Skip to next link without viewing page
 
-                # Check limit after determining we need to scrape this product
+                    # Check limit after determining we need to scrape this product
+                    if args.limit > 0 and scraped_count >= args.limit:
+                        logger.info(f"Reached limit of {args.limit} new products scraped")
+                        return  # Exit the function entirely when limit is reached
+
+                    status = await scrape_product(page, link)
+                    if status == "scraped":
+                        scraped_count += 1
+                        logger.info(f"Scraped {scraped_count} new products so far")
+                        await asyncio.sleep(1)
+                    elif status == "skipped":
+                        # Don't increment scraped_count, don't sleep (or sleep less)
+                        continue
+                    else:
+                        # failure
+                        await asyncio.sleep(1)
+                
+                # If we've reached the limit, break out of the loop
                 if args.limit > 0 and scraped_count >= args.limit:
+                    logger.info(f"Reached limit of {args.limit} new products scraped")
                     break
+                
+                # Try to find and navigate to the next page
+                next_page_url = await page.evaluate("""() => {
+                    // Common selectors for next page links
+                    const nextSelectors = [
+                        'a[aria-label*="next" i]',
+                        'a[title*="next" i]',
+                        'a:has-text("Next")',
+                        'a:has-text("»")',
+                        '.pagination__next',
+                        '.next',
+                        '[data-testid="pagination-next"]',
+                        'a.pagination__next',
+                        'li.next a'
+                    ];
+                    
+                    for (const selector of nextSelectors) {
+                        const el = document.querySelector(selector);
+                        if (el && el.href && !el.href.includes('#')) {
+                            return el.href;
+                        }
+                    }
+                    
+                    // Look for numeric pagination
+                    const pageLinks = document.querySelectorAll('.pagination a, .pager a, [class*="page"] a');
+                    let maxPage = 0;
+                    let currentPageLink = null;
+                    
+                    pageLinks.forEach(link => {
+                        const text = link.textContent.trim();
+                        const pageNum = parseInt(text, 10);
+                        if (!isNaN(pageNum)) {
+                            if (pageNum > maxPage) {
+                                maxPage = pageNum;
+                            }
+                            // Check if this link looks like it's for the current page (often has active class)
+                            if (link.classList.contains('active') || 
+                                link.getAttribute('aria-current') === 'true' ||
+                                link.classList.contains('selected')) {
+                                currentPageLink = link;
+                            }
+                        }
+                    });
+                    
+                    // If we found a current page indicator, look for the next number
+                    if (currentPageLink) {
+                        const currentText = currentPageLink.textContent.trim();
+                        const currentPage = parseInt(currentText, 10);
+                        if (!isNaN(currentPage) && currentPage < maxPage) {
+                            // Look for the link with the next page number
+                            const nextPageNum = currentPage + 1;
+                            for (const link of pageLinks) {
+                                if (link.textContent.trim() === String(nextPageNum)) {
+                                    return link.href;
+                                }
+                            }
+                        }
+                    }
+                    
+                    return null; // No next page found
+                }""")
+                
+                if not next_page_url:
+                    logger.info("No next page found, stopping pagination")
+                    break
+                    
+                logger.info(f"Navigating to next page: {next_page_url}")
+                try:
+                    await page.goto(next_page_url, wait_until="domcontentloaded", timeout=60000)
+                    await page.wait_for_timeout(3000)
+                    
+                    # Get new product links from the next page
+                    product_links = await page.evaluate("""() => {
+                        const links = new Set();
+                        document.querySelectorAll('a[href*="/p/"]').forEach(a => links.add(a.href));
 
-                status = await scrape_product(page, link)
-                if status == "scraped":
-                    scraped_count += 1
-                    await asyncio.sleep(1)
-                elif status == "skipped":
-                    # Don't increment scraped_count, don't sleep (or sleep less)
-                    continue
-                else:
-                    # failure
-                    await asyncio.sleep(1)
+                        if (links.size === 0) {
+                           document.querySelectorAll('.product-item a, .item-product a').forEach(a => {
+                               if (a.href && !a.href.includes('#')) links.add(a.href);
+                           });
+                        }
+                        return Array.from(links);
+                    }""")
+                    
+                    if len(product_links) == 0:
+                        logger.warning(f"No product links found on next page")
+                        break
+                        
+                    logger.info(f"Found {len(product_links)} potential products on next page")
+                    page_num += 1
+                    
+                except Exception as e:
+                    logger.error(f"Failed to navigate to next page: {e}")
+                    break
 
         except Exception as e:
             logger.error(f"Failed to scrape category {cat_url}: {e}")
