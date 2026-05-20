@@ -17,11 +17,109 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
     handlers=[
-        logging.FileHandler(".rokct/agent/logs/shoprite_scraper.log", mode="w"),
+        logging.FileHandler(".rokct/agent/logs/shoprite_maintain.log", mode="w"),
         logging.StreamHandler(sys.stdout)
     ]
 )
 logger = logging.getLogger(__name__)
+
+
+def get_image_dimensions(filepath: str):
+    """Return (width, height) for an image file, or (0, 0) on failure."""
+    try:
+        from PIL import Image
+        with Image.open(filepath) as img:
+            return img.size  # (width, height)
+    except Exception:
+        return (0, 0)
+
+
+def rename_images_by_size(product_dir: str, card_path: str, slug: str) -> bool:
+    """
+    Rename every image in product_dir/images/ to {slug}_{W}x{H}.jpg.
+    If two images share the same dimensions, append _1, _2, etc.
+    Updates the card file to reflect the new names.
+    Returns True if the card was modified.
+    """
+    images_dir = os.path.join(product_dir, "images")
+    if not os.path.exists(images_dir):
+        return False
+
+    image_files = sorted([
+        f for f in os.listdir(images_dir)
+        if f.lower().endswith((".jpg", ".jpeg", ".png", ".webp"))
+    ])
+    if not image_files:
+        return False
+
+    # Build rename map: old_name -> new_name
+    seen_dims = {}  # dim_key -> count
+    rename_map = {}
+
+    for fname in image_files:
+        fpath = os.path.join(images_dir, fname)
+        w, h = get_image_dimensions(fpath)
+        dim_key = f"{w}x{h}"
+        count = seen_dims.get(dim_key, 0)
+        seen_dims[dim_key] = count + 1
+
+        if count == 0:
+            new_name = f"{slug}_{dim_key}.jpg"
+        else:
+            new_name = f"{slug}_{dim_key}_{count}.jpg"
+
+        rename_map[fname] = new_name
+
+    # Check if anything actually needs renaming
+    if all(old == new for old, new in rename_map.items()):
+        return False
+
+    # Perform renames (use a temp name first to avoid collisions)
+    for old_name, new_name in rename_map.items():
+        old_path = os.path.join(images_dir, old_name)
+        new_path = os.path.join(images_dir, new_name)
+        if old_path == new_path:
+            continue
+        # Two-step to avoid clobbering if new_name already exists with different content
+        tmp_path = old_path + ".tmp_rename"
+        os.rename(old_path, tmp_path)
+        rename_map[old_name] = (tmp_path, new_path)
+
+    # Second pass: move from .tmp_rename to final name
+    for old_name, val in rename_map.items():
+        if isinstance(val, tuple):
+            tmp_path, new_path = val
+            if os.path.exists(tmp_path):
+                os.rename(tmp_path, new_path)
+                logger.info(f"Renamed image: {old_name} -> {os.path.basename(new_path)}")
+
+    # Rewrite the ## Images section in the card
+    with open(card_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Build old->new for card references (card stores "images/filename")
+    card_rename = {
+        f"images/{old}": f"images/{(val[1] if isinstance(val, tuple) else val)}"
+        for old, val in rename_map.items()
+    }
+
+    new_content = content
+    for old_ref, new_ref in card_rename.items():
+        new_content = new_content.replace(old_ref, os.path.basename(new_ref).join(["images/", ""]).replace("images/images/", "images/"))
+
+    # Simpler: just do a direct replace of old filename -> new filename in the Images section
+    new_content = content
+    for old, val in rename_map.items():
+        new_name = os.path.basename(val[1]) if isinstance(val, tuple) else val
+        new_content = new_content.replace(f"images/{old}", f"images/{new_name}")
+
+    if new_content != content:
+        with open(card_path, "w", encoding="utf-8") as f:
+            f.write(new_content)
+        return True
+
+    return False
+
 
 def maintain_images():
     products_root = "products"
@@ -35,65 +133,72 @@ def maintain_images():
             if file.endswith("_card.md"):
                 card_path = os.path.join(root, file)
                 product_dir = root
+                slug = file.replace("_card.md", "")
 
-                with open(card_path, 'r') as f:
+                with open(card_path, "r", encoding="utf-8") as f:
                     content = f.read()
 
-                # Extract filenames listed under ## Images
-                image_section = re.search(r'## Images\n((?:- images/.*\n?)*)', content)
+                # ── Rename images by size ─────────────────────────────────────
+                renamed = rename_images_by_size(product_dir, card_path, slug)
+                if renamed:
+                    logger.info(f"Renamed images for {slug}")
+                    # Reload content after rename update
+                    with open(card_path, "r", encoding="utf-8") as f:
+                        content = f.read()
+
+                # ── Sync: delete files not listed in card ─────────────────────
+                image_section = re.search(r"## Images\n((?:- images/.*\n?)*)", content)
                 listed_images = []
                 if image_section:
                     listed_images = [
-                        line.strip().replace('- ', '')  # gives "images/filename.jpg"
-                        for line in image_section.group(1).strip().split('\n')
-                        if line.strip().startswith('- images/')
+                        line.strip().replace("- ", "")
+                        for line in image_section.group(1).strip().split("\n")
+                        if line.strip().startswith("- images/")
                     ]
 
-                images_dir = os.path.join(product_dir, 'images')
+                images_dir = os.path.join(product_dir, "images")
                 if not os.path.exists(images_dir):
                     if listed_images:
-                        logger.warning(f"Images directory missing but images listed in {card_path}")
+                        logger.warning(f"Images dir missing but images listed in {card_path}")
                     continue
 
-                # Deletion logic
                 for actual_file in os.listdir(images_dir):
                     relative = f"images/{actual_file}"
                     if relative not in listed_images:
                         os.remove(os.path.join(images_dir, actual_file))
                         logger.info(f"Deleted unlisted image: {relative}")
 
-                # Warn if a listed image is missing from disk
                 for listed_image in listed_images:
                     if not os.path.exists(os.path.join(product_dir, listed_image)):
-                        logger.warning(f"Listed image not found on disk: {listed_image} (in {card_path})")
+                        logger.warning(f"Listed image missing on disk: {listed_image} (in {card_path})")
 
-    # Second pass: Ensure Is Platform field exists in all cards
+    # ── Ensure Is Platform field exists in all cards ──────────────────────────
     logger.info("Ensuring 'Is Platform' field exists in all cards...")
     for root, dirs, files in os.walk(products_root):
         for file in files:
             if file.endswith("_card.md"):
                 card_path = os.path.join(root, file)
-                with open(card_path, 'r') as f:
+                with open(card_path, "r", encoding="utf-8") as f:
                     content = f.read()
 
                 if "- **Is Platform**:" not in content:
-                    # Ensure it's added to the ## Meta section
                     if "## Meta" in content:
                         new_content = content.replace("## Meta", "## Meta\n- **Is Platform**: false")
                     else:
                         new_content = content.rstrip() + "\n\n## Meta\n- **Is Platform**: false\n"
 
-                    with open(card_path, 'w', encoding='utf-8') as f:
+                    with open(card_path, "w", encoding="utf-8") as f:
                         f.write(new_content)
                     logger.info(f"Added 'Is Platform: false' to {card_path}")
 
     logger.info("Image maintenance complete.")
 
+
 async def update_price(context, card_path: str):
-    with open(card_path, 'r') as f:
+    with open(card_path, "r") as f:
         content = f.read()
 
-    match = re.search(r'- \*\*Source\*\*: (https://www\.shoprite\.co\.za/.*)', content)
+    match = re.search(r"- \*\*Source\*\*: (https://www\.shoprite\.co\.za/.*)", content)
     if not match:
         logger.warning(f"Could not find source URL in {card_path}")
         return
@@ -106,7 +211,7 @@ async def update_price(context, card_path: str):
         page = await get_stealthy_page(context)
         try:
             response = await page.goto(url, wait_until="domcontentloaded", timeout=60000)
-            status = response.status if response else 'No Response'
+            status = response.status if response else "No Response"
 
             if not response or status != 200:
                 logger.error(f"Failed to load {url} (Status: {status}). Skipping product.")
@@ -115,32 +220,35 @@ async def update_price(context, card_path: str):
             logger.error(f"Exception loading {url}: {e}")
             return
 
-        await page.evaluate("window.scrollTo(0, document.body.scrollHeight / 2)");
+        await page.evaluate("window.scrollTo(0, document.body.scrollHeight / 2)")
         await page.wait_for_timeout(3000)
 
         data = await page.evaluate(JS_PRICE_EXTRACTION)
 
         prices = extract_price_from_page(data)
-        current_price = prices['current_price']
-        was_price = prices['was_price']
+        current_price = prices["current_price"]
+        was_price = prices["was_price"]
 
         if not current_price:
             logger.warning(f"Could not extract current price for {url}")
             return
 
         price_section = f"## Price\n- **Current Price**: R{current_price}"
-        if prices.get('is_card_price'):
+        if prices.get("is_card_price"):
             price_section += " (WITH CARD)"
         if was_price:
             price_section += f"\n- **Was**: R{was_price}"
-        if prices.get('promotion_dates'):
+        if prices.get("promotion_dates"):
             price_section += f"\n- **Validity**: {prices.get('promotion_dates')}"
 
-        # Improved regex to catch all possible lines in the Price section
-        new_content = re.sub(r'## Price\n(?:- .*\n?)*\n(?=## Description)', price_section + "\n\n", content)
+        new_content = re.sub(
+            r"## Price\n(?:- .*\n?)*\n(?=## Description)",
+            price_section + "\n\n",
+            content
+        )
 
         if new_content != content:
-            with open(card_path, 'w') as f:
+            with open(card_path, "w") as f:
                 f.write(new_content)
             logger.info(f"Successfully updated price in {card_path}")
         else:
@@ -149,7 +257,9 @@ async def update_price(context, card_path: str):
     except Exception as e:
         logger.error(f"Error updating price for {url}: {e}")
     finally:
-        if page: await page.close()
+        if page:
+            await page.close()
+
 
 async def main():
     parser = argparse.ArgumentParser(description="Maintain PriceGrid product data.")
@@ -159,7 +269,7 @@ async def main():
     if not args.images_only:
         async with async_playwright() as p:
             browser = await p.chromium.launch(
-                headless=True,  # price updates are safe to run headless once initial scrape works
+                headless=True,
                 args=[
                     "--disable-blink-features=AutomationControlled",
                     "--no-sandbox",
@@ -197,8 +307,8 @@ async def main():
 
             await browser.close()
 
-    # maintain_images() runs after prices, or alone if --images-only is set
     maintain_images()
+
 
 if __name__ == "__main__":
     asyncio.run(main())
