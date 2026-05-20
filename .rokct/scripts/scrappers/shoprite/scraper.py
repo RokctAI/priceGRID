@@ -670,9 +670,11 @@ async def main():
                         'li.next a'
                     ];
                     
-                    for (const selector of nextSelectors) {
+                    for (let i = 0; i < nextSelectors.length; i++) {
+                        const selector = nextSelectors[i];
                         const els = document.querySelectorAll(selector);
-                        for (const el of els) {
+                        for (let j = 0; j < els.length; j++) {
+                            const el = els[j];
                             if (el.href && !el.href.includes('#')) {
                                 // Check if it contains next-related text
                                 const text = el.textContent.toLowerCase();
@@ -688,7 +690,8 @@ async def main():
                     let maxPage = 0;
                     let currentPageEl = null;
                     
-                    pageLinks.forEach(link => {
+                    for (let k = 0; k < pageLinks.length; k++) {
+                        const link = pageLinks[k];
                         const text = link.textContent.trim();
                         const pageNum = parseInt(text, 10);
                         if (!isNaN(pageNum)) {
@@ -702,7 +705,7 @@ async def main():
                                 currentPageEl = link;
                             }
                         }
-                    });
+                    }
                     
                     // If we found a current page indicator, look for the next number
                     if (currentPageEl) {
@@ -711,7 +714,8 @@ async def main():
                         if (!isNaN(currentPage) && currentPage < maxPage) {
                             // Look for the link with the next page number
                             const nextPageNum = currentPage + 1;
-                            for (const link of pageLinks) {
+                            for (let l = 0; l < pageLinks.length; l++) {
+                                const link = pageLinks[l];
                                 if (link.textContent.trim() === String(nextPageNum)) {
                                     return link.href;
                                 }
@@ -721,7 +725,8 @@ async def main():
                     
                     // Fallback: look for any link with "next" in text content
                     const allLinks = document.querySelectorAll('a');
-                    for (const link of allLinks) {
+                    for (let m = 0; m < allLinks.length; m++) {
+                        const link = allLinks[m];
                         const text = link.textContent.toLowerCase();
                         if ((text.includes('next') || text.includes('»') || text.includes('›')) && 
                             link.href && !link.href.includes('#')) {
@@ -745,11 +750,11 @@ async def main():
                     product_links = await page.evaluate("""() => {
                         const links = new Set();
                         document.querySelectorAll('a[href*="/p/"]').forEach(a => links.add(a.href));
-
+                        
                         if (links.size === 0) {
-                           document.querySelectorAll('.product-item a, .item-product a').forEach(a => {
-                               if (a.href && !a.href.includes('#')) links.add(a.href);
-                           });
+                            document.querySelectorAll('.product-item a, .item-product a').forEach(a => {
+                                if (a.href && !a.href.includes('#')) links.add(a.href);
+                            });
                         }
                         return Array.from(links);
                     }""")
@@ -763,7 +768,35 @@ async def main():
                     page_num += 1
                     
                 } catch (e) {
-                    logger.error(`Failed to navigate to next page: ${e}`)
+                    logger.error(f"Failed to navigate to next page: {e}")
+                    break
+                }
+                try:
+                    await page.goto(next_page_url, wait_until="domcontentloaded", timeout=60000)
+                    await page.wait_for_timeout(3000)
+                    
+                    # Get new product links from the next page
+                    product_links = await page.evaluate("""() => {
+                        const links = new Set();
+                        document.querySelectorAll('a[href*="/p/"]').forEach(a => links.add(a.href));
+                        
+                        if (links.size === 0) {
+                            document.querySelectorAll('.product-item a, .item-product a').forEach(a => {
+                                if (a.href && !a.href.includes('#')) links.add(a.href);
+                            });
+                        }
+                        return Array.from(links);
+                    }""")
+                    
+                    if len(product_links) == 0:
+                        logger.warning(f"No product links found on next page")
+                        break
+                        
+                    logger.info(f"Found {len(product_links)} potential products on next page")
+                    page_num += 1
+                    
+                except Exception as e:
+                    logger.error(f"Failed to navigate to next page: {e}")
                     break
                 }
                     
