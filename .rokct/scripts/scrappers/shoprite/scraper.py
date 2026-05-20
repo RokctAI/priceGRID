@@ -622,9 +622,6 @@ async def main():
             logger.info(f"Found {len(product_links)} potential products on page")
             scraped_count = 0
             for link in product_links:
-                if args.limit > 0 and scraped_count >= args.limit:
-                    break
-
                 # Check if product card already exists without viewing the page
                 url_slug = extract_slug_from_url(link)
                 if url_slug:
@@ -633,6 +630,10 @@ async def main():
                     if os.path.exists(card_path):
                         logger.info(f"Skipping {url_slug}, card already exists.")
                         continue  # Skip to next link without viewing page
+
+                # Check limit after determining we need to scrape this product
+                if args.limit > 0 and scraped_count >= args.limit:
+                    break
 
                 status = await scrape_product(page, link)
                 if status == "scraped":
