@@ -28,8 +28,8 @@ Does not need to be dissolved in water Specially formulated to activate quickly 
 - **Kosher**: Yes
 
 ## Images
-- images/anchor-instant-yeast-10g_0.jpg
-- images/anchor-instant-yeast-10g_1.jpg
+- images/anchor-instant-yeast-10g_515x515.jpg
+- images/anchor-instant-yeast-10g_515x515_1.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Baking/Anchor-Instant-Yeast-10g/p/10143785EA

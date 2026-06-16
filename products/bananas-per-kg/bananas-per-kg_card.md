@@ -13,8 +13,8 @@ Fresh fruit and vegetables sourced when needed to ensure a wider variety and con
 - **Main Barcode**: 2577390000005
 
 ## Images
-- images/bananas-per-kg_0.jpg
-- images/bananas-per-kg_1.jpg
+- images/bananas-per-kg_515x515.jpg
+- images/bananas-per-kg_515x515_1.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Fruit/Bananas-Per-kg/p/10145033KG

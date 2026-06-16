@@ -1,55 +1,228 @@
-2026-05-20 11:40:41,731 [INFO] Establishing cookies via home page...
-2026-05-20 11:40:52,473 [INFO] Found 78 product cards to update.
-2026-05-20 11:40:52,477 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Baking/Anchor-Instant-Yeast-10g/p/10143785EA
-2026-05-20 11:41:01,658 [INFO] Price unchanged for products\anchor-instant-yeast-10g\anchor-instant-yeast-10g_card.md
-2026-05-20 11:41:06,590 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Salad%2C-Herbs-and-Dip/Avocado/p/10145186EA
-2026-05-20 11:41:16,913 [INFO] Price unchanged for products\avocado\avocado_card.md
-2026-05-20 11:41:22,227 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Fruit/Bananas-650g/p/10148833EA
-2026-05-20 11:41:31,697 [INFO] Price unchanged for products\bananas-650g\bananas-650g_card.md
-2026-05-20 11:41:37,768 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Fruit/Bananas-Per-kg/p/10145033KG
-2026-05-20 11:41:49,517 [INFO] Price unchanged for products\bananas-per-kg\bananas-per-kg_card.md
-2026-05-20 11:41:54,857 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Beef-Potjiekos-Per-kg/p/10149770KG
-2026-05-20 11:42:03,769 [INFO] Price unchanged for products\beef-potjiekos-per-kg\beef-potjiekos-per-kg_card.md
-2026-05-20 11:42:10,532 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Blue-Ribbon-Sliced-Brown-Bread-700g/p/10136371EA
-2026-05-20 11:42:18,981 [INFO] Price unchanged for products\blue-ribbon-sliced-brown-bread-700g\blue-ribbon-sliced-brown-bread-700g_card.md
-2026-05-20 11:42:24,064 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Blue-Ribbon-Sliced-White-Bread-700g/p/10136370EA
-2026-05-20 11:42:33,404 [INFO] Price unchanged for products\blue-ribbon-sliced-white-bread-700g\blue-ribbon-sliced-white-bread-700g_card.md
-2026-05-20 11:42:40,369 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Blue-Ribbon-Toaster-White-Bread-700g/p/10456482EA
-2026-05-20 11:42:50,338 [INFO] Price unchanged for products\blue-ribbon-toaster-white-bread-700g\blue-ribbon-toaster-white-bread-700g_card.md
-2026-05-20 11:42:53,483 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Brown-Bread-600g/p/10810522EA
-2026-05-20 11:43:02,116 [INFO] Price unchanged for products\brown-bread-600g\brown-bread-600g_card.md
-2026-05-20 11:43:06,418 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Toiletries/Sanitary-Protection/Sanitary-Pads-and-Panty-Liners/Caress-Regular-Maxi-Sanitary-Pads-8-Pack/p/10730757EA
-2026-05-20 11:43:16,756 [INFO] Price unchanged for products\caress-regular-maxi-sanitary-pads-8-pack\caress-regular-maxi-sanitary-pads-8-pack_card.md
-2026-05-20 11:43:23,156 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Carling-Black-Label-Beer-Bottle-750ml/p/10125600EA
-2026-05-20 11:43:30,613 [INFO] Price unchanged for products\carling-black-label-beer-bottle-750ml\carling-black-label-beer-bottle-750ml_card.md
-2026-05-20 11:43:35,054 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Carling-Black-Label-Beer-Can-500ml/p/10541856EA
-2026-05-20 11:43:42,819 [INFO] Price unchanged for products\carling-black-label-beer-can-500ml\carling-black-label-beer-can-500ml_card.md
-2026-05-20 11:43:47,533 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Carrots-1kg/p/10152390EA
-2026-05-20 11:44:10,798 [INFO] Price unchanged for products\carrots-1kg\carrots-1kg_card.md
-2026-05-20 11:44:17,246 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Castle-Lager-Beer-Bottle-750ml/p/10125599EA
-2026-05-20 11:44:30,221 [INFO] Price unchanged for products\castle-lager-beer-bottle-750ml\castle-lager-beer-bottle-750ml_card.md
-2026-05-20 11:44:36,072 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Drinks/Soft-Drinks/Cola/Coca-Cola-Original-Taste-Less-Sugar-Soft-Drink-1-5L/p/10141470EA
-2026-05-20 11:44:47,055 [INFO] Price unchanged for products\coca-cola-original-taste-less-sugar-soft-drink-15l\coca-cola-original-taste-less-sugar-soft-drink-15l_card.md
-2026-05-20 11:44:52,183 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Drinks/Soft-Drinks/Cola/Coca-Cola-Original-Taste-Less-Sugar-Soft-Drink-2L/p/10136669EA
-2026-05-20 11:45:01,859 [INFO] Price unchanged for products\coca-cola-original-taste-less-sugar-soft-drink-2l\coca-cola-original-taste-less-sugar-soft-drink-2l_card.md
-2026-05-20 11:45:06,432 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/County-Fair-Fresh-Chicken-5-Piece-Braaipack-Per-kg/p/10224500KG
-2026-05-20 11:45:20,195 [INFO] Price unchanged for products\county-fair-fresh-chicken-5-piece-braaipack-per-kg\county-fair-fresh-chicken-5-piece-braaipack-per-kg_card.md
-2026-05-20 11:45:26,374 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Frozen-Food/Frozen-Meat-and-Poultry/County-Fair-Frozen-Chicken-Mixed-Portions-With-Brine-Based-Mixture-5kg/p/10538316EA
-2026-05-20 11:45:34,466 [INFO] Price unchanged for products\county-fair-frozen-chicken-mixed-portions-with-brine-based-mixture-5kg\county-fair-frozen-chicken-mixed-portions-with-brine-based-mixture-5kg_card.md
-2026-05-20 11:45:39,126 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Crown-Blended-Cooking-Oil-750ml/p/10126761EA
-2026-05-20 11:46:04,020 [INFO] Price unchanged for products\crown-blended-cooking-oil-750ml\crown-blended-cooking-oil-750ml_card.md
-2026-05-20 11:46:10,321 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Crystal-Valley-Full-Cream-Long-Life-Milk-1L/p/10156069EA
-2026-05-20 11:46:19,303 [INFO] Price unchanged for products\crystal-valley-full-cream-long-life-milk-1l\crystal-valley-full-cream-long-life-milk-1l_card.md
-2026-05-20 11:46:25,165 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Crystal-Valley-Full-Cream-Milk-1L/p/10127467EA
-2026-05-20 11:46:33,401 [INFO] Price unchanged for products\crystal-valley-full-cream-milk-1l\crystal-valley-full-cream-milk-1l_card.md
-2026-05-20 11:46:37,377 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Yoghurt/Crystal-Valley-Strawberry%2C-Vanilla-and-Granadilla-Flavoured-Smooth-Low-Fat-Dairy-Snack-6-x-75g/p/10644905EA
-2026-05-20 11:46:46,258 [INFO] Price unchanged for products\crystal-valley-strawberry-vanilla-amp-granadilla-flavoured-smooth-low-fat-dairy-snack-6-x-75g\crystal-valley-strawberry-vanilla-amp-granadilla-flavoured-smooth-low-fat-dairy-snack-6-x-75g_card.md
-2026-05-20 11:46:49,412 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/D%27Lite-Pure-Cooking-Oil-2L/p/10225789EA
-2026-05-20 11:47:02,200 [INFO] Price unchanged for products\d039lite-pure-cooking-oil-2l\d039lite-pure-cooking-oil-2l_card.md
-2026-05-20 11:47:05,885 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Darling-Amasi-Maas-Bottle-2L/p/10131335EA
-2026-05-20 11:47:14,303 [INFO] Price unchanged for products\darling-amasi-maas-bottle-2l\darling-amasi-maas-bottle-2l_card.md
-2026-05-20 11:47:18,527 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Darling-Fresh-Full-Cream-Milk-Sachet-1L/p/10124889EA
-2026-05-20 11:47:28,467 [INFO] Price unchanged for products\darling-fresh-full-cream-milk-sachet-1l\darling-fresh-full-cream-milk-sachet-1l_card.md
-2026-05-20 11:47:34,970 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Doughnuts%2C-Fresh-Cookies-and-Iced-Buns/Dessert-Buns-6-Pack/p/10152503EA
-2026-05-20 11:47:46,789 [INFO] Price unchanged for products\dessert-buns-6-pack\dessert-buns-6-pack_card.md
-2026-05-20 11:47:51,700 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Easy-Crispy-Seafood-Coating-Mix-200g/p/10602244EA
+2026-05-20 12:27:15,323 [INFO] Establishing cookies via home page...
+2026-05-20 12:27:26,677 [INFO] Found 78 product cards to update.
+2026-05-20 12:27:26,879 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Baking/Anchor-Instant-Yeast-10g/p/10143785EA
+2026-05-20 12:27:38,428 [INFO] Price unchanged for products\anchor-instant-yeast-10g\anchor-instant-yeast-10g_card.md
+2026-05-20 12:27:44,725 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Salad%2C-Herbs-and-Dip/Avocado/p/10145186EA
+2026-05-20 12:27:52,936 [INFO] Price unchanged for products\avocado\avocado_card.md
+2026-05-20 12:27:58,726 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Fruit/Bananas-650g/p/10148833EA
+2026-05-20 12:28:06,782 [INFO] Price unchanged for products\bananas-650g\bananas-650g_card.md
+2026-05-20 12:28:11,973 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Fruit/Bananas-Per-kg/p/10145033KG
+2026-05-20 12:28:22,840 [INFO] Price unchanged for products\bananas-per-kg\bananas-per-kg_card.md
+2026-05-20 12:28:26,861 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Beef-Potjiekos-Per-kg/p/10149770KG
+2026-05-20 12:28:35,873 [INFO] Price unchanged for products\beef-potjiekos-per-kg\beef-potjiekos-per-kg_card.md
+2026-05-20 12:28:42,018 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Blue-Ribbon-Sliced-Brown-Bread-700g/p/10136371EA
+2026-05-20 12:28:52,988 [INFO] Price unchanged for products\blue-ribbon-sliced-brown-bread-700g\blue-ribbon-sliced-brown-bread-700g_card.md
+2026-05-20 12:28:56,671 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Blue-Ribbon-Sliced-White-Bread-700g/p/10136370EA
+2026-05-20 12:29:06,683 [INFO] Price unchanged for products\blue-ribbon-sliced-white-bread-700g\blue-ribbon-sliced-white-bread-700g_card.md
+2026-05-20 12:29:10,084 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Blue-Ribbon-Toaster-White-Bread-700g/p/10456482EA
+2026-05-20 12:29:19,692 [INFO] Price unchanged for products\blue-ribbon-toaster-white-bread-700g\blue-ribbon-toaster-white-bread-700g_card.md
+2026-05-20 12:29:23,084 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Brown-Bread-600g/p/10810522EA
+2026-05-20 12:29:32,894 [INFO] Price unchanged for products\brown-bread-600g\brown-bread-600g_card.md
+2026-05-20 12:29:39,825 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Toiletries/Sanitary-Protection/Sanitary-Pads-and-Panty-Liners/Caress-Regular-Maxi-Sanitary-Pads-8-Pack/p/10730757EA
+2026-05-20 12:29:51,548 [INFO] Price unchanged for products\caress-regular-maxi-sanitary-pads-8-pack\caress-regular-maxi-sanitary-pads-8-pack_card.md
+2026-05-20 12:29:57,217 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Carling-Black-Label-Beer-Bottle-750ml/p/10125600EA
+2026-05-20 12:30:04,549 [INFO] Price unchanged for products\carling-black-label-beer-bottle-750ml\carling-black-label-beer-bottle-750ml_card.md
+2026-05-20 12:30:10,877 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Carling-Black-Label-Beer-Can-500ml/p/10541856EA
+2026-05-20 12:30:17,605 [INFO] Price unchanged for products\carling-black-label-beer-can-500ml\carling-black-label-beer-can-500ml_card.md
+2026-05-20 12:30:20,769 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Carrots-1kg/p/10152390EA
+2026-05-20 12:30:29,326 [INFO] Price unchanged for products\carrots-1kg\carrots-1kg_card.md
+2026-05-20 12:30:33,872 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Castle-Lager-Beer-Bottle-750ml/p/10125599EA
+2026-05-20 12:30:44,849 [INFO] Price unchanged for products\castle-lager-beer-bottle-750ml\castle-lager-beer-bottle-750ml_card.md
+2026-05-20 12:30:50,130 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Drinks/Soft-Drinks/Cola/Coca-Cola-Original-Taste-Less-Sugar-Soft-Drink-1-5L/p/10141470EA
+2026-05-20 12:30:58,089 [INFO] Price unchanged for products\coca-cola-original-taste-less-sugar-soft-drink-15l\coca-cola-original-taste-less-sugar-soft-drink-15l_card.md
+2026-05-20 12:31:02,944 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Drinks/Soft-Drinks/Cola/Coca-Cola-Original-Taste-Less-Sugar-Soft-Drink-2L/p/10136669EA
+2026-05-20 12:31:11,017 [INFO] Price unchanged for products\coca-cola-original-taste-less-sugar-soft-drink-2l\coca-cola-original-taste-less-sugar-soft-drink-2l_card.md
+2026-05-20 12:31:14,104 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/County-Fair-Fresh-Chicken-5-Piece-Braaipack-Per-kg/p/10224500KG
+2026-05-20 12:31:21,751 [INFO] Price unchanged for products\county-fair-fresh-chicken-5-piece-braaipack-per-kg\county-fair-fresh-chicken-5-piece-braaipack-per-kg_card.md
+2026-05-20 12:31:26,666 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Frozen-Food/Frozen-Meat-and-Poultry/County-Fair-Frozen-Chicken-Mixed-Portions-With-Brine-Based-Mixture-5kg/p/10538316EA
+2026-05-20 12:31:34,758 [INFO] Price unchanged for products\county-fair-frozen-chicken-mixed-portions-with-brine-based-mixture-5kg\county-fair-frozen-chicken-mixed-portions-with-brine-based-mixture-5kg_card.md
+2026-05-20 12:31:41,779 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Crown-Blended-Cooking-Oil-750ml/p/10126761EA
+2026-05-20 12:31:51,452 [INFO] Price unchanged for products\crown-blended-cooking-oil-750ml\crown-blended-cooking-oil-750ml_card.md
+2026-05-20 12:31:57,702 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Crystal-Valley-Full-Cream-Long-Life-Milk-1L/p/10156069EA
+2026-05-20 12:32:06,574 [INFO] Price unchanged for products\crystal-valley-full-cream-long-life-milk-1l\crystal-valley-full-cream-long-life-milk-1l_card.md
+2026-05-20 12:32:12,965 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Crystal-Valley-Full-Cream-Milk-1L/p/10127467EA
+2026-05-20 12:32:24,944 [INFO] Price unchanged for products\crystal-valley-full-cream-milk-1l\crystal-valley-full-cream-milk-1l_card.md
+2026-05-20 12:32:31,215 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Yoghurt/Crystal-Valley-Strawberry%2C-Vanilla-and-Granadilla-Flavoured-Smooth-Low-Fat-Dairy-Snack-6-x-75g/p/10644905EA
+2026-05-20 12:32:40,036 [INFO] Price unchanged for products\crystal-valley-strawberry-vanilla-amp-granadilla-flavoured-smooth-low-fat-dairy-snack-6-x-75g\crystal-valley-strawberry-vanilla-amp-granadilla-flavoured-smooth-low-fat-dairy-snack-6-x-75g_card.md
+2026-05-20 12:32:43,839 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/D%27Lite-Pure-Cooking-Oil-2L/p/10225789EA
+2026-05-20 12:32:53,431 [INFO] Price unchanged for products\d039lite-pure-cooking-oil-2l\d039lite-pure-cooking-oil-2l_card.md
+2026-05-20 12:32:59,678 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Darling-Amasi-Maas-Bottle-2L/p/10131335EA
+2026-05-20 12:33:07,152 [INFO] Price unchanged for products\darling-amasi-maas-bottle-2l\darling-amasi-maas-bottle-2l_card.md
+2026-05-20 12:33:10,938 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Darling-Fresh-Full-Cream-Milk-Sachet-1L/p/10124889EA
+2026-05-20 12:33:19,683 [INFO] Price unchanged for products\darling-fresh-full-cream-milk-sachet-1l\darling-fresh-full-cream-milk-sachet-1l_card.md
+2026-05-20 12:33:26,004 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Doughnuts%2C-Fresh-Cookies-and-Iced-Buns/Dessert-Buns-6-Pack/p/10152503EA
+2026-05-20 12:33:35,405 [INFO] Price unchanged for products\dessert-buns-6-pack\dessert-buns-6-pack_card.md
+2026-05-20 12:33:42,304 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Easy-Crispy-Seafood-Coating-Mix-200g/p/10602244EA
+2026-05-20 12:33:52,413 [INFO] Price unchanged for products\easy-crispy-seafood-coating-mix-200g\easy-crispy-seafood-coating-mix-200g_card.md
+2026-05-20 12:33:58,572 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Salad%2C-Herbs-and-Dip/English-Cucumber-1s/p/10145817EA
+2026-05-20 12:34:06,339 [INFO] Price unchanged for products\english-cucumber-1s\english-cucumber-1s_card.md
+2026-05-20 12:34:10,230 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Farmbest-Fresh-Chicken-Braai-Pack-5-Piece-Per-kg/p/10357568KG
+2026-05-20 12:34:18,112 [INFO] Price unchanged for products\farmbest-fresh-chicken-braai-pack-5-piece-per-kg\farmbest-fresh-chicken-braai-pack-5-piece-per-kg_card.md
+2026-05-20 12:34:24,867 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Farmbest-Fresh-Chicken-Braai-Pack-650g/p/10874870EA
+2026-05-20 12:34:31,400 [INFO] Successfully updated price in products\farmbest-fresh-chicken-braai-pack-650g\farmbest-fresh-chicken-braai-pack-650g_card.md
+2026-05-20 12:34:34,496 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Farmbest-Fresh-Chicken-Breasts-Per-kg/p/10187706KG
+2026-05-20 12:34:43,229 [INFO] Price unchanged for products\farmbest-fresh-chicken-breasts-per-kg\farmbest-fresh-chicken-breasts-per-kg_card.md
+2026-05-20 12:34:46,676 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Frozen-Food/Frozen-Meat-and-Poultry/Farmer%27s-Choice-Frozen-Chicken-Mixed-Portions-5kg/p/10248591EA
+2026-05-20 12:34:54,271 [INFO] Price unchanged for products\farmer039s-choice-frozen-chicken-mixed-portions-5kg\farmer039s-choice-frozen-chicken-mixed-portions-5kg_card.md
+2026-05-20 12:35:00,610 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Golden-Yolk-Medium-Eggs-18-Pack/p/10714975EA
+2026-05-20 12:35:10,371 [INFO] Price unchanged for products\golden-yolk-medium-eggs-18-pack\golden-yolk-medium-eggs-18-pack_card.md
+2026-05-20 12:35:17,097 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Hamburger-Roll/p/10151456EA
+2026-05-20 12:35:25,449 [INFO] Price unchanged for products\hamburger-roll\hamburger-roll_card.md
+2026-05-20 12:35:30,676 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Sugar-and-Sweeteners/Huletts-White-Sugar-2-5kg/p/10141796EA
+2026-05-20 12:35:40,100 [INFO] Price unchanged for products\huletts-white-sugar-25kg\huletts-white-sugar-25kg_card.md
+2026-05-20 12:35:44,622 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Table-Condiments-and-Dressings/Knorr-Balsamic-and-Pineapple-Salad-Dressing-340ml/p/10618040EA
+2026-05-20 12:35:53,965 [INFO] Price unchanged for products\knorr-balsamic-amp-pineapple-salad-dressing-340ml\knorr-balsamic-amp-pineapple-salad-dressing-340ml_card.md
+2026-05-20 12:35:59,819 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Canned-Food/KOO-Baked-Beans-in-Tomato-Sauce-400g/p/10126789EA
+2026-05-20 12:36:08,919 [INFO] Price unchanged for products\koo-baked-beans-in-tomato-sauce-400g\koo-baked-beans-in-tomato-sauce-400g_card.md
+2026-05-20 12:36:14,540 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Canned-Food/Lucky-Star-Pilchards-in-Tomato-Sauce-400g/p/10185083EA
+2026-05-20 12:36:23,745 [INFO] Price unchanged for products\lucky-star-pilchards-in-tomato-sauce-400g\lucky-star-pilchards-in-tomato-sauce-400g_card.md
+2026-05-20 12:36:28,979 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Marvello-70%25-Fat-Spread-500g/p/10153949EA
+2026-05-20 12:36:36,687 [INFO] Price unchanged for products\marvello-70-fat-spread-500g\marvello-70-fat-spread-500g_card.md
+2026-05-20 12:36:41,141 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Medium-Cabbage-Head/p/10133089EA
+2026-05-20 12:36:49,526 [INFO] Price unchanged for products\medium-cabbage-head\medium-cabbage-head_card.md
+2026-05-20 12:36:54,467 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Medium-Half-Cabbage/p/10133089PK3
+2026-05-20 12:37:04,193 [INFO] Price unchanged for products\medium-half-cabbage\medium-half-cabbage_card.md
+2026-05-20 12:37:10,513 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Nulaid-Large-Eggs-18-Pack/p/10125869EA
+2026-05-20 12:37:19,654 [INFO] Price unchanged for products\nulaid-large-eggs-18-pack\nulaid-large-eggs-18-pack_card.md
+2026-05-20 12:37:25,426 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Ol%C3%A9-20%25-Fat-Bread-Spread-500g/p/10150754EA
+2026-05-20 12:37:34,994 [INFO] Price unchanged for products\olé-20-fat-bread-spread-500g\olé-20-fat-bread-spread-500g_card.md
+2026-05-20 12:37:40,765 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Onions-1kg/p/10241181EA
+2026-05-20 12:37:48,754 [INFO] Price unchanged for products\onions-1kg\onions-1kg_card.md
+2026-05-20 12:37:55,148 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Panini-Roll-Single/p/10397287EA
+2026-05-20 12:38:06,210 [INFO] Price unchanged for products\panini-roll-single\panini-roll-single_card.md
+2026-05-20 12:38:12,674 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Pork-Pack-Per-kg/p/10151892KG
+2026-05-20 12:38:23,926 [INFO] Price unchanged for products\pork-pack-per-kg\pork-pack-per-kg_card.md
+2026-05-20 12:38:29,485 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Pot-O%27-Gold-Tomato-Paste-50g/p/10212842EA
+2026-05-20 12:38:39,541 [INFO] Price unchanged for products\pot-o039-gold-tomato-paste-50g\pot-o039-gold-tomato-paste-50g_card.md
+2026-05-20 12:38:44,079 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Potatoes-7kg/p/10147186EA
+2026-05-20 12:38:55,385 [INFO] Price unchanged for products\potatoes-7kg\potatoes-7kg_card.md
+2026-05-20 12:39:01,172 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Rajah-Beef-Madras-Cook-In-Sauce-Sachet-15g/p/10641192EA
+2026-05-20 12:39:14,152 [INFO] Price unchanged for products\rajah-beef-madras-cook-in-sauce-sachet-15g\rajah-beef-madras-cook-in-sauce-sachet-15g_card.md
+2026-05-20 12:39:17,700 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Rajah-Chicken-Tikka-Cook-In-Sauce-Sachet-15g/p/10641194EA
+2026-05-20 12:39:34,540 [INFO] Price unchanged for products\rajah-chicken-tikka-cook-in-sauce-sachet-15g\rajah-chicken-tikka-cook-in-sauce-sachet-15g_card.md
+2026-05-20 12:39:39,380 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Spreads%2C-Honey-and-Preserves/Red-Bicycle-Speculoos-Crunchy-Cookie-Spread-350g/p/10532276EA
+2026-05-20 12:39:50,452 [INFO] Price unchanged for products\red-bicycle-speculoos-crunchy-cookie-spread-350g\red-bicycle-speculoos-crunchy-cookie-spread-350g_card.md
+2026-05-20 12:39:56,993 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Rhodes-Quality-Tomato-Paste-50g/p/10351880EA
+2026-05-20 12:40:13,756 [INFO] Price unchanged for products\rhodes-quality-tomato-paste-50g\rhodes-quality-tomato-paste-50g_card.md
+2026-05-20 12:40:18,148 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Canned-Food/Ritebrand-Baked-Beans-in-Tomato-Sauce-410g/p/10137752EA
+2026-05-20 12:40:29,187 [INFO] Price unchanged for products\ritebrand-baked-beans-in-tomato-sauce-410g\ritebrand-baked-beans-in-tomato-sauce-410g_card.md
+2026-05-20 12:40:34,043 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Frozen-Food/Frozen-Chips%2C-Potatoes-and-Rice/Ritebrand-Frozen-Straight-Cut-Potato-Chips-1kg/p/10126230EA
+2026-05-20 12:40:43,805 [INFO] Price unchanged for products\ritebrand-frozen-straight-cut-potato-chips-1kg\ritebrand-frozen-straight-cut-potato-chips-1kg_card.md
+2026-05-20 12:40:48,729 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Long-Life-Milk-and-Dairy-Alternatives/Ritebrand-Full-Cream-Milk-1L/p/10156109EA
+2026-05-20 12:40:56,536 [INFO] Price unchanged for products\ritebrand-full-cream-milk-1l\ritebrand-full-cream-milk-1l_card.md
+2026-05-20 12:40:59,940 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Long-Life-Milk-and-Dairy-Alternatives/Ritebrand-Long-Life-Full-Cream-Milk-6-x-1L/p/10156109PK1
+2026-05-20 12:41:07,763 [INFO] Price unchanged for products\ritebrand-long-life-full-cream-milk-6-x-1l\ritebrand-long-life-full-cream-milk-6-x-1l_card.md
+2026-05-20 12:41:14,569 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Rice%2C-Pasta%2C-Noodles-and-Cous-Cous/Ritebrand-Macaroni-500g/p/10139338EA
+2026-05-20 12:41:23,162 [INFO] Price unchanged for products\ritebrand-macaroni-500g\ritebrand-macaroni-500g_card.md
+2026-05-20 12:41:29,197 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Table-Condiments-and-Dressings/Ritebrand-Mayonnaise-750g/p/10141784EA
+2026-05-20 12:41:36,699 [INFO] Price unchanged for products\ritebrand-mayonnaise-750g\ritebrand-mayonnaise-750g_card.md
+2026-05-20 12:41:42,792 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Rice%2C-Pasta%2C-Noodles-and-Cous-Cous/Ritebrand-Medium-Grain-Parboiled-White-Rice-2kg/p/10130255EA
+2026-05-20 12:41:50,982 [INFO] Price unchanged for products\ritebrand-medium-grain-parboiled-white-rice-2kg\ritebrand-medium-grain-parboiled-white-rice-2kg_card.md
+2026-05-20 12:41:54,725 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Canned-Food/Ritebrand-Pilchards-In-Tomato-Sauce-Can-400g/p/10417425EA
+2026-05-20 12:42:02,062 [INFO] Price unchanged for products\ritebrand-pilchards-in-tomato-sauce-can-400g\ritebrand-pilchards-in-tomato-sauce-can-400g_card.md
+2026-05-20 12:42:08,636 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Spreads%2C-Honey-and-Preserves/Ritebrand-Smooth-Peanut-Butter-400g/p/10125075EA
+2026-05-20 12:42:15,961 [INFO] Price unchanged for products\ritebrand-smooth-peanut-butter-400g\ritebrand-smooth-peanut-butter-400g_card.md
+2026-05-20 12:42:19,310 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Rice%2C-Pasta%2C-Noodles-and-Cous-Cous/Ritebrand-Spaghetti-500g/p/10139337EA
+2026-05-20 12:42:27,936 [INFO] Price unchanged for products\ritebrand-spaghetti-500g\ritebrand-spaghetti-500g_card.md
+2026-05-20 12:42:32,756 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Robertsons-Coarse-Black-Pepper-Compound-Envelope-7g/p/10132087EA
+2026-05-20 12:42:40,532 [INFO] Price unchanged for products\robertsons-coarse-black-pepper-compound-envelope-7g\robertsons-coarse-black-pepper-compound-envelope-7g_card.md
+2026-05-20 12:42:43,952 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Robertsons-Indian-Spicy-Lentil-Dhal-Cook-In-Sauce-48g/p/10641181EA
+2026-05-20 12:42:51,856 [INFO] Price unchanged for products\robertsons-indian-spicy-lentil-dhal-cook-in-sauce-48g\robertsons-indian-spicy-lentil-dhal-cook-in-sauce-48g_card.md
+2026-05-20 12:42:57,703 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Royco-Stew-Mix-For-Chicken-200g/p/10498612EA
+2026-05-20 12:43:04,090 [INFO] Price unchanged for products\royco-stew-mix-for-chicken-200g\royco-stew-mix-for-chicken-200g_card.md
+2026-05-20 12:43:08,997 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Baking/SASKO-Cake-Wheat-Flour-Bag-2-5kg/p/10137552EA
+2026-05-20 12:43:15,792 [INFO] Price unchanged for products\sasko-cake-wheat-flour-bag-25kg\sasko-cake-wheat-flour-bag-25kg_card.md
+2026-05-20 12:43:19,800 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/SASKO-More-Slices-White-Bread-700g/p/10241927EA
+2026-05-20 12:43:27,221 [INFO] Price unchanged for products\sasko-more-slices-white-bread-700g\sasko-more-slices-white-bread-700g_card.md
+2026-05-20 12:43:32,919 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Sugar-and-Sweeteners/Selati-Golden-Brown-Sugar-2kg/p/10156064EA
+2026-05-20 12:43:39,782 [INFO] Price unchanged for products\selati-golden-brown-sugar-2kg\selati-golden-brown-sugar-2kg_card.md
+2026-05-20 12:43:44,554 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Rice%2C-Pasta%2C-Noodles-and-Cous-Cous/Spekko-Long-Grain-Parboiled-White-Rice-2kg/p/10133205EA
+2026-05-20 12:43:55,416 [INFO] Price unchanged for products\spekko-long-grain-parboiled-white-rice-2kg\spekko-long-grain-parboiled-white-rice-2kg_card.md
+2026-05-20 12:43:58,491 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Standard-Brown-Bread-600g/p/10141147EA
+2026-05-20 12:44:09,407 [INFO] Price unchanged for products\standard-brown-bread-600g\standard-brown-bread-600g_card.md
+2026-05-20 12:44:13,189 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Standard-White-Bread-600g/p/10141145EA
+2026-05-20 12:44:23,159 [INFO] Price unchanged for products\standard-white-bread-600g\standard-white-bread-600g_card.md
+2026-05-20 12:44:28,388 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Breakfast-Cereals%2C-Porridge-and-Pap/Super-White-Super-Maize-Meal-2-5kg/p/10335895EA
+2026-05-20 12:44:38,670 [INFO] Price unchanged for products\super-white-super-maize-meal-25kg\super-white-super-maize-meal-25kg_card.md
+2026-05-20 12:44:42,470 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/From-our-Bakery/Sweet-Bread-600g/p/10531399EA
+2026-05-20 12:44:51,032 [INFO] Price unchanged for products\sweet-bread-600g\sweet-bread-600g_card.md
+2026-05-20 12:44:57,317 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Cooked-Meats%2C-Sandwich-Fillers-and-Deli/Vegetable-Soup-250ml/p/10636777EA
+2026-05-20 12:45:06,517 [INFO] Price unchanged for products\vegetable-soup-250ml\vegetable-soup-250ml_card.md
+2026-05-20 12:45:14,185 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/White-Bread-600g/p/10810523EA
+2026-05-20 12:45:24,494 [INFO] Price unchanged for products\white-bread-600g\white-bread-600g_card.md
+2026-05-20 12:45:29,801 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/White-Hamburger-Rolls-6-Pack/p/10151456PK1
+2026-05-20 12:45:39,272 [INFO] Price unchanged for products\white-hamburger-rolls-6-pack\white-hamburger-rolls-6-pack_card.md
+2026-05-20 12:45:44,583 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/White-Hot-Dog-Roll-Single/p/10151458EA
+2026-05-20 12:45:56,452 [INFO] Price unchanged for products\white-hot-dog-roll-single\white-hot-dog-roll-single_card.md
+2026-05-20 12:46:02,501 [INFO] Updating price for: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/White-Hotdog-Rolls-6-Pack/p/10151458PK1
+2026-05-20 12:46:19,001 [INFO] Price unchanged for products\white-hotdog-rolls-6-pack\white-hotdog-rolls-6-pack_card.md
+2026-05-20 12:46:24,434 [INFO] Starting image maintenance...
+2026-05-20 12:46:26,254 [INFO] Renamed image: anchor-instant-yeast-10g_0.jpg -> anchor-instant-yeast-10g_515x515.jpg
+2026-05-20 12:46:26,258 [INFO] Renamed image: anchor-instant-yeast-10g_1.jpg -> anchor-instant-yeast-10g_515x515_1.jpg
+2026-05-20 12:46:26,260 [INFO] Renamed images for anchor-instant-yeast-10g
+2026-05-20 12:46:26,300 [INFO] Renamed image: avocado_0.jpg -> avocado_515x515.jpg
+2026-05-20 12:46:26,301 [INFO] Renamed image: avocado_1.jpg -> avocado_515x515_1.jpg
+2026-05-20 12:46:26,304 [INFO] Renamed image: avocado_2.jpg -> avocado_1200x1200.jpg
+2026-05-20 12:46:26,306 [INFO] Renamed image: avocado_3.jpg -> avocado_515x515_2.jpg
+2026-05-20 12:46:26,309 [INFO] Renamed image: avocado_4.jpg -> avocado_1200x1200_1.jpg
+2026-05-20 12:46:26,310 [INFO] Renamed images for avocado
+2026-05-20 12:46:26,334 [INFO] Renamed image: bananas-650g_0.jpg -> bananas-650g_515x515.jpg
+2026-05-20 12:46:26,336 [INFO] Renamed image: bananas-650g_1.jpg -> bananas-650g_515x515_1.jpg
+2026-05-20 12:46:26,338 [INFO] Renamed images for bananas-650g
+2026-05-20 12:46:26,369 [INFO] Renamed image: bananas-per-kg_0.jpg -> bananas-per-kg_515x515.jpg
+2026-05-20 12:46:26,371 [INFO] Renamed image: bananas-per-kg_1.jpg -> bananas-per-kg_515x515_1.jpg
+2026-05-20 12:46:26,373 [INFO] Renamed images for bananas-per-kg
+2026-05-20 12:46:26,399 [INFO] Renamed image: beef-potjiekos-per-kg_0.jpg -> beef-potjiekos-per-kg_515x515.jpg
+2026-05-20 12:46:26,400 [INFO] Renamed image: beef-potjiekos-per-kg_1.jpg -> beef-potjiekos-per-kg_515x515_1.jpg
+2026-05-20 12:46:26,401 [INFO] Renamed images for beef-potjiekos-per-kg
+2026-05-20 12:46:26,441 [INFO] Renamed image: blue-ribbon-sliced-brown-bread-700g_0.jpg -> blue-ribbon-sliced-brown-bread-700g_515x515.jpg
+2026-05-20 12:46:26,442 [INFO] Renamed image: blue-ribbon-sliced-brown-bread-700g_1.jpg -> blue-ribbon-sliced-brown-bread-700g_515x515_1.jpg
+2026-05-20 12:46:26,445 [INFO] Renamed image: blue-ribbon-sliced-brown-bread-700g_2.jpg -> blue-ribbon-sliced-brown-bread-700g_1200x1200.jpg
+2026-05-20 12:46:26,447 [INFO] Renamed image: blue-ribbon-sliced-brown-bread-700g_3.jpg -> blue-ribbon-sliced-brown-bread-700g_515x515_2.jpg
+2026-05-20 12:46:26,448 [INFO] Renamed image: blue-ribbon-sliced-brown-bread-700g_4.jpg -> blue-ribbon-sliced-brown-bread-700g_1000x1000.jpg
+2026-05-20 12:46:26,449 [INFO] Renamed images for blue-ribbon-sliced-brown-bread-700g
+2026-05-20 12:46:26,569 [INFO] Renamed image: blue-ribbon-sliced-white-bread-700g_0.jpg -> blue-ribbon-sliced-white-bread-700g_515x515.jpg
+2026-05-20 12:46:26,575 [INFO] Renamed image: blue-ribbon-sliced-white-bread-700g_1.jpg -> blue-ribbon-sliced-white-bread-700g_515x515_1.jpg
+2026-05-20 12:46:26,577 [INFO] Renamed image: blue-ribbon-sliced-white-bread-700g_2.jpg -> blue-ribbon-sliced-white-bread-700g_1200x1200.jpg
+2026-05-20 12:46:26,579 [INFO] Renamed image: blue-ribbon-sliced-white-bread-700g_3.jpg -> blue-ribbon-sliced-white-bread-700g_515x515_2.jpg
+2026-05-20 12:46:26,580 [INFO] Renamed image: blue-ribbon-sliced-white-bread-700g_4.jpg -> blue-ribbon-sliced-white-bread-700g_1000x1000.jpg
+2026-05-20 12:46:26,582 [INFO] Renamed images for blue-ribbon-sliced-white-bread-700g
+2026-05-20 12:46:26,694 [INFO] Renamed image: blue-ribbon-toaster-white-bread-700g_0.jpg -> blue-ribbon-toaster-white-bread-700g_515x515.jpg
+2026-05-20 12:46:26,695 [INFO] Renamed image: blue-ribbon-toaster-white-bread-700g_1.jpg -> blue-ribbon-toaster-white-bread-700g_515x515_1.jpg
+2026-05-20 12:46:26,698 [INFO] Renamed image: blue-ribbon-toaster-white-bread-700g_2.jpg -> blue-ribbon-toaster-white-bread-700g_1200x1200.jpg
+2026-05-20 12:46:26,699 [INFO] Renamed image: blue-ribbon-toaster-white-bread-700g_3.jpg -> blue-ribbon-toaster-white-bread-700g_515x515_2.jpg
+2026-05-20 12:46:26,700 [INFO] Renamed image: blue-ribbon-toaster-white-bread-700g_4.jpg -> blue-ribbon-toaster-white-bread-700g_1000x1000.jpg
+2026-05-20 12:46:26,701 [INFO] Renamed images for blue-ribbon-toaster-white-bread-700g
+2026-05-20 12:46:26,823 [INFO] Renamed image: brown-bread-600g_0.jpg -> brown-bread-600g_515x515.jpg
+2026-05-20 12:46:26,824 [INFO] Renamed image: brown-bread-600g_1.jpg -> brown-bread-600g_515x515_1.jpg
+2026-05-20 12:46:26,826 [INFO] Renamed image: brown-bread-600g_2.jpg -> brown-bread-600g_1000x1000.jpg
+2026-05-20 12:46:26,827 [INFO] Renamed image: brown-bread-600g_3.jpg -> brown-bread-600g_515x515_2.jpg
+2026-05-20 12:46:26,827 [INFO] Renamed image: brown-bread-600g_4.jpg -> brown-bread-600g_1200x1200.jpg
+2026-05-20 12:46:26,828 [INFO] Renamed image: brown-bread-600g_5.jpg -> brown-bread-600g_515x515_3.jpg
+2026-05-20 12:46:26,829 [INFO] Renamed image: brown-bread-600g_6.jpg -> brown-bread-600g_1000x1000_1.jpg
+2026-05-20 12:46:26,831 [INFO] Renamed images for brown-bread-600g
+2026-05-20 12:46:26,884 [INFO] Renamed image: caress-regular-maxi-sanitary-pads-8-pack_0.jpg -> caress-regular-maxi-sanitary-pads-8-pack_515x515.jpg
+2026-05-20 12:46:26,893 [INFO] Renamed image: caress-regular-maxi-sanitary-pads-8-pack_1.jpg -> caress-regular-maxi-sanitary-pads-8-pack_515x515_1.jpg
+2026-05-20 12:46:26,898 [INFO] Renamed images for caress-regular-maxi-sanitary-pads-8-pack
+2026-05-20 12:46:26,963 [INFO] Renamed image: carling-black-label-beer-bottle-750ml_0.jpg -> carling-black-label-beer-bottle-750ml_515x515.jpg
+2026-05-20 12:46:26,965 [INFO] Renamed image: carling-black-label-beer-bottle-750ml_1.jpg -> carling-black-label-beer-bottle-750ml_515x515_1.jpg
+2026-05-20 12:46:26,968 [INFO] Renamed images for carling-black-label-beer-bottle-750ml
+2026-05-20 12:46:27,025 [INFO] Renamed image: carling-black-label-beer-can-500ml_0.jpg -> carling-black-label-beer-can-500ml_515x515.jpg
+2026-05-20 12:46:27,026 [INFO] Renamed image: carling-black-label-beer-can-500ml_1.jpg -> carling-black-label-beer-can-500ml_515x515_1.jpg
+2026-05-20 12:46:27,028 [INFO] Renamed image: carling-black-label-beer-can-500ml_2.jpg -> carling-black-label-beer-can-500ml_1200x1200.jpg
+2026-05-20 12:46:27,030 [INFO] Renamed image: carling-black-label-beer-can-500ml_3.jpg -> carling-black-label-beer-can-500ml_515x515_2.jpg
+2026-05-20 12:46:27,031 [INFO] Renamed image: carling-black-label-beer-can-500ml_4.jpg -> carling-black-label-beer-can-500ml_1200x1200_1.jpg
+2026-05-20 12:46:27,032 [INFO] Renamed image: carling-black-label-beer-can-500ml_5.jpg -> carling-black-label-beer-can-500ml_515x515_3.jpg
+2026-05-20 12:46:27,034 [INFO] Renamed image: carling-black-label-beer-can-500ml_6.jpg -> carling-black-label-beer-can-500ml_1000x1000.jpg
+2026-05-20 12:46:27,037 [INFO] Renamed images for carling-black-label-beer-can-500ml
+2026-05-20 12:46:27,073 [INFO] Renamed image: carrots-1kg_0.jpg -> carrots-1kg_515x515.jpg
+2026-05-20 12:46:27,076 [INFO] Renamed image: carrots-1kg_1.jpg -> carrots-1kg_515x515_1.jpg
+2026-05-20 12:46:27,076 [INFO] Renamed images for carrots-1kg
+2026-05-20 12:46:27,128 [INFO] Renamed image: castle-lager-beer-bottle-750ml_0.jpg -> castle-lager-beer-bottle-750ml_515x515.jpg
+2026-05-20 12:46:27,129 [INFO] Renamed image: castle-lager-beer-bottle-750ml_1.jpg -> castle-lager-beer-bottle-750ml_515x515_1.jpg
+2026-05-20 12:46:27,131 [INFO] Renamed image: castle-lager-beer-bottle-750ml_2.jpg -> castle-lager-beer-bottle-750ml_1200x1200.jpg
+2026-05-20 12:46:27,132 [INFO] Renamed image: castle-lager-beer-bottle-750ml_3.jpg -> castle-lager-beer-bottle-750ml_515x515_2.jpg
+2026-05-20 12:46:27,134 [INFO] Renamed image: castle-lager-beer-bottle-750ml_4.jpg -> castle-lager-beer-bottle-750ml_1200x1200_1.jpg
+2026-05-20 12:46:27,135 [INFO] Renamed image: castle-lager-beer-bottle-750ml_5.jpg -> castle-lager-beer-bottle-750ml_515x515_3.jpg
+2026-05-20 12:46:27,139 [INFO] Renamed image: castle-lager-beer-bottle-750ml_6.jpg -> castle-lager-beer-bottle-750ml_1000x1000.jpg
+2026-05-20 12:46:27,141 [INFO] Renamed images for castle-lager-beer-bottle-750ml

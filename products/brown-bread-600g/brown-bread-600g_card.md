@@ -52,13 +52,13 @@ Pre-sliced for convenience Soft texture Versatile for various recipes Perfect fo
 | Serving Size |  | 67g |
 
 ## Images
-- images/brown-bread-600g_0.jpg
-- images/brown-bread-600g_1.jpg
-- images/brown-bread-600g_2.jpg
-- images/brown-bread-600g_3.jpg
-- images/brown-bread-600g_4.jpg
-- images/brown-bread-600g_5.jpg
-- images/brown-bread-600g_6.jpg
+- images/brown-bread-600g_515x515.jpg
+- images/brown-bread-600g_515x515_1.jpg
+- images/brown-bread-600g_1000x1000.jpg
+- images/brown-bread-600g_515x515_2.jpg
+- images/brown-bread-600g_1200x1200.jpg
+- images/brown-bread-600g_515x515_3.jpg
+- images/brown-bread-600g_1000x1000_1.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Brown-Bread-600g/p/10810522EA

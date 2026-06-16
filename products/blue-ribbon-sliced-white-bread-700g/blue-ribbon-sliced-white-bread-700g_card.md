@@ -23,11 +23,11 @@ Consistently delivering the taste and quality you expect, Blue Ribbon Sliced Whi
 | 150Energy |  | 1536kJ |
 
 ## Images
-- images/blue-ribbon-sliced-white-bread-700g_0.jpg
-- images/blue-ribbon-sliced-white-bread-700g_1.jpg
-- images/blue-ribbon-sliced-white-bread-700g_2.jpg
-- images/blue-ribbon-sliced-white-bread-700g_3.jpg
-- images/blue-ribbon-sliced-white-bread-700g_4.jpg
+- images/blue-ribbon-sliced-white-bread-700g_515x515.jpg
+- images/blue-ribbon-sliced-white-bread-700g_515x515_1.jpg
+- images/blue-ribbon-sliced-white-bread-700g_1200x1200.jpg
+- images/blue-ribbon-sliced-white-bread-700g_515x515_2.jpg
+- images/blue-ribbon-sliced-white-bread-700g_1000x1000.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Blue-Ribbon-Sliced-White-Bread-700g/p/10136370EA

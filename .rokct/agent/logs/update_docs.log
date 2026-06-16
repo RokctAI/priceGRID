@@ -1,0 +1,7 @@
+2026-06-16 14:48:14,405 - INFO - Detected project type: python for C:\Users\sinya\Desktop\RokctAI\priceGRID
+2026-06-16 14:48:14,428 - INFO - Auto-creating missing documentation for: scripts\publisher\publish.py
+2026-06-16 14:48:14,431 - INFO - Auto-created missing doc: docs\api\scripts_publisher_publish.md <- scripts\publisher\publish.py
+2026-06-16 14:48:14,437 - INFO - Auto-creating missing documentation for: scripts\scrappers\shoprite\maintain.py
+2026-06-16 14:48:14,747 - INFO - Auto-created missing doc: docs\api\scripts_scrappers_shoprite_maintain.md <- scripts\scrappers\shoprite\maintain.py
+2026-06-16 14:48:14,756 - INFO - Auto-creating missing documentation for: scripts\scrappers\shoprite\scraper.py
+2026-06-16 14:48:14,761 - INFO - Auto-created missing doc: docs\api\scripts_scrappers_shoprite_scraper.md <- scripts\scrappers\shoprite\scraper.py

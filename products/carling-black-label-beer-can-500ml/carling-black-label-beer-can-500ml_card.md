@@ -31,13 +31,13 @@ Contains: Barley, Gluten.
 - **Ingredients**: Water, Barley Malt (Gluten), Maize Extract & Hops
 
 ## Images
-- images/carling-black-label-beer-can-500ml_0.jpg
-- images/carling-black-label-beer-can-500ml_1.jpg
-- images/carling-black-label-beer-can-500ml_2.jpg
-- images/carling-black-label-beer-can-500ml_3.jpg
-- images/carling-black-label-beer-can-500ml_4.jpg
-- images/carling-black-label-beer-can-500ml_5.jpg
-- images/carling-black-label-beer-can-500ml_6.jpg
+- images/carling-black-label-beer-can-500ml_515x515.jpg
+- images/carling-black-label-beer-can-500ml_515x515_1.jpg
+- images/carling-black-label-beer-can-500ml_1200x1200.jpg
+- images/carling-black-label-beer-can-500ml_515x515_2.jpg
+- images/carling-black-label-beer-can-500ml_1200x1200_1.jpg
+- images/carling-black-label-beer-can-500ml_515x515_3.jpg
+- images/carling-black-label-beer-can-500ml_1000x1000.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Carling-Black-Label-Beer-Can-500ml/p/10541856EA

@@ -34,13 +34,13 @@ Contains: Barley, Gluten.
 - **Ingredients**: Water, Barley Malt (( Gluten), Maize Extract & Hops
 
 ## Images
-- images/castle-lager-beer-bottle-750ml_0.jpg
-- images/castle-lager-beer-bottle-750ml_1.jpg
-- images/castle-lager-beer-bottle-750ml_2.jpg
-- images/castle-lager-beer-bottle-750ml_3.jpg
-- images/castle-lager-beer-bottle-750ml_4.jpg
-- images/castle-lager-beer-bottle-750ml_5.jpg
-- images/castle-lager-beer-bottle-750ml_6.jpg
+- images/castle-lager-beer-bottle-750ml_515x515.jpg
+- images/castle-lager-beer-bottle-750ml_515x515_1.jpg
+- images/castle-lager-beer-bottle-750ml_1200x1200.jpg
+- images/castle-lager-beer-bottle-750ml_515x515_2.jpg
+- images/castle-lager-beer-bottle-750ml_1200x1200_1.jpg
+- images/castle-lager-beer-bottle-750ml_515x515_3.jpg
+- images/castle-lager-beer-bottle-750ml_1000x1000.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Castle-Lager-Beer-Bottle-750ml/p/10125599EA

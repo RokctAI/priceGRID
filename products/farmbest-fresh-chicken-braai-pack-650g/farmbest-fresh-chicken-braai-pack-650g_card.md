@@ -2,7 +2,6 @@
 
 ## Price
 - **Current Price**: R38.99
-- **Validity**: Valid until 24 May 2026
 
 ## Description
 Enjoy this chicken braai pack that offers versatile, juicy, and tender pieces. Suitable for various cooking methods, the plump pieces are convenient to prepare and can be served as a standalone dish or with sides.

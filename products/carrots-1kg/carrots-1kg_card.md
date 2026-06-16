@@ -13,8 +13,8 @@ Fresh fruit and vegetables sourced when needed to ensure a wider variety and con
 - **Main Barcode**: 6003678934121
 
 ## Images
-- images/carrots-1kg_0.jpg
-- images/carrots-1kg_1.jpg
+- images/carrots-1kg_515x515.jpg
+- images/carrots-1kg_515x515_1.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Carrots-1kg/p/10152390EA

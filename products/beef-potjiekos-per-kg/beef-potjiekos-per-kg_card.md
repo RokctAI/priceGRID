@@ -15,8 +15,8 @@ Choose from our wide selection of premium grade beef potjiekos pieces. Our tende
 - **Contains Pork**: No
 
 ## Images
-- images/beef-potjiekos-per-kg_0.jpg
-- images/beef-potjiekos-per-kg_1.jpg
+- images/beef-potjiekos-per-kg_515x515.jpg
+- images/beef-potjiekos-per-kg_515x515_1.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Beef-Potjiekos-Per-kg/p/10149770KG
