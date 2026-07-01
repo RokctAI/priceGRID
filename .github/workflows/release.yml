@@ -58,7 +58,7 @@ jobs:
       - name: System Essentials
         run: apt-get update && apt-get install -y sudo git curl
 
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Check Project Type
         id: check
         run: |
