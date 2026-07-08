@@ -4,11 +4,69 @@ __pycache__/
 *$py.class
 *.so
 .Python
+/build/
+/develop-eggs/
+/dist/
+/downloads/
+/eggs/
+/.eggs/
+/lib/
+/lib64/
+/parts/
+/sdist/
+/var/
+/wheels/
+/share/python-wheels/
+*.egg-info/
+/.installed.cfg
+*.egg
+/MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-uninstall-log.txt
+
+# Unit test / coverage reports
+/htmlcov/
+/.tox/
+/.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+pytestdebug.log
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pyright
+.pyright/
 
 # Virtual environments
-venv/
-env/
-ENV/
+/venv/
+/env/
+/ENV/
+/.venv
+.env
+/env.bak/
+/venv.bak/
 
 # IDE
 .vscode/
@@ -27,63 +85,25 @@ Thumbs.db
 
 # Frappe specific
 *.compiled
-node_modules/
-.build/
+/node_modules/
+/.build/
 sites/*/private/backups/
 sites/*/private/files/
 sites/*/locks/
 sites/*/task-logs/
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-.pub-cache/
-.pub/
-/build/
-/coverage/
-pubspec.lock
-app.*.symbols
-app.*.map.json
-/android/app/debug
-/android/app/profile
-/android/app/release
-*.freezed.dart
-*.g.dart
-*.gr.dart
-
-# Next.js/Node
-.pnp
-.pnp.js
-.next/
-out/
-.turbo
-.vercel
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.env*.local
-*.pem
-
 # Logs
 *.log
-logs/
+/logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# Private Modules
-paas/whatsapp/
-
 # Miscellaneous
 *.class
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+/.buildlog/
+/.history
+/.svn/
+/.swiftpm/
+/migrate_working_dir/
