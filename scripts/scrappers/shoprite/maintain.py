@@ -9,17 +9,22 @@ from typing import Optional, Dict
 from playwright.async_api import async_playwright
 
 sys.path.append(os.path.dirname(__file__))
-from scraper import extract_price_from_page, JS_PRICE_EXTRACTION, get_hardened_context, get_stealthy_page
+from scraper import (
+    extract_price_from_page,
+    JS_PRICE_EXTRACTION,
+    get_hardened_context,
+    get_stealthy_page,
+)
 
 # Setup logging
 os.makedirs(".rokct/agent/logs", exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s [%(levelname)s] %(message)s',
+    format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
         logging.FileHandler(".rokct/agent/logs/shoprite_maintain.log", mode="w"),
-        logging.StreamHandler(sys.stdout)
-    ]
+        logging.StreamHandler(sys.stdout),
+    ],
 )
 logger = logging.getLogger(__name__)
 
@@ -28,6 +33,7 @@ def get_image_dimensions(filepath: str):
     """Return (width, height) for an image file, or (0, 0) on failure."""
     try:
         from PIL import Image
+
         with Image.open(filepath) as img:
             return img.size  # (width, height)
     except Exception:
@@ -45,10 +51,13 @@ def rename_images_by_size(product_dir: str, card_path: str, slug: str) -> bool:
     if not os.path.exists(images_dir):
         return False
 
-    image_files = sorted([
-        f for f in os.listdir(images_dir)
-        if f.lower().endswith((".jpg", ".jpeg", ".png", ".webp"))
-    ])
+    image_files = sorted(
+        [
+            f
+            for f in os.listdir(images_dir)
+            if f.lower().endswith((".jpg", ".jpeg", ".png", ".webp"))
+        ]
+    )
     if not image_files:
         return False
 
@@ -91,7 +100,9 @@ def rename_images_by_size(product_dir: str, card_path: str, slug: str) -> bool:
             tmp_path, new_path = val
             if os.path.exists(tmp_path):
                 os.rename(tmp_path, new_path)
-                logger.info(f"Renamed image: {old_name} -> {os.path.basename(new_path)}")
+                logger.info(
+                    f"Renamed image: {old_name} -> {os.path.basename(new_path)}"
+                )
 
     # Rewrite the ## Images section in the card
     with open(card_path, "r", encoding="utf-8") as f:
@@ -105,7 +116,12 @@ def rename_images_by_size(product_dir: str, card_path: str, slug: str) -> bool:
 
     new_content = content
     for old_ref, new_ref in card_rename.items():
-        new_content = new_content.replace(old_ref, os.path.basename(new_ref).join(["images/", ""]).replace("images/images/", "images/"))
+        new_content = new_content.replace(
+            old_ref,
+            os.path.basename(new_ref)
+            .join(["images/", ""])
+            .replace("images/images/", "images/"),
+        )
 
     # Simpler: just do a direct replace of old filename -> new filename in the Images section
     new_content = content
@@ -159,7 +175,9 @@ def maintain_images():
                 images_dir = os.path.join(product_dir, "images")
                 if not os.path.exists(images_dir):
                     if listed_images:
-                        logger.warning(f"Images dir missing but images listed in {card_path}")
+                        logger.warning(
+                            f"Images dir missing but images listed in {card_path}"
+                        )
                     continue
 
                 for actual_file in os.listdir(images_dir):
@@ -170,7 +188,9 @@ def maintain_images():
 
                 for listed_image in listed_images:
                     if not os.path.exists(os.path.join(product_dir, listed_image)):
-                        logger.warning(f"Listed image missing on disk: {listed_image} (in {card_path})")
+                        logger.warning(
+                            f"Listed image missing on disk: {listed_image} (in {card_path})"
+                        )
 
     # ── Ensure Is Platform field exists in all cards ──────────────────────────
     logger.info("Ensuring 'Is Platform' field exists in all cards...")
@@ -183,9 +203,13 @@ def maintain_images():
 
                 if "- **Is Platform**:" not in content:
                     if "## Meta" in content:
-                        new_content = content.replace("## Meta", "## Meta\n- **Is Platform**: false")
+                        new_content = content.replace(
+                            "## Meta", "## Meta\n- **Is Platform**: false"
+                        )
                     else:
-                        new_content = content.rstrip() + "\n\n## Meta\n- **Is Platform**: false\n"
+                        new_content = (
+                            content.rstrip() + "\n\n## Meta\n- **Is Platform**: false\n"
+                        )
 
                     with open(card_path, "w", encoding="utf-8") as f:
                         f.write(new_content)
@@ -210,11 +234,15 @@ async def update_price(context, card_path: str):
     try:
         page = await get_stealthy_page(context)
         try:
-            response = await page.goto(url, wait_until="domcontentloaded", timeout=60000)
+            response = await page.goto(
+                url, wait_until="domcontentloaded", timeout=60000
+            )
             status = response.status if response else "No Response"
 
             if not response or status != 200:
-                logger.error(f"Failed to load {url} (Status: {status}). Skipping product.")
+                logger.error(
+                    f"Failed to load {url} (Status: {status}). Skipping product."
+                )
                 return
         except Exception as e:
             logger.error(f"Exception loading {url}: {e}")
@@ -244,7 +272,7 @@ async def update_price(context, card_path: str):
         new_content = re.sub(
             r"## Price\n(?:- .*\n?)*\n(?=## Description)",
             price_section + "\n\n",
-            content
+            content,
         )
 
         if new_content != content:
@@ -263,7 +291,11 @@ async def update_price(context, card_path: str):
 
 async def main():
     parser = argparse.ArgumentParser(description="Maintain PriceGrid product data.")
-    parser.add_argument("--images-only", action="store_true", help="Only perform image maintenance, skip price updates.")
+    parser.add_argument(
+        "--images-only",
+        action="store_true",
+        help="Only perform image maintenance, skip price updates.",
+    )
     args = parser.parse_args()
 
     if not args.images_only:
@@ -274,7 +306,7 @@ async def main():
                     "--disable-blink-features=AutomationControlled",
                     "--no-sandbox",
                     "--disable-dev-shm-usage",
-                ]
+                ],
             )
             context = await get_hardened_context(browser)
 
@@ -293,7 +325,11 @@ async def main():
             logger.info("Establishing cookies via home page...")
             temp_page = await get_stealthy_page(context)
             try:
-                await temp_page.goto("https://www.shoprite.co.za", wait_until="domcontentloaded", timeout=30000)
+                await temp_page.goto(
+                    "https://www.shoprite.co.za",
+                    wait_until="domcontentloaded",
+                    timeout=30000,
+                )
                 await asyncio.sleep(random.uniform(2, 4))
             except Exception as e:
                 logger.warning(f"Failed to load home page: {e}")
