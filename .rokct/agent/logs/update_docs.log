@@ -60,3 +60,31 @@
 2026-07-10 23:44:28,909 - INFO - Auto-created missing doc: docs/api/.shared-workflows_scripts_compliance_layer_10.md <- .shared-workflows/scripts/compliance/layer_10.py
 2026-07-10 23:44:28,923 - INFO - Auto-creating missing documentation for: .shared-workflows/scripts/compliance/layer_12.py
 2026-07-10 23:44:28,959 - INFO - Auto-created missing doc: docs/api/.shared-workflows_scripts_compliance_layer_12.md <- .shared-workflows/scripts/compliance/layer_12.py
+2026-07-17 23:39:38,279 - INFO - Detected project type: python for /home/runner/work/priceGRID/priceGRID
+2026-07-17 23:39:38,373 - INFO - Synced: docs/api/.shared-workflows_scripts_pr_auto_labeler.md <- .shared-workflows/scripts/pr_auto_labeler.py
+2026-07-17 23:39:38,375 - INFO - Synced: docs/api/.shared-workflows_scripts_update_usage_badge.md <- .shared-workflows/scripts/update_usage_badge.py
+2026-07-17 23:39:38,382 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_scanner.md <- .shared-workflows/scripts/compliance_scanner.py
+2026-07-17 23:39:38,398 - INFO - Synced: docs/api/.shared-workflows_scripts_audit_inputs_and_drift.md <- .shared-workflows/scripts/audit_inputs_and_drift.py
+2026-07-17 23:39:38,487 - INFO - Synced: docs/api/.shared-workflows_scripts_update_docs.md <- .shared-workflows/scripts/update_docs.py
+2026-07-17 23:39:38,489 - INFO - Synced: docs/api/.shared-workflows_scripts_fleet_compliance.md <- .shared-workflows/scripts/fleet_compliance.py
+2026-07-17 23:39:38,531 - INFO - Synced: docs/api/.shared-workflows_scripts_standardize_fleet.md <- .shared-workflows/scripts/standardize_fleet.py
+2026-07-17 23:39:38,534 - INFO - Synced: docs/api/.shared-workflows_scripts_update_readme_badges.md <- .shared-workflows/scripts/update_readme_badges.py
+2026-07-17 23:39:38,535 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_6.md <- .shared-workflows/scripts/compliance/layer_6.py
+2026-07-17 23:39:38,536 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_base.md <- .shared-workflows/scripts/compliance/base.py
+2026-07-17 23:39:38,538 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_11.md <- .shared-workflows/scripts/compliance/layer_11.py
+2026-07-17 23:39:38,542 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_3.md <- .shared-workflows/scripts/compliance/layer_3.py
+2026-07-17 23:39:38,542 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_8.md <- .shared-workflows/scripts/compliance/layer_8.py
+2026-07-17 23:39:38,543 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_9.md <- .shared-workflows/scripts/compliance/layer_9.py
+2026-07-17 23:39:38,545 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_2.md <- .shared-workflows/scripts/compliance/layer_2.py
+2026-07-17 23:39:38,546 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_15.md <- .shared-workflows/scripts/compliance/layer_15.py
+2026-07-17 23:39:38,548 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_4_5.md <- .shared-workflows/scripts/compliance/layer_4_5.py
+2026-07-17 23:39:38,591 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_12.md <- .shared-workflows/scripts/compliance/layer_12.py
+2026-07-17 23:39:38,592 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_16.md <- .shared-workflows/scripts/compliance/layer_16.py
+2026-07-17 23:39:38,593 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_13.md <- .shared-workflows/scripts/compliance/layer_13.py
+2026-07-17 23:39:38,595 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_10.md <- .shared-workflows/scripts/compliance/layer_10.py
+2026-07-17 23:39:38,596 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_19.md <- .shared-workflows/scripts/compliance/layer_19.py
+2026-07-17 23:39:38,597 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_14.md <- .shared-workflows/scripts/compliance/layer_14.py
+2026-07-17 23:39:38,597 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_17.md <- .shared-workflows/scripts/compliance/layer_17.py
+2026-07-17 23:39:38,598 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_7.md <- .shared-workflows/scripts/compliance/layer_7.py
+2026-07-17 23:39:38,600 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance_layer_18.md <- .shared-workflows/scripts/compliance/layer_18.py
+2026-07-17 23:39:38,601 - INFO - Synced: docs/api/.shared-workflows_scripts_compliance___init__.md <- .shared-workflows/scripts/compliance/__init__.py
