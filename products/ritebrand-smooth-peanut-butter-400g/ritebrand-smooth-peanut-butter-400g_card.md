@@ -49,14 +49,13 @@ Smooth texture for easy spreadingSealed lid to maintain freshnessVersatile use i
 | Serving Size |  | 15g |
 
 ## Images
-- images/ritebrand-smooth-peanut-butter-400g_0x0.jpg
-- images/ritebrand-smooth-peanut-butter-400g_0x0_1.jpg
-- images/ritebrand-smooth-peanut-butter-400g_0x0_2.jpg
-- images/ritebrand-smooth-peanut-butter-400g_0x0_3.jpg
-- images/ritebrand-smooth-peanut-butter-400g_0x0_4.jpg
+- images/ritebrand-smooth-peanut-butter-400g_0.jpg
+- images/ritebrand-smooth-peanut-butter-400g_1.jpg
+- images/ritebrand-smooth-peanut-butter-400g_2.jpg
+- images/ritebrand-smooth-peanut-butter-400g_3.jpg
+- images/ritebrand-smooth-peanut-butter-400g_4.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Spreads%2C-Honey-and-Preserves/Ritebrand-Smooth-Peanut-Butter-400g/p/10125075EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

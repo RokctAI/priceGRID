@@ -47,11 +47,10 @@ Carbonated Water, Sugar, Caramel, Phosphoric Acid, Flavouring and Caffeine
 | Serving Size |  | 250m |
 
 ## Images
-- images/coca-cola-original-taste-less-sugar-soft-drink-15l_0x0.jpg
-- images/coca-cola-original-taste-less-sugar-soft-drink-15l_0x0_1.jpg
+- images/coca-cola-original-taste-less-sugar-soft-drink-15l_0.jpg
+- images/coca-cola-original-taste-less-sugar-soft-drink-15l_1.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Drinks/Soft-Drinks/Cola/Coca-Cola-Original-Taste-Less-Sugar-Soft-Drink-1-5L/p/10141470EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

@@ -27,11 +27,10 @@ Rich in potassium: Enhances your overall health and vitality. Biodegradable peel
 - **Benefits & Features**: Rich in potassium: Enhances your overall health and vitality. Biodegradable peel: A sustainable choice for conscious consumers. Versatile culinary use: Ideal for smoothies, baking, and toppings. Naturally ripening: Delivers a variety of textures to elevate your meals. Perfect for on-the-go lifestyles: Ensures you maintain optimal nutrition, no matter how hectic your day gets.
 
 ## Images
-- images/bananas-650g_0x0.jpg
-- images/bananas-650g_0x0_1.jpg
+- images/bananas-650g_515x515.jpg
+- images/bananas-650g_515x515_1.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Fruit/Bananas-650g/p/10148833EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

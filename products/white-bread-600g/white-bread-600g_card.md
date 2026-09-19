@@ -55,14 +55,13 @@ Soft texture Pre-sliced for convenience Ideal for sandwiches and toast A perfect
 | Serving Size |  | 67g |
 
 ## Images
-- images/white-bread-600g_0x0.jpg
-- images/white-bread-600g_0x0_1.jpg
-- images/white-bread-600g_0x0_2.jpg
-- images/white-bread-600g_0x0_3.jpg
-- images/white-bread-600g_0x0_4.jpg
+- images/white-bread-600g_0.jpg
+- images/white-bread-600g_1.jpg
+- images/white-bread-600g_2.jpg
+- images/white-bread-600g_3.jpg
+- images/white-bread-600g_4.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/White-Bread-600g/p/10810523EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

@@ -53,16 +53,15 @@ Water (78%), Vegetable Fats and Oil (20%) (Palm Fruit, Sunflower, Maize, Canola 
 | Serving Size |  | 20g |
 
 ## Images
-- images/olé-20-fat-bread-spread-500g_0x0.jpg
-- images/olé-20-fat-bread-spread-500g_0x0_1.jpg
-- images/olé-20-fat-bread-spread-500g_0x0_2.jpg
-- images/olé-20-fat-bread-spread-500g_0x0_3.jpg
-- images/olé-20-fat-bread-spread-500g_0x0_4.jpg
-- images/olé-20-fat-bread-spread-500g_0x0_5.jpg
-- images/olé-20-fat-bread-spread-500g_0x0_6.jpg
+- images/olé-20-fat-bread-spread-500g_0.jpg
+- images/olé-20-fat-bread-spread-500g_1.jpg
+- images/olé-20-fat-bread-spread-500g_2.jpg
+- images/olé-20-fat-bread-spread-500g_3.jpg
+- images/olé-20-fat-bread-spread-500g_4.jpg
+- images/olé-20-fat-bread-spread-500g_5.jpg
+- images/olé-20-fat-bread-spread-500g_6.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Ol%C3%A9-20%25-Fat-Bread-Spread-500g/p/10150754EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

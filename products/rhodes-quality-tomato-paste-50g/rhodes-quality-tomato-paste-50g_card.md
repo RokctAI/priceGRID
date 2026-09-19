@@ -42,11 +42,10 @@ Made from ripe, locally sourced tomatoes Naturally free from fat Source of dieta
 | 1g    Serving Size |  | 125g |
 
 ## Images
-- images/rhodes-quality-tomato-paste-50g_0x0.jpg
-- images/rhodes-quality-tomato-paste-50g_0x0_1.jpg
+- images/rhodes-quality-tomato-paste-50g_0.jpg
+- images/rhodes-quality-tomato-paste-50g_1.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Rhodes-Quality-Tomato-Paste-50g/p/10351880EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

@@ -36,7 +36,8 @@ def get_image_dimensions(filepath: str):
 
         with Image.open(filepath) as img:
             return img.size  # (width, height)
-    except Exception:
+    except Exception as e:
+        logger.warning(f"Could not read dimensions for {filepath}: {e}")
         return (0, 0)
 
 
@@ -68,6 +69,15 @@ def rename_images_by_size(product_dir: str, card_path: str, slug: str) -> bool:
     for fname in image_files:
         fpath = os.path.join(images_dir, fname)
         w, h = get_image_dimensions(fpath)
+        if not w or not h:
+            # Dimensions are what the new name is made of, so without them there
+            # is no name to give. Renaming anyway stamps every image _0x0 and
+            # destroys the sizes already recorded in the existing filenames.
+            logger.warning(
+                f"Skipping rename for {slug}: no dimensions for {fname}. "
+                "Is Pillow installed?"
+            )
+            return False
         dim_key = f"{w}x{h}"
         count = seen_dims.get(dim_key, 0)
         seen_dims[dim_key] = count + 1

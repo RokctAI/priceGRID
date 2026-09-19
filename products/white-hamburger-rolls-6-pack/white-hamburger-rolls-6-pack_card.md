@@ -21,14 +21,13 @@ Soft and fluffy texture Baked fresh daily Round shape Convenient for making quic
 - **Benefits & Features**: Soft and fluffy texture Baked fresh daily Round shape Convenient for making quick sandwiches Ideal for hosting braais and gatherings
 
 ## Images
-- images/white-hamburger-rolls-6-pack_0x0.jpg
-- images/white-hamburger-rolls-6-pack_0x0_1.jpg
-- images/white-hamburger-rolls-6-pack_0x0_2.jpg
-- images/white-hamburger-rolls-6-pack_0x0_3.jpg
-- images/white-hamburger-rolls-6-pack_0x0_4.jpg
+- images/white-hamburger-rolls-6-pack_0.jpg
+- images/white-hamburger-rolls-6-pack_1.jpg
+- images/white-hamburger-rolls-6-pack_2.jpg
+- images/white-hamburger-rolls-6-pack_3.jpg
+- images/white-hamburger-rolls-6-pack_4.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/White-Hamburger-Rolls-6-Pack/p/10151456PK1
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

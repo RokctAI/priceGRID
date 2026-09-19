@@ -22,8 +22,8 @@ Bring the spicy aromas and enticing flavours of India together in a tasty lentil
 | Energy |  | 168kJ |
 
 ## Images
-- images/robertsons-indian-spicy-lentil-dhal-cook-in-sauce-48g_0x0.jpg
-- images/robertsons-indian-spicy-lentil-dhal-cook-in-sauce-48g_0x0_1.jpg
+- images/robertsons-indian-spicy-lentil-dhal-cook-in-sauce-48g_0.jpg
+- images/robertsons-indian-spicy-lentil-dhal-cook-in-sauce-48g_1.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Robertsons-Indian-Spicy-Lentil-Dhal-Cook-In-Sauce-48g/p/10641181EA
