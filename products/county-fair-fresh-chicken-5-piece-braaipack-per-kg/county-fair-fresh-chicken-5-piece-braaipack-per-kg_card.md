@@ -14,10 +14,11 @@ Great South African chicken everyday!
 - **Contains Pork**: No
 
 ## Images
-- images/county-fair-fresh-chicken-5-piece-braaipack-per-kg_0.jpg
-- images/county-fair-fresh-chicken-5-piece-braaipack-per-kg_1.jpg
+- images/county-fair-fresh-chicken-5-piece-braaipack-per-kg_515x515.jpg
+- images/county-fair-fresh-chicken-5-piece-braaipack-per-kg_515x515_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/County-Fair-Fresh-Chicken-5-Piece-Braaipack-Per-kg/p/10224500KG
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

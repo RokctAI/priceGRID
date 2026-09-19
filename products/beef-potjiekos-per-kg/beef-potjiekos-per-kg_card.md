@@ -19,6 +19,7 @@ Choose from our wide selection of premium grade beef potjiekos pieces. Our tende
 - images/beef-potjiekos-per-kg_515x515_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Beef-Potjiekos-Per-kg/p/10149770KG
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

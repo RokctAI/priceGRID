@@ -31,6 +31,7 @@ Rich in potassium: Enhances your overall health and vitality. Biodegradable peel
 - images/bananas-650g_515x515_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Fruit/Bananas-650g/p/10148833EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

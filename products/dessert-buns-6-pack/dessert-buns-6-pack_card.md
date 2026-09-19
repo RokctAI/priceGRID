@@ -15,10 +15,11 @@ and are of the highest qaulity.
 - **Main Barcode**: 2481270000002
 
 ## Images
-- images/dessert-buns-6-pack_0.jpg
-- images/dessert-buns-6-pack_1.jpg
+- images/dessert-buns-6-pack_515x515.jpg
+- images/dessert-buns-6-pack_515x515_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Bakery/Doughnuts%2C-Fresh-Cookies-and-Iced-Buns/Dessert-Buns-6-Pack/p/10152503EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

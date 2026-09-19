@@ -45,13 +45,14 @@ Contains wheat, gluten.
 | Dietary fibre | 3.7g |  |
 
 ## Images
-- images/sasko-cake-wheat-flour-bag-25kg_0.jpg
-- images/sasko-cake-wheat-flour-bag-25kg_1.jpg
-- images/sasko-cake-wheat-flour-bag-25kg_2.jpg
-- images/sasko-cake-wheat-flour-bag-25kg_3.jpg
-- images/sasko-cake-wheat-flour-bag-25kg_4.jpg
+- images/sasko-cake-wheat-flour-bag-25kg_515x515.jpg
+- images/sasko-cake-wheat-flour-bag-25kg_515x515_1.jpg
+- images/sasko-cake-wheat-flour-bag-25kg_1200x1200.jpg
+- images/sasko-cake-wheat-flour-bag-25kg_515x515_2.jpg
+- images/sasko-cake-wheat-flour-bag-25kg_1200x1200_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Baking/SASKO-Cake-Wheat-Flour-Bag-2-5kg/p/10137552EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

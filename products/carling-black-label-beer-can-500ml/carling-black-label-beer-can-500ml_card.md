@@ -40,6 +40,7 @@ Contains: Barley, Gluten.
 - images/carling-black-label-beer-can-500ml_1000x1000.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Carling-Black-Label-Beer-Can-500ml/p/10541856EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

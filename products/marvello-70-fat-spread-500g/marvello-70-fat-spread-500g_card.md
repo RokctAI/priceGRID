@@ -53,13 +53,14 @@ Contains 70% fat for rich flavour  Suitable for cooking, frying, and baking  Ric
 | 2g    Serving Size |  | 20g |
 
 ## Images
-- images/marvello-70-fat-spread-500g_0.jpg
-- images/marvello-70-fat-spread-500g_1.jpg
-- images/marvello-70-fat-spread-500g_2.jpg
-- images/marvello-70-fat-spread-500g_3.jpg
-- images/marvello-70-fat-spread-500g_4.jpg
+- images/marvello-70-fat-spread-500g_515x515.jpg
+- images/marvello-70-fat-spread-500g_515x515_1.jpg
+- images/marvello-70-fat-spread-500g_1200x1200.jpg
+- images/marvello-70-fat-spread-500g_515x515_2.jpg
+- images/marvello-70-fat-spread-500g_1000x1000.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Marvello-70%25-Fat-Spread-500g/p/10153949EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

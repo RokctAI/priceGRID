@@ -19,6 +19,7 @@ Fresh fruit and vegetables sourced when needed to ensure a wider variety and con
 - images/avocado_1200x1200_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Salad%2C-Herbs-and-Dip/Avocado/p/10145186EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

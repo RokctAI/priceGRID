@@ -24,13 +24,14 @@ Chicken.
 - **Contains Pork**: No
 
 ## Images
-- images/farmbest-fresh-chicken-breasts-per-kg_0.jpg
-- images/farmbest-fresh-chicken-breasts-per-kg_1.jpg
-- images/farmbest-fresh-chicken-breasts-per-kg_2.jpg
-- images/farmbest-fresh-chicken-breasts-per-kg_3.jpg
-- images/farmbest-fresh-chicken-breasts-per-kg_4.jpg
+- images/farmbest-fresh-chicken-breasts-per-kg_515x515.jpg
+- images/farmbest-fresh-chicken-breasts-per-kg_515x515_1.jpg
+- images/farmbest-fresh-chicken-breasts-per-kg_1200x1200.jpg
+- images/farmbest-fresh-chicken-breasts-per-kg_515x515_2.jpg
+- images/farmbest-fresh-chicken-breasts-per-kg_1000x1000.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Farmbest-Fresh-Chicken-Breasts-Per-kg/p/10187706KG
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

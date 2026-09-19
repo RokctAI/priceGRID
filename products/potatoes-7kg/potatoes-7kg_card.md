@@ -22,8 +22,8 @@ Stock up on a versatile kitchen staple with Freshmark Potatoes, packed in a stur
 | Serving Size |  | 60g |
 
 ## Images
-- images/potatoes-7kg_0.jpg
-- images/potatoes-7kg_1.jpg
+- images/potatoes-7kg_515x515.jpg
+- images/potatoes-7kg_515x515_1.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Potatoes-7kg/p/10147186EA

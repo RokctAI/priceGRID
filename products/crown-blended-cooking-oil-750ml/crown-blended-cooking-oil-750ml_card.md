@@ -17,13 +17,14 @@ Crown Blended Cooking Oil 750ml
 - **Main Barcode**: 6001251121029
 
 ## Images
-- images/crown-blended-cooking-oil-750ml_0.jpg
-- images/crown-blended-cooking-oil-750ml_1.jpg
-- images/crown-blended-cooking-oil-750ml_2.jpg
-- images/crown-blended-cooking-oil-750ml_3.jpg
-- images/crown-blended-cooking-oil-750ml_4.jpg
+- images/crown-blended-cooking-oil-750ml_515x515.jpg
+- images/crown-blended-cooking-oil-750ml_515x515_1.jpg
+- images/crown-blended-cooking-oil-750ml_1200x1200.jpg
+- images/crown-blended-cooking-oil-750ml_515x515_2.jpg
+- images/crown-blended-cooking-oil-750ml_1200x1200_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Crown-Blended-Cooking-Oil-750ml/p/10126761EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

@@ -27,13 +27,14 @@ Cow's milk. Made in a factory that uses soya.
 - **Allergens**: Cow's milk. Made in a factory that uses soya.
 
 ## Images
-- images/crystal-valley-full-cream-long-life-milk-1l_0.jpg
-- images/crystal-valley-full-cream-long-life-milk-1l_1.jpg
-- images/crystal-valley-full-cream-long-life-milk-1l_2.jpg
-- images/crystal-valley-full-cream-long-life-milk-1l_3.jpg
-- images/crystal-valley-full-cream-long-life-milk-1l_4.jpg
+- images/crystal-valley-full-cream-long-life-milk-1l_515x515.jpg
+- images/crystal-valley-full-cream-long-life-milk-1l_515x515_1.jpg
+- images/crystal-valley-full-cream-long-life-milk-1l_1200x1200.jpg
+- images/crystal-valley-full-cream-long-life-milk-1l_515x515_2.jpg
+- images/crystal-valley-full-cream-long-life-milk-1l_1200x1200_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Crystal-Valley-Full-Cream-Long-Life-Milk-1L/p/10156069EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

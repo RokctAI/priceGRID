@@ -43,6 +43,7 @@ Contains: Barley, Gluten.
 - images/castle-lager-beer-bottle-750ml_1000x1000.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Drinks/Beer-and-Cider/Beer/Castle-Lager-Beer-Bottle-750ml/p/10125599EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

@@ -21,8 +21,8 @@ For all your morning cereal bowls to your cup of coffee and milk for fulfilling 
 | Energy |  | 675kJ |
 
 ## Images
-- images/darling-fresh-full-cream-milk-sachet-1l_0.jpg
-- images/darling-fresh-full-cream-milk-sachet-1l_1.jpg
+- images/darling-fresh-full-cream-milk-sachet-1l_515x515.jpg
+- images/darling-fresh-full-cream-milk-sachet-1l_515x515_1.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Darling-Fresh-Full-Cream-Milk-Sachet-1L/p/10124889EA

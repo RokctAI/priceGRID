@@ -25,10 +25,11 @@ Chicken (85%), Brine Based Mixture (15%) [Water (14.5%), Salt, Stabilizers (E415
 - **Contains Pork**: No
 
 ## Images
-- images/farmer039s-choice-frozen-chicken-mixed-portions-5kg_0.jpg
-- images/farmer039s-choice-frozen-chicken-mixed-portions-5kg_1.jpg
+- images/farmer039s-choice-frozen-chicken-mixed-portions-5kg_515x515.jpg
+- images/farmer039s-choice-frozen-chicken-mixed-portions-5kg_515x515_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Frozen-Food/Frozen-Meat-and-Poultry/Farmer%27s-Choice-Frozen-Chicken-Mixed-Portions-5kg/p/10248591EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

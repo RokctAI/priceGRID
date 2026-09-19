@@ -56,6 +56,7 @@ Versatile for meals, suitable for breakfast, lunch, or dinner Source of fibre So
 - images/blue-ribbon-sliced-brown-bread-700g_1000x1000.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Blue-Ribbon-Sliced-Brown-Bread-700g/p/10136371EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

@@ -22,13 +22,14 @@ Experience high-quality ingredients in every biteIndulge in the soft and light t
 - **Benefits & Features**: Experience high-quality ingredients in every biteIndulge in the soft and light texture that melts in your mouthComplements different toppings
 
 ## Images
-- images/sweet-bread-600g_0.jpg
-- images/sweet-bread-600g_1.jpg
-- images/sweet-bread-600g_2.jpg
-- images/sweet-bread-600g_3.jpg
-- images/sweet-bread-600g_4.jpg
+- images/sweet-bread-600g_515x515.jpg
+- images/sweet-bread-600g_515x515_1.jpg
+- images/sweet-bread-600g_1200x1200.jpg
+- images/sweet-bread-600g_515x515_2.jpg
+- images/sweet-bread-600g_1000x1000.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Bakery/From-our-Bakery/Sweet-Bread-600g/p/10531399EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

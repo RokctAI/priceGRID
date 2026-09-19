@@ -22,8 +22,8 @@ Craft authentic Indian Chicken Tikka effortlessly with Rajah's 15g pure spice sa
 | Energy |  | 90kJ |
 
 ## Images
-- images/rajah-chicken-tikka-cook-in-sauce-sachet-15g_0.jpg
-- images/rajah-chicken-tikka-cook-in-sauce-sachet-15g_1.jpg
+- images/rajah-chicken-tikka-cook-in-sauce-sachet-15g_515x515.jpg
+- images/rajah-chicken-tikka-cook-in-sauce-sachet-15g_515x515_1.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Rajah-Chicken-Tikka-Cook-In-Sauce-Sachet-15g/p/10641194EA

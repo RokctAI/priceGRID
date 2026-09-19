@@ -13,10 +13,11 @@ Fresh fruit and vegetables sourced when needed to ensure a wider variety and con
 - **Main Barcode**: 6003678919746
 
 ## Images
-- images/onions-1kg_0.jpg
-- images/onions-1kg_1.jpg
+- images/onions-1kg_515x515.jpg
+- images/onions-1kg_515x515_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Onions-1kg/p/10241181EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

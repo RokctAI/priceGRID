@@ -20,10 +20,11 @@ Savour the smooth, low-fat delight of Crystal Valley's Strawberry, Vanilla & Gra
 - **Low Fat**: Yes
 
 ## Images
-- images/crystal-valley-strawberry-vanilla-amp-granadilla-flavoured-smooth-low-fat-dairy-snack-6-x-75g_0.jpg
-- images/crystal-valley-strawberry-vanilla-amp-granadilla-flavoured-smooth-low-fat-dairy-snack-6-x-75g_1.jpg
+- images/crystal-valley-strawberry-vanilla-amp-granadilla-flavoured-smooth-low-fat-dairy-snack-6-x-75g_515x515.jpg
+- images/crystal-valley-strawberry-vanilla-amp-granadilla-flavoured-smooth-low-fat-dairy-snack-6-x-75g_515x515_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Yoghurt/Crystal-Valley-Strawberry%2C-Vanilla-and-Granadilla-Flavoured-Smooth-Low-Fat-Dairy-Snack-6-x-75g/p/10644905EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

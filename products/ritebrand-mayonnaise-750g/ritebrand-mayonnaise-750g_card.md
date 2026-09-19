@@ -53,13 +53,14 @@ Smooth textureTangy taste Versatile condiment or ingredient Ideal for spreading 
 | Serving Size |  | 15g |
 
 ## Images
-- images/ritebrand-mayonnaise-750g_0.jpg
-- images/ritebrand-mayonnaise-750g_1.jpg
-- images/ritebrand-mayonnaise-750g_2.jpg
-- images/ritebrand-mayonnaise-750g_3.jpg
-- images/ritebrand-mayonnaise-750g_4.jpg
+- images/ritebrand-mayonnaise-750g_515x515.jpg
+- images/ritebrand-mayonnaise-750g_515x515_1.jpg
+- images/ritebrand-mayonnaise-750g_1000x1000.jpg
+- images/ritebrand-mayonnaise-750g_515x515_2.jpg
+- images/ritebrand-mayonnaise-750g_1000x1000_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Table-Condiments-and-Dressings/Ritebrand-Mayonnaise-750g/p/10141784EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

@@ -32,6 +32,7 @@ Does not need to be dissolved in water Specially formulated to activate quickly 
 - images/anchor-instant-yeast-10g_515x515_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Baking/Anchor-Instant-Yeast-10g/p/10143785EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

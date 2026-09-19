@@ -41,10 +41,11 @@ Unrefined Cane Sugar
 | Cholesterol |  | 0mg |
 
 ## Images
-- images/selati-golden-brown-sugar-2kg_0.jpg
-- images/selati-golden-brown-sugar-2kg_1.jpg
+- images/selati-golden-brown-sugar-2kg_515x515.jpg
+- images/selati-golden-brown-sugar-2kg_515x515_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Sugar-and-Sweeteners/Selati-Golden-Brown-Sugar-2kg/p/10156064EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

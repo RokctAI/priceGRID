@@ -49,13 +49,14 @@ Rich and creamy texture Versatile use in beverages, desserts, baking, and sauces
 | Serving Size |  | 250m |
 
 ## Images
-- images/ritebrand-long-life-full-cream-milk-6-x-1l_0.jpg
-- images/ritebrand-long-life-full-cream-milk-6-x-1l_1.jpg
-- images/ritebrand-long-life-full-cream-milk-6-x-1l_2.jpg
-- images/ritebrand-long-life-full-cream-milk-6-x-1l_3.jpg
-- images/ritebrand-long-life-full-cream-milk-6-x-1l_4.jpg
+- images/ritebrand-long-life-full-cream-milk-6-x-1l_515x515.jpg
+- images/ritebrand-long-life-full-cream-milk-6-x-1l_515x515_1.jpg
+- images/ritebrand-long-life-full-cream-milk-6-x-1l_1200x1200.jpg
+- images/ritebrand-long-life-full-cream-milk-6-x-1l_515x515_2.jpg
+- images/ritebrand-long-life-full-cream-milk-6-x-1l_1000x1000.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Long-Life-Milk-and-Dairy-Alternatives/Ritebrand-Long-Life-Full-Cream-Milk-6-x-1L/p/10156109PK1
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers
