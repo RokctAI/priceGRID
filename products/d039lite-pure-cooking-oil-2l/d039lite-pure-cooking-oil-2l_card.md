@@ -56,14 +56,13 @@ Free from mineral and added extraneous organic acids  High in polyunsaturated fa
 | Serving Size |  | 20m |
 
 ## Images
-- images/d039lite-pure-cooking-oil-2l_0x0.jpg
-- images/d039lite-pure-cooking-oil-2l_0x0_1.jpg
-- images/d039lite-pure-cooking-oil-2l_0x0_2.jpg
-- images/d039lite-pure-cooking-oil-2l_0x0_3.jpg
-- images/d039lite-pure-cooking-oil-2l_0x0_4.jpg
+- images/d039lite-pure-cooking-oil-2l_0.jpg
+- images/d039lite-pure-cooking-oil-2l_1.jpg
+- images/d039lite-pure-cooking-oil-2l_2.jpg
+- images/d039lite-pure-cooking-oil-2l_3.jpg
+- images/d039lite-pure-cooking-oil-2l_4.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/D%27Lite-Pure-Cooking-Oil-2L/p/10225789EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

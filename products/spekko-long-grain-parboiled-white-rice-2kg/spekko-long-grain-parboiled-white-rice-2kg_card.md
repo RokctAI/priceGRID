@@ -47,11 +47,10 @@ May contain wheat and gluten
 | 1mg    Serving Size | 120g |  |
 
 ## Images
-- images/spekko-long-grain-parboiled-white-rice-2kg_0x0.jpg
-- images/spekko-long-grain-parboiled-white-rice-2kg_0x0_1.jpg
+- images/spekko-long-grain-parboiled-white-rice-2kg_0.jpg
+- images/spekko-long-grain-parboiled-white-rice-2kg_1.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Rice%2C-Pasta%2C-Noodles-and-Cous-Cous/Spekko-Long-Grain-Parboiled-White-Rice-2kg/p/10133205EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

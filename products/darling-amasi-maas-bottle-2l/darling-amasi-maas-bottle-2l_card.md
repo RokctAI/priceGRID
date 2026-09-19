@@ -14,11 +14,10 @@ Relish the authentic taste of South Africa with Darling Amasi Maas. This 2L bott
 - **Main Barcode**: 6005277000108
 
 ## Images
-- images/darling-amasi-maas-bottle-2l_0x0.jpg
-- images/darling-amasi-maas-bottle-2l_0x0_1.jpg
+- images/darling-amasi-maas-bottle-2l_0.jpg
+- images/darling-amasi-maas-bottle-2l_1.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Darling-Amasi-Maas-Bottle-2L/p/10131335EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

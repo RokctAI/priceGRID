@@ -48,14 +48,13 @@ Contains: Milk
 | Serving Size |  | 250m |
 
 ## Images
-- images/crystal-valley-full-cream-milk-1l_0x0.jpg
-- images/crystal-valley-full-cream-milk-1l_0x0_1.jpg
-- images/crystal-valley-full-cream-milk-1l_0x0_2.jpg
-- images/crystal-valley-full-cream-milk-1l_0x0_3.jpg
-- images/crystal-valley-full-cream-milk-1l_0x0_4.jpg
+- images/crystal-valley-full-cream-milk-1l_0.jpg
+- images/crystal-valley-full-cream-milk-1l_1.jpg
+- images/crystal-valley-full-cream-milk-1l_2.jpg
+- images/crystal-valley-full-cream-milk-1l_3.jpg
+- images/crystal-valley-full-cream-milk-1l_4.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Crystal-Valley-Full-Cream-Milk-1L/p/10127467EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

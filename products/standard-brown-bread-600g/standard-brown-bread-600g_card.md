@@ -16,11 +16,10 @@ and are of the highest quality.
 - **Main Barcode**: 178
 
 ## Images
-- images/standard-brown-bread-600g_0x0.jpg
-- images/standard-brown-bread-600g_0x0_1.jpg
+- images/standard-brown-bread-600g_0.jpg
+- images/standard-brown-bread-600g_1.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Standard-Brown-Bread-600g/p/10141147EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

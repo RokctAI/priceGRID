@@ -12,14 +12,13 @@ Elevate your burger experience with our single, freshly baked white hamburger ro
 - **Main Barcode**: 2483710000009
 
 ## Images
-- images/hamburger-roll_0x0.jpg
-- images/hamburger-roll_0x0_1.jpg
-- images/hamburger-roll_0x0_2.jpg
-- images/hamburger-roll_0x0_3.jpg
-- images/hamburger-roll_0x0_4.jpg
+- images/hamburger-roll_0.jpg
+- images/hamburger-roll_1.jpg
+- images/hamburger-roll_2.jpg
+- images/hamburger-roll_3.jpg
+- images/hamburger-roll_4.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Hamburger-Roll/p/10151456EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

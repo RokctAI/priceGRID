@@ -27,14 +27,13 @@ It makes a delicious sandwich filler Perfect for adding to salads, pasta bakes, 
 - **Halaal**: Yes
 
 ## Images
-- images/lucky-star-pilchards-in-tomato-sauce-400g_0x0.jpg
-- images/lucky-star-pilchards-in-tomato-sauce-400g_0x0_1.jpg
-- images/lucky-star-pilchards-in-tomato-sauce-400g_0x0_2.jpg
-- images/lucky-star-pilchards-in-tomato-sauce-400g_0x0_3.jpg
-- images/lucky-star-pilchards-in-tomato-sauce-400g_0x0_4.jpg
+- images/lucky-star-pilchards-in-tomato-sauce-400g_0.jpg
+- images/lucky-star-pilchards-in-tomato-sauce-400g_1.jpg
+- images/lucky-star-pilchards-in-tomato-sauce-400g_2.jpg
+- images/lucky-star-pilchards-in-tomato-sauce-400g_3.jpg
+- images/lucky-star-pilchards-in-tomato-sauce-400g_4.jpg
 
 ## Meta
-- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Canned-Food/Lucky-Star-Pilchards-in-Tomato-Sauce-400g/p/10185083EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers
