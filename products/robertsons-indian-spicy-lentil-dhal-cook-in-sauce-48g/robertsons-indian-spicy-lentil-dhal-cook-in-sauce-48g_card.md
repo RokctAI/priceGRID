@@ -7,6 +7,7 @@
 Bring the spicy aromas and enticing flavours of India together in a tasty lentil dhal dish when you keep this dry cook-in-sauce in the pantry. It includes yellow lentils and delicious spices and is quick and easy to prepare.
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

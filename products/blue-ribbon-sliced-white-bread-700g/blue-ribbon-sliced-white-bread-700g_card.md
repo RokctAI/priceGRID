@@ -7,6 +7,7 @@
 Consistently delivering the taste and quality you expect, Blue Ribbon Sliced White Bread is a versatile and delicious option for any meal, that's a source of vitamin D. Perfect for family meals or gatherings, its soft texture and even slices make it ideal for sandwiches, toast, or as a side dish.
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

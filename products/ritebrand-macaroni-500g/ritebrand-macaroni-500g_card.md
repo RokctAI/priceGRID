@@ -4,7 +4,7 @@
 - **Current Price**: R14.99
 
 ## Description
-Savour the taste of Ritebrand Macaroni, perfect for busy weeknights. Cooks to perfection in 9–11 minutes, ideal for mac and cheese or hearty bakes. Enjoy its smooth, consistent texture in every bite.
+Savour the taste of Ritebrand Macaroni, perfect for busy weeknights. Cooks to perfection in 9â€“11 minutes, ideal for mac and cheese or hearty bakes. Enjoy its smooth, consistent texture in every bite.
 
 ## Ingredients
 Wheat Flour (Gluten), Water, Colourants (Quinoline Yellow, Sunset Yellow)
@@ -34,6 +34,7 @@ Quick cooking time Suitable for family meals Cooks in 9-11 minutes Source of fib
 - **Kosher**: Yes
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

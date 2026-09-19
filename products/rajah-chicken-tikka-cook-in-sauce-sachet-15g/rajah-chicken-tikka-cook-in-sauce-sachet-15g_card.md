@@ -7,6 +7,7 @@
 Craft authentic Indian Chicken Tikka effortlessly with Rajah's 15g pure spice sachet. This vibrant blend instantly transforms four servings into a trendy, flavourful meal for family and friends.
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

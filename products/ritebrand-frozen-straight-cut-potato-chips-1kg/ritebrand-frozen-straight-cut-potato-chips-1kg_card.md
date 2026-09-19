@@ -30,6 +30,7 @@ Versatile cooking options (baked, fried, or air-fried) Ideal as a side dish Stra
 - **Kosher**: Yes
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

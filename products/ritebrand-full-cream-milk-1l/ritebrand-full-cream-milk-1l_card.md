@@ -34,6 +34,7 @@ Rich and creamy texture Versatile use in beverages, desserts, baking, and sauces
 - **Kosher**: Yes
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

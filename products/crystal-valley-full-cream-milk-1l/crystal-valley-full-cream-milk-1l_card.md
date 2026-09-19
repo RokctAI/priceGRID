@@ -13,7 +13,7 @@ Pasteurised Full Cream Milk
 Contains: Milk
 
 ## Benefits & Features
-• Made from high-quality cow's milk • Pasteurised and homogenised • Rich and creamy texture • Ideal for drinking, cooking and baking
+â€¢ Made from high-quality cow's milk â€¢ Pasteurised and homogenised â€¢ Rich and creamy texture â€¢ Ideal for drinking, cooking and baking
 
 ## Specifications
 - **Product Brand**: Crystal Valley
@@ -29,10 +29,11 @@ Contains: Milk
 - **Ingredients**: Pasteurised Full Cream Milk
 - **Allergens**: Contains: Milk
 - **Serving Size**: 250ml
-- **Benefits & Features**: • Made from high-quality cow's milk • Pasteurised and homogenised • Rich and creamy texture • Ideal for drinking, cooking and baking
+- **Benefits & Features**: â€¢ Made from high-quality cow's milk â€¢ Pasteurised and homogenised â€¢ Rich and creamy texture â€¢ Ideal for drinking, cooking and baking
 - **Halaal**: Yes
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Milk   Nutritional Information  Per | 100g |  |

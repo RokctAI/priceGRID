@@ -15,6 +15,7 @@ Huletts sugar has small granules that dissolve quickly and easily, giving you in
 - **Main Barcode**: 6001042000304
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

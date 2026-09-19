@@ -35,6 +35,7 @@ Free from mineral and added extraneous organic acids  High in polyunsaturated fa
 - **Kosher**: Yes
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |
