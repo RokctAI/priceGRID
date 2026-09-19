@@ -14,6 +14,9 @@ from scraper import (
     JS_PRICE_EXTRACTION,
     get_hardened_context,
     get_stealthy_page,
+    get_proxy_config,
+    EXIT_OK,
+    EXIT_BLOCKED,
 )
 
 # Setup logging
@@ -228,14 +231,21 @@ def maintain_images():
     logger.info("Image maintenance complete.")
 
 
-async def update_price(context, card_path: str):
+async def update_price(context, card_path: str) -> Optional[bool]:
+    """
+    Refresh one card's price.
+
+    Returns True when the product page was actually fetched, False when the
+    fetch failed, and None when there was no URL to fetch. The caller counts
+    these: a run where every fetch failed is a blocked run, not a quiet one.
+    """
     with open(card_path, "r", encoding="utf-8") as f:
         content = f.read()
 
     match = re.search(r"- \*\*Source\*\*: (https://www\.shoprite\.co\.za/.*)", content)
     if not match:
         logger.warning(f"Could not find source URL in {card_path}")
-        return
+        return None
 
     url = match.group(1).strip()
     logger.info(f"Updating price for: {url}")
@@ -253,10 +263,10 @@ async def update_price(context, card_path: str):
                 logger.error(
                     f"Failed to load {url} (Status: {status}). Skipping product."
                 )
-                return
+                return False
         except Exception as e:
             logger.error(f"Exception loading {url}: {e}")
-            return
+            return False
 
         await page.evaluate("window.scrollTo(0, document.body.scrollHeight / 2)")
         await page.wait_for_timeout(3000)
@@ -269,7 +279,7 @@ async def update_price(context, card_path: str):
 
         if not current_price:
             logger.warning(f"Could not extract current price for {url}")
-            return
+            return True
 
         price_section = f"## Price\n- **Current Price**: R{current_price}"
         if prices.get("is_card_price"):
@@ -292,8 +302,11 @@ async def update_price(context, card_path: str):
         else:
             logger.info(f"Price unchanged for {card_path}")
 
+        return True
+
     except Exception as e:
         logger.error(f"Error updating price for {url}: {e}")
+        return False
     finally:
         if page:
             await page.close()
@@ -317,6 +330,7 @@ async def main():
                     "--no-sandbox",
                     "--disable-dev-shm-usage",
                 ],
+                proxy=get_proxy_config(),
             )
             context = await get_hardened_context(browser)
 
@@ -324,7 +338,7 @@ async def main():
             if not os.path.exists(products_root):
                 logger.info("No products folder found.")
                 await browser.close()
-                return
+                return EXIT_OK
 
             cards = []
             for root, dirs, files in os.walk(products_root):
@@ -347,14 +361,33 @@ async def main():
                 await temp_page.close()
 
             logger.info(f"Found {len(cards)} product cards to update.")
+            fetched = 0
+            failed = 0
             for card_path in cards:
-                await update_price(context, card_path)
+                outcome = await update_price(context, card_path)
+                if outcome is True:
+                    fetched += 1
+                elif outcome is False:
+                    failed += 1
                 await asyncio.sleep(random.uniform(3, 7))
 
             await browser.close()
+            logger.info(f"Price pass: {fetched} fetched, {failed} failed.")
+
+            # Every single fetch failing is a block, not bad luck with a few
+            # products. Reporting success there would leave the schedule
+            # looking healthy while no price had been refreshed in months.
+            if failed and not fetched:
+                logger.error(
+                    f"All {failed} product fetches failed. Treating this run as "
+                    "a failure rather than reporting a successful no-op."
+                )
+                maintain_images()
+                return EXIT_BLOCKED
 
     maintain_images()
+    return EXIT_OK
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    sys.exit(asyncio.run(main()))
