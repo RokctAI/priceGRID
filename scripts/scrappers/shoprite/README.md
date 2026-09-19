@@ -4,40 +4,68 @@ This directory contains scripts to scrape product information from the PriceGrid
 
 ## Scripts
 
-### 1. `scraper.py`
+### 1. `catalogue_api.py`
 
-The main scraper script that fetches product details from category pages.
+The catalogue layer. Both storefronts run the same front end, which serves its
+data as JSON from `POST /api/catalogue/get-products-filter` rather than as
+markup. This module discovers departments, pages through their products
+and reads a single product's record off its page.
+
+A WAF fronts both sites and issues a JavaScript challenge, so plain HTTP
+clients get 403 where a browser gets 200. Every call here is therefore made from
+inside a Playwright page, which already holds the WAF token.
+
+### 2. `scraper.py`
+
+The main scraper. It walks every department and writes a markdown card per
+product.
 
 **Usage:**
+
 ```bash
-python3 .rokct/scripts/scrappers/shoprite/scraper.py [args]
+python3 scripts/scrappers/shoprite/scraper.py [args]
 ```
 
 **Arguments:**
-- `--category`: The category slug or full URL to scrape. Defaults to "All-Departments".
-- `--limit`: Limit the number of products to scrape (useful for testing). Default is 0 (no limit).
+
+- `--store`: `shoprite` (default) or `checkers`.
+- `--category`: only scrape departments whose path contains this text, e.g.
+  `bakery`. Defaults to all of them.
+- `--limit`: stop after this many new cards. Default is 0 (no limit).
+- `--page-size`: products per API request. Default is 50.
+- `--headless`: run the browser headless. CI sets this.
+- `--legacy-html`: use the pre-2026 HTML scrape instead. Kept for reference;
+  the pages it reads no longer exist.
 
 **Functionality:**
-- Extracts: Product Name, Price (Current/Was), Description, Nutrition Data, and Images.
-- Uses Playwright (headless) for JavaScript rendering.
-- Implements a 1-second polite delay between requests.
-- Deduplicates by skipping products that already have a markdown card.
-- Logs to `.rokct/agent/logs/shoprite_scraper.log` and `.rokct/agent/logs/shoprite_failures.log`.
 
-### 2. `update_prices.py`
+- Extracts: name, current and previous price, promotion state, description,
+  brand, barcode and images.
+- Deduplicates by product id within a run, and skips products that already have
+  a card.
+- Exits non-zero when it cannot read the catalogue, so a blocked run fails
+  rather than quietly committing nothing.
+- Logs to `.rokct/agent/logs/shoprite_scraper.log` and
+  `.rokct/agent/logs/shoprite_failures.log`.
 
-A script to re-scrape and update prices for products that have already been scraped.
+### 3. `maintain.py`
+
+Refreshes prices on cards that already exist, then tidies the images.
 
 **Usage:**
+
 ```bash
-python3 .rokct/scripts/scrappers/shoprite/update_prices.py
+python3 scripts/scrappers/shoprite/maintain.py [--images-only]
 ```
 
 **Functionality:**
-- Iterates through all `.md` cards in the `products/` directory.
-- Fetches the current price and was-price from the source URL.
-- Updates the markdown card if the price has changed.
-- Reuses the price extraction logic from `scraper.py`.
+
+- Iterates every `_card.md` under `products/` and re-reads its Source URL.
+- Updates the Price section when it has changed.
+- Renames images after their real dimensions; a product whose dimensions cannot
+  be read is left alone rather than renamed to `_0x0`.
+- Exits non-zero when every fetch failed, which is what being blocked looks
+  like.
 
 ## Output Structure
 

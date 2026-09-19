@@ -9,9 +9,8 @@ from typing import Optional, Dict
 from playwright.async_api import async_playwright
 
 sys.path.append(os.path.dirname(__file__))
+import catalogue_api
 from scraper import (
-    extract_price_from_page,
-    JS_PRICE_EXTRACTION,
     get_hardened_context,
     get_stealthy_page,
     get_proxy_config,
@@ -254,40 +253,28 @@ async def update_price(context, card_path: str) -> Optional[bool]:
     try:
         page = await get_stealthy_page(context)
         try:
-            response = await page.goto(
-                url, wait_until="domcontentloaded", timeout=60000
-            )
-            status = response.status if response else "No Response"
-
-            if not response or status != 200:
-                logger.error(
-                    f"Failed to load {url} (Status: {status}). Skipping product."
-                )
-                return False
+            product = await catalogue_api.fetch_product_by_url(page, url)
         except Exception as e:
             logger.error(f"Exception loading {url}: {e}")
             return False
 
-        await page.evaluate("window.scrollTo(0, document.body.scrollHeight / 2)")
-        await page.wait_for_timeout(3000)
+        if product is None:
+            logger.error(f"Could not read product data at {url}. Skipping product.")
+            return False
 
-        data = await page.evaluate(JS_PRICE_EXTRACTION)
-
-        prices = extract_price_from_page(data)
+        prices = catalogue_api.extract_prices(product)
         current_price = prices["current_price"]
         was_price = prices["was_price"]
 
-        if not current_price:
+        if current_price is None:
             logger.warning(f"Could not extract current price for {url}")
             return True
 
         price_section = f"## Price\n- **Current Price**: R{current_price}"
-        if prices.get("is_card_price"):
-            price_section += " (WITH CARD)"
         if was_price:
             price_section += f"\n- **Was**: R{was_price}"
-        if prices.get("promotion_dates"):
-            price_section += f"\n- **Validity**: {prices.get('promotion_dates')}"
+        if prices["is_on_promotion"]:
+            price_section += "\n- **On Promotion**: yes"
 
         new_content = re.sub(
             r"## Price\n(?:- .*\n?)*\n(?=## Description)",
