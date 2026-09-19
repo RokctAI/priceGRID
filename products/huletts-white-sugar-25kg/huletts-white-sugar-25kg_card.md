@@ -26,10 +26,11 @@ Huletts sugar has small granules that dissolve quickly and easily, giving you in
 | Energy |  | 68kJ |
 
 ## Images
-- images/huletts-white-sugar-25kg_0.jpg
-- images/huletts-white-sugar-25kg_1.jpg
+- images/huletts-white-sugar-25kg_0x0.jpg
+- images/huletts-white-sugar-25kg_0x0_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Sugar-and-Sweeteners/Huletts-White-Sugar-2-5kg/p/10141796EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

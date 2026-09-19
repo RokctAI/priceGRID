@@ -50,12 +50,13 @@ Source of fibreIn smooth tomato sauce Tangy and savoury taste Delicious on its o
 
 ## Images
 - images/ritebrand-baked-beans-in-tomato-sauce-410g_0.jpg
-- images/ritebrand-baked-beans-in-tomato-sauce-410g_1.jpg
+- images/ritebrand-baked-beans-in-tomato-sauce-410g_0x0.jpg
 - images/ritebrand-baked-beans-in-tomato-sauce-410g_2.jpg
-- images/ritebrand-baked-beans-in-tomato-sauce-410g_3.jpg
+- images/ritebrand-baked-beans-in-tomato-sauce-410g_0x0_1.jpg
 - images/ritebrand-baked-beans-in-tomato-sauce-410g_4.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Canned-Food/Ritebrand-Baked-Beans-in-Tomato-Sauce-410g/p/10137752EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

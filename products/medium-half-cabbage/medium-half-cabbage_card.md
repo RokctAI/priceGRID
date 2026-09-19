@@ -21,13 +21,14 @@ Smooth-leafed Tight-headed varieties Loose-leafed for continuous picking Excitin
 - **Benefits & Features**: Smooth-leafed Tight-headed varieties Loose-leafed for continuous picking Exciting mild and tender taste Good for sauerkraut Good for coleslaw Suitable for general cooking Smooth leaves for easy handling
 
 ## Images
-- images/medium-half-cabbage_0.jpg
-- images/medium-half-cabbage_1.jpg
-- images/medium-half-cabbage_2.jpg
-- images/medium-half-cabbage_3.jpg
-- images/medium-half-cabbage_4.jpg
+- images/medium-half-cabbage_0x0.jpg
+- images/medium-half-cabbage_0x0_1.jpg
+- images/medium-half-cabbage_0x0_2.jpg
+- images/medium-half-cabbage_0x0_3.jpg
+- images/medium-half-cabbage_0x0_4.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Vegetables/Medium-Half-Cabbage/p/10133089PK3
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

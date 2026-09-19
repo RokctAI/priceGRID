@@ -28,13 +28,14 @@ Source of seleniumGreat tasteSource of minerals & vitaminsKeeps you feeling full
 - **Halaal**: Yes
 
 ## Images
-- images/super-white-super-maize-meal-25kg_0.jpg
-- images/super-white-super-maize-meal-25kg_1.jpg
-- images/super-white-super-maize-meal-25kg_2.jpg
-- images/super-white-super-maize-meal-25kg_3.jpg
-- images/super-white-super-maize-meal-25kg_4.jpg
+- images/super-white-super-maize-meal-25kg_0x0.jpg
+- images/super-white-super-maize-meal-25kg_0x0_1.jpg
+- images/super-white-super-maize-meal-25kg_0x0_2.jpg
+- images/super-white-super-maize-meal-25kg_0x0_3.jpg
+- images/super-white-super-maize-meal-25kg_0x0_4.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Breakfast-Cereals%2C-Porridge-and-Pap/Super-White-Super-Maize-Meal-2-5kg/p/10335895EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

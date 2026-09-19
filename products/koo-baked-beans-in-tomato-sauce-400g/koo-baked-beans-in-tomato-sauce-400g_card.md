@@ -50,13 +50,14 @@ Rich, tasty and versatileIt tastes delicious on toast with eggs or mashed potato
 | Serving Size |  | 80g |
 
 ## Images
-- images/koo-baked-beans-in-tomato-sauce-400g_0.jpg
-- images/koo-baked-beans-in-tomato-sauce-400g_1.jpg
-- images/koo-baked-beans-in-tomato-sauce-400g_2.jpg
-- images/koo-baked-beans-in-tomato-sauce-400g_3.jpg
-- images/koo-baked-beans-in-tomato-sauce-400g_4.jpg
+- images/koo-baked-beans-in-tomato-sauce-400g_0x0.jpg
+- images/koo-baked-beans-in-tomato-sauce-400g_0x0_1.jpg
+- images/koo-baked-beans-in-tomato-sauce-400g_0x0_2.jpg
+- images/koo-baked-beans-in-tomato-sauce-400g_0x0_3.jpg
+- images/koo-baked-beans-in-tomato-sauce-400g_0x0_4.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Canned-Food/KOO-Baked-Beans-in-Tomato-Sauce-400g/p/10126789EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

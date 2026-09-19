@@ -7,8 +7,8 @@
 Our bakery offers bread, rolls, French loaves and so much more, these fresh bakes are made with the finest ingredients and are of the highest quality.
 
 ## Images
-- images/standard-white-bread-600g_0.jpg
-- images/standard-white-bread-600g_1.jpg
+- images/standard-white-bread-600g_0x0.jpg
+- images/standard-white-bread-600g_0x0_1.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Standard-White-Bread-600g/p/10141145EA

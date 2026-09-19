@@ -12,13 +12,14 @@ Fresh fruit and vegetables sourced when needed to ensure a wider variety and con
 - **Main Barcode**: 6003678933780
 
 ## Images
-- images/avocado_515x515.jpg
-- images/avocado_515x515_1.jpg
-- images/avocado_1200x1200.jpg
-- images/avocado_515x515_2.jpg
-- images/avocado_1200x1200_1.jpg
+- images/avocado_0x0_2.jpg
+- images/avocado_0x0_3.jpg
+- images/avocado_0x0.jpg
+- images/avocado_0x0_4.jpg
+- images/avocado_0x0_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Salad%2C-Herbs-and-Dip/Avocado/p/10145186EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

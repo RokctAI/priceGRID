@@ -18,10 +18,11 @@ Farm fresh graded shell eggs.
 - **Egg Size**: Large
 
 ## Images
-- images/nulaid-large-eggs-18-pack_0.jpg
-- images/nulaid-large-eggs-18-pack_1.jpg
+- images/nulaid-large-eggs-18-pack_0x0.jpg
+- images/nulaid-large-eggs-18-pack_0x0_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Nulaid-Large-Eggs-18-Pack/p/10125869EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

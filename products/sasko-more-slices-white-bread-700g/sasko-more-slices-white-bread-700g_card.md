@@ -50,10 +50,11 @@ Fortified with essential vitamins & minerals Naturally high in energy Naturally 
 | Serving Size |  | 140g |
 
 ## Images
-- images/sasko-more-slices-white-bread-700g_0.jpg
-- images/sasko-more-slices-white-bread-700g_1.jpg
+- images/sasko-more-slices-white-bread-700g_0x0.jpg
+- images/sasko-more-slices-white-bread-700g_0x0_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/SASKO-More-Slices-White-Bread-700g/p/10241927EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

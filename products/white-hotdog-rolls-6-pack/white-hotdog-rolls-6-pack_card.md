@@ -15,10 +15,11 @@ and are of the highest quality ensuring a fresh and fluffy texture.
 - **Main Barcode**: 2453300000009
 
 ## Images
-- images/white-hotdog-rolls-6-pack_0.jpg
-- images/white-hotdog-rolls-6-pack_1.jpg
+- images/white-hotdog-rolls-6-pack_0x0.jpg
+- images/white-hotdog-rolls-6-pack_0x0_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/White-Hotdog-Rolls-6-Pack/p/10151458PK1
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

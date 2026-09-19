@@ -50,10 +50,11 @@ Quick cooking time Suitable for family meals Cooks in 9-11 minutes Source of fib
 | Serving Size |  | 85g |
 
 ## Images
-- images/ritebrand-macaroni-500g_0.jpg
-- images/ritebrand-macaroni-500g_1.jpg
+- images/ritebrand-macaroni-500g_0x0.jpg
+- images/ritebrand-macaroni-500g_0x0_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Rice%2C-Pasta%2C-Noodles-and-Cous-Cous/Ritebrand-Macaroni-500g/p/10139338EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

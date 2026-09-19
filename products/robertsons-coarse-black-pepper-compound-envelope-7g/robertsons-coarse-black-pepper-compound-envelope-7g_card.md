@@ -46,10 +46,11 @@ Contains gluten. May contain cow's milk, egg and soya.
 | 1g Protein |  | 0.1g |
 
 ## Images
-- images/robertsons-coarse-black-pepper-compound-envelope-7g_0.jpg
-- images/robertsons-coarse-black-pepper-compound-envelope-7g_1.jpg
+- images/robertsons-coarse-black-pepper-compound-envelope-7g_0x0.jpg
+- images/robertsons-coarse-black-pepper-compound-envelope-7g_0x0_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Robertsons-Coarse-Black-Pepper-Compound-Envelope-7g/p/10132087EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

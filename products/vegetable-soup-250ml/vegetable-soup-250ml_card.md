@@ -13,10 +13,11 @@ Delicious and nutritious, Freshly made vegetable soup made with variety of veget
 - **Main Barcode**: 2644320000005
 
 ## Images
-- images/vegetable-soup-250ml_0.jpg
-- images/vegetable-soup-250ml_1.jpg
+- images/vegetable-soup-250ml_0x0.jpg
+- images/vegetable-soup-250ml_0x0_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Cooked-Meats%2C-Sandwich-Fillers-and-Deli/Vegetable-Soup-250ml/p/10636777EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

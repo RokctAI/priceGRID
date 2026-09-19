@@ -27,10 +27,11 @@ Crisp and crunchy texture: Experience the satisfying bite that elevates your dis
 - **Benefits & Features**: Crisp and crunchy texture: Experience the satisfying bite that elevates your dishes. Long, slender cucumber variety: Create striking presentations that impress at any gathering. Effortless slicing with thin skin: Save time in the kitchen while enjoying maximum flavour and nutrition. Versatile ingredient: Perfect for a wide range of culinary creations, from appetisers to main dishes.
 
 ## Images
-- images/english-cucumber-1s_0.jpg
-- images/english-cucumber-1s_1.jpg
+- images/english-cucumber-1s_0x0.jpg
+- images/english-cucumber-1s_0x0_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Salad%2C-Herbs-and-Dip/English-Cucumber-1s/p/10145817EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

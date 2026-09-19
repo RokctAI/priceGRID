@@ -13,10 +13,11 @@ Craft memorable family meals effortlessly with our versatile Pork Pack. Featurin
 - **Main Barcode**: 2338750000000
 
 ## Images
-- images/pork-pack-per-kg_0.jpg
-- images/pork-pack-per-kg_1.jpg
+- images/pork-pack-per-kg_0x0.jpg
+- images/pork-pack-per-kg_0x0_1.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Fresh-Meat-and-Poultry/Pork-Pack-Per-kg/p/10151892KG
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

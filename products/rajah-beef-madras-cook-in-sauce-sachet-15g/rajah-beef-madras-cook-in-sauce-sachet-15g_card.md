@@ -22,11 +22,11 @@ Craft a vibrant beef madras feast for four with this authentic Rajah spice blend
 | Energy |  | 89kJ |
 
 ## Images
-- images/rajah-beef-madras-cook-in-sauce-sachet-15g_0.jpg
-- images/rajah-beef-madras-cook-in-sauce-sachet-15g_1.jpg
-- images/rajah-beef-madras-cook-in-sauce-sachet-15g_2.jpg
-- images/rajah-beef-madras-cook-in-sauce-sachet-15g_3.jpg
-- images/rajah-beef-madras-cook-in-sauce-sachet-15g_4.jpg
+- images/rajah-beef-madras-cook-in-sauce-sachet-15g_0x0.jpg
+- images/rajah-beef-madras-cook-in-sauce-sachet-15g_0x0_1.jpg
+- images/rajah-beef-madras-cook-in-sauce-sachet-15g_0x0_2.jpg
+- images/rajah-beef-madras-cook-in-sauce-sachet-15g_0x0_3.jpg
+- images/rajah-beef-madras-cook-in-sauce-sachet-15g_0x0_4.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Cooking-Ingredients/Rajah-Beef-Madras-Cook-In-Sauce-Sachet-15g/p/10641192EA

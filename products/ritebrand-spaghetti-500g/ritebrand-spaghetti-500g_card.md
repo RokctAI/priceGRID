@@ -51,13 +51,14 @@ Source of fibre, supporting digestive health Cooks in 8 to 10 minutes, saving ti
 | saving time on meal preparation Classic spaghetti shape is ideal for diverse recipes |  | 500g |
 
 ## Images
-- images/ritebrand-spaghetti-500g_0.jpg
-- images/ritebrand-spaghetti-500g_1.jpg
-- images/ritebrand-spaghetti-500g_2.jpg
-- images/ritebrand-spaghetti-500g_3.jpg
-- images/ritebrand-spaghetti-500g_4.jpg
+- images/ritebrand-spaghetti-500g_0x0.jpg
+- images/ritebrand-spaghetti-500g_0x0_1.jpg
+- images/ritebrand-spaghetti-500g_0x0_2.jpg
+- images/ritebrand-spaghetti-500g_0x0_3.jpg
+- images/ritebrand-spaghetti-500g_0x0_4.jpg
 
 ## Meta
+- **Is Platform**: false
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Food-Cupboard/Rice%2C-Pasta%2C-Noodles-and-Cous-Cous/Ritebrand-Spaghetti-500g/p/10139337EA
 - **Scraped**: 2026-05-20
 - **Store**: Shoprite/Checkers

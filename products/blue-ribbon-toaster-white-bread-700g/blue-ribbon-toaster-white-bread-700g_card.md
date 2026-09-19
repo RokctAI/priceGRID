@@ -24,11 +24,11 @@ Combining taste and convenience for everyday meals or gatherings, Blue Ribbon To
 | Serving Size |  | 150g |
 
 ## Images
-- images/blue-ribbon-toaster-white-bread-700g_515x515.jpg
-- images/blue-ribbon-toaster-white-bread-700g_515x515_1.jpg
-- images/blue-ribbon-toaster-white-bread-700g_1200x1200.jpg
-- images/blue-ribbon-toaster-white-bread-700g_515x515_2.jpg
-- images/blue-ribbon-toaster-white-bread-700g_1000x1000.jpg
+- images/blue-ribbon-toaster-white-bread-700g_0x0_2.jpg
+- images/blue-ribbon-toaster-white-bread-700g_0x0_3.jpg
+- images/blue-ribbon-toaster-white-bread-700g_0x0_1.jpg
+- images/blue-ribbon-toaster-white-bread-700g_0x0_4.jpg
+- images/blue-ribbon-toaster-white-bread-700g_0x0.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Bakery/Bread-and-Rolls/Blue-Ribbon-Toaster-White-Bread-700g/p/10456482EA
