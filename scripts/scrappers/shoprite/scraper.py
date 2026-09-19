@@ -34,12 +34,72 @@ failure_handler.setFormatter(
 failure_logger.addHandler(failure_handler)
 
 BASE_URL = "https://www.shoprite.co.za"
-USER_AGENTS = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
+
+# Exit codes. A blocked run must not report success: the pipeline would commit
+# nothing and the schedule would go on looking healthy while prices went stale.
+EXIT_OK = 0
+EXIT_BLOCKED = 1
+# Each profile pairs a user agent with the client hints that browser would
+# actually send. A Windows UA advertising a Mac platform, or a Firefox UA
+# sending Sec-Ch-Ua at all (Firefox does not implement it), is a contradiction
+# a WAF can match on, so the hints travel with the UA rather than being fixed.
+BROWSER_PROFILES = [
+    {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "sec_ch_ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+        "platform": '"Windows"',
+    },
+    {
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+        "sec_ch_ua": '"Chromium";v="123", "Google Chrome";v="123", "Not-A.Brand";v="99"',
+        "platform": '"macOS"',
+    },
+    {
+        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "sec_ch_ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+        "platform": '"Linux"',
+    },
+    {
+        # Firefox sends no client hints. The engine underneath is Chromium, so
+        # this profile is the least convincing of the four; it stays in the
+        # rotation rather than being dropped, but without the hints that would
+        # give it away outright.
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
+        "sec_ch_ua": None,
+        "platform": None,
+    },
 ]
+
+# Kept for callers that only need a UA string (e.g. the plain requests fallback).
+USER_AGENTS = [p["user_agent"] for p in BROWSER_PROFILES]
+
+
+def get_proxy_config() -> Optional[Dict[str, str]]:
+    """
+    Playwright proxy settings from PRICEGRID_PROXY, or None when unset.
+
+    Shoprite's CDN refuses GitHub's runner addresses outright, so the scrape
+    only reaches the site from an egress it will accept. Set PRICEGRID_PROXY to
+    a proxy URL (http://user:pass@host:port) to route through one; the value is
+    a credential, so only the scheme and host are ever logged.
+    """
+    raw = os.environ.get("PRICEGRID_PROXY", "").strip()
+    if not raw:
+        return None
+
+    parsed = urlparse(raw)
+    if not parsed.hostname:
+        logger.error("PRICEGRID_PROXY is set but is not a valid URL; ignoring it.")
+        return None
+
+    config = {"server": f"{parsed.scheme}://{parsed.hostname}:{parsed.port or 8080}"}
+    if parsed.username:
+        config["username"] = parsed.username
+    if parsed.password:
+        config["password"] = parsed.password
+
+    logger.info(f"Routing through proxy {parsed.scheme}://{parsed.hostname}")
+    return config
 
 
 # Shared JavaScript logic for price extraction
@@ -179,23 +239,25 @@ def extract_price_from_page(data: Dict[str, Any]) -> Dict[str, Optional[Any]]:
 
 async def get_hardened_context(browser, headless: bool = False):
     """Creates a browser context with hardened fingerprints to avoid bot detection."""
+    profile = random.choice(BROWSER_PROFILES)
+
+    # Only headers a real browser sends identically on every request belong
+    # here. Accept and the Sec-Fetch-* family are per-request: Chromium already
+    # sets them correctly, and pinning them context-wide makes every image and
+    # XHR announce itself as a top-level document navigation, which is a
+    # stronger bot signal than sending nothing at all.
+    headers = {"Accept-Language": "en-ZA,en;q=0.9"}
+    if profile["sec_ch_ua"]:
+        headers["Sec-Ch-Ua"] = profile["sec_ch_ua"]
+        headers["Sec-Ch-Ua-Mobile"] = "?0"
+        headers["Sec-Ch-Ua-Platform"] = profile["platform"]
+
     context = await browser.new_context(
-        user_agent=random.choice(USER_AGENTS),
+        user_agent=profile["user_agent"],
         viewport={"width": 1920, "height": 1080},
         locale="en-ZA",
         timezone_id="Africa/Johannesburg",
-        extra_http_headers={
-            "Accept-Language": "en-ZA,en;q=0.9",
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-            "Sec-Ch-Ua": '"Not-A.Brand";v="99", "Chromium";v="124", "Google Chrome";v="124"',
-            "Sec-Ch-Ua-Mobile": "?0",
-            "Sec-Ch-Ua-Platform": '"Windows"',
-            "Sec-Fetch-Dest": "document",
-            "Sec-Fetch-Mode": "navigate",
-            "Sec-Fetch-Site": "none",
-            "Sec-Fetch-User": "?1",
-            "Upgrade-Insecure-Requests": "1",
-        },
+        extra_http_headers=headers,
     )
     return context
 
@@ -579,6 +641,7 @@ async def main():
                 "--no-sandbox",
                 "--disable-dev-shm-usage",
             ],
+            proxy=get_proxy_config(),
         )
         context = await get_hardened_context(browser, headless=args.headless)
         # Two separate pages: cat_page browses category listings, page scrapes products.
@@ -647,7 +710,9 @@ async def main():
                 f"Final response status: {response.status if response else 'No Response'}"
             )
             logger.info(f"Page title: {page_info['title']}")
-            if page_info["isBlocked"]:
+            status = response.status if response else None
+            blocked = page_info["isBlocked"] or (status is not None and status != 200)
+            if blocked:
                 logger.error("Detected bot blocking or access denial page.")
             if page_info["isMaintenance"]:
                 logger.warning("Site appears to be in maintenance mode.")
@@ -663,6 +728,18 @@ async def main():
                 screenshot_path = f".rokct/agent/logs/category_debug_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
                 await cat_page.screenshot(path=screenshot_path)
                 logger.info(f"Saved debug screenshot to {screenshot_path}")
+
+            # A blocked catalogue page yields nothing, and carrying on to report
+            # success would leave prices silently stale. Reaching the catalogue
+            # and finding it empty is the same outcome for this run's purposes:
+            # there is nothing to scrape and something is wrong upstream.
+            if blocked or len(product_links) == 0:
+                logger.error(
+                    f"Could not read the catalogue at {cat_url} "
+                    f"(status {status}, {len(product_links)} product links). "
+                    "Treating this run as a failure."
+                )
+                return EXIT_BLOCKED
 
             scraped_count = 0
             seen_links: set = set(product_links)
@@ -693,7 +770,7 @@ async def main():
                             f"Reached limit of {args.limit} new products scraped"
                         )
                         await browser.close()
-                        return
+                        return EXIT_OK
 
                     url_slug = extract_slug_from_url(link)
                     if url_slug:
@@ -743,11 +820,14 @@ async def main():
                     logger.error(f"[Cat page {cat_page_num}] Failed to load: {e}")
                     break
 
+            return EXIT_OK
+
         except Exception as e:
             logger.error(f"Failed to scrape category {cat_url}: {e}")
+            return EXIT_BLOCKED
         finally:
             await browser.close()
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    sys.exit(asyncio.run(main()))
