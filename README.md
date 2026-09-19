@@ -39,7 +39,7 @@ playwright install chromium
 1.  **Scraping & Maintenance**:
     Execute the scrapers to fetch new data or update existing records.
     ```bash
-    python3 scripts/scrappers/{source}/scraper.py --category <URL>
+    python3 scripts/scrappers/{source}/scraper.py --store shoprite --limit 20
     python3 scripts/scrappers/{source}/maintain.py
     ```
 

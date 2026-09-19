@@ -12,6 +12,9 @@ import requests
 import time
 from playwright.async_api import async_playwright
 
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+import catalogue_api
+
 
 # Setup logging
 os.makedirs(".rokct/agent/logs", exist_ok=True)
@@ -603,7 +606,16 @@ JS_GET_PRODUCT_LINKS = """() => {
 }"""
 
 
-async def main():
+async def main_html_legacy():
+    """
+    The pre-2026 scrape: walk /c-<id>/<Name> category pages and parse product
+    markup out of the HTML.
+
+    The retailer replaced that front end, so these paths now redirect to the
+    homepage and the selectors below match nothing. It is kept, and reachable
+    with --legacy-html, because it is the only record of how the old site was
+    read and it costs nothing to leave in place.
+    """
     parser = argparse.ArgumentParser(description="PriceGrid Product Scraper")
     parser.add_argument(
         "--category", type=str, default="All-Departments", help="Category to scrape"
@@ -824,6 +836,233 @@ async def main():
 
         except Exception as e:
             logger.error(f"Failed to scrape category {cat_url}: {e}")
+            return EXIT_BLOCKED
+        finally:
+            await browser.close()
+
+
+def write_card_from_api(
+    product: Dict[str, Any], department: Optional["catalogue_api.Department"] = None
+) -> str:
+    """
+    Write one product card from an API record.
+
+    Returns "scraped" when a card was written, "skipped" when one already
+    exists, and "failed" when the record had no usable name. The card layout is
+    unchanged from the HTML scrape so existing cards, the publisher and the
+    maintenance pass all keep working; only where the values come from is new.
+    """
+    name = product.get("displayName") or product.get("name")
+    if not name:
+        logger.error(f"API record {product.get('id')} has no name; skipping.")
+        failure_logger.error(f"No name on product id {product.get('id')}")
+        return "failed"
+
+    product_slug = slugify(name)
+    product_dir = f"products/{product_slug}"
+    card_path = f"{product_dir}/{product_slug}_card.md"
+
+    if os.path.exists(card_path):
+        logger.info(f"Skipping {product_slug}, card already exists.")
+        return "skipped"
+
+    os.makedirs(f"{product_dir}/images", exist_ok=True)
+
+    prices = catalogue_api.extract_prices(product)
+    url = catalogue_api.product_url(product)
+
+    headers = {"User-Agent": random.choice(USER_AGENTS)}
+    image_filenames: List[str] = []
+    for img_url in catalogue_api.image_urls(product):
+        try:
+            img_response = requests.get(img_url, headers=headers, timeout=15)
+            if img_response.status_code != 200:
+                logger.warning(
+                    f"Failed to download image {img_url}, status: {img_response.status_code}"
+                )
+                continue
+            filename = f"{product_slug}_{len(image_filenames)}.jpg"
+            with open(f"{product_dir}/images/{filename}", "wb") as f:
+                f.write(img_response.content)
+            image_filenames.append(filename)
+        except Exception as e:
+            logger.warning(f"Failed to download image {img_url}: {e}")
+
+    was_price_line = (
+        f"\n- **Was**: R{prices['was_price']}" if prices["was_price"] else ""
+    )
+    promo_line = "\n- **On Promotion**: yes" if prices["is_on_promotion"] else ""
+
+    description = (
+        catalogue_api.plain_text(product.get("longDescription"))
+        or catalogue_api.plain_text(product.get("description"))
+        or catalogue_api.plain_text(product.get("shortDescription"))
+        or "No description available."
+    )
+
+    # Facts the API gives outright. The HTML scrape had to dig these out of
+    # tables and often missed them, so they are worth recording plainly.
+    spec_pairs = [
+        # "Product Brand" and "Sub Brand" are the keys the cards already in the
+        # repo use; a plain "Brand" here would split the same fact across two
+        # names and break anything reading the older cards.
+        ("Product Brand", catalogue_api.brand_of(product, department)),
+        ("Sub Brand", product.get("subBrand")),
+        ("Pack Size", product.get("packSize") or None),
+        ("Unit of Measure", product.get("unitOfMeasure")),
+        ("Barcode", ", ".join(product.get("barcodes") or []) or None),
+        ("Manufacturer", product.get("manufacturer")),
+        ("Ingredients", product.get("activeIngredient")),
+    ]
+    specs_md = "\n".join(f"- **{k}**: {v}" for k, v in spec_pairs if v)
+    additional_info = f"\n## Specifications\n{specs_md}\n" if specs_md else ""
+
+    images_list = "\n".join(f"- images/{fn}" for fn in image_filenames)
+
+    card_content = f"""# {name}
+
+## Price
+- **Current Price**: R{prices["current_price"] if prices["current_price"] is not None else "N/A"}{was_price_line}{promo_line}
+
+## Description
+{description}
+{additional_info}
+## Images
+{images_list}
+
+## Meta
+- **Source**: {url}
+- **Product ID**: {product.get("id")}
+- **Scraped**: {datetime.date.today().isoformat()}
+- **Store**: {catalogue_api.BASE_URL.split("//")[-1]}
+- **Is Platform**: false
+"""
+    with open(card_path, "w", encoding="utf-8") as f:
+        f.write(card_content)
+
+    logger.info(f"Successfully scraped {product_slug}")
+    return "scraped"
+
+
+async def main():
+    parser = argparse.ArgumentParser(description="PriceGrid Product Scraper")
+    parser.add_argument(
+        "--category",
+        type=str,
+        default="",
+        help="Only scrape departments whose path contains this text.",
+    )
+    parser.add_argument("--limit", type=int, default=0, help="Limit number of products")
+    parser.add_argument(
+        "--page-size", type=int, default=50, help="Products per API request"
+    )
+    parser.add_argument(
+        "--headless",
+        action="store_true",
+        default=False,
+        help="Run browser in headless mode (default: False for local, set True for CI)",
+    )
+    parser.add_argument(
+        "--store",
+        type=str,
+        default="shoprite",
+        choices=sorted(catalogue_api.STORES),
+        help="Which storefront to scrape.",
+    )
+    parser.add_argument(
+        "--legacy-html",
+        action="store_true",
+        help="Use the pre-2026 HTML scrape instead of the catalogue API.",
+    )
+    args, _ = parser.parse_known_args()
+
+    if args.legacy_html:
+        return await main_html_legacy()
+
+    base_url = catalogue_api.set_store(args.store)
+    logger.info(f"Scraping {args.store} at {base_url}")
+
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(
+            headless=args.headless,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-dev-shm-usage",
+            ],
+            proxy=get_proxy_config(),
+        )
+        context = await get_hardened_context(browser, headless=args.headless)
+        page = await get_stealthy_page(context)
+
+        try:
+            departments = await catalogue_api.discover_departments(page)
+            if args.category:
+                needle = args.category.lower()
+                departments = [
+                    d for d in departments if needle in f"{d.section}/{d.slug}".lower()
+                ]
+                logger.info(
+                    f"Filtered to {len(departments)} departments matching "
+                    f"'{args.category}'."
+                )
+
+            # No departments means the menu did not render, which is what a WAF
+            # challenge or another front-end rebuild looks like from here. There
+            # is nothing to scrape and the run must say so.
+            if not departments:
+                logger.error(
+                    "Found no departments to scrape. Either the site changed "
+                    "again or the request was refused. Treating this run as a "
+                    "failure."
+                )
+                return EXIT_BLOCKED
+
+            scraped = 0
+            seen_ids: set = set()
+            reached_limit = False
+
+            for dept in departments:
+                if reached_limit:
+                    break
+                logger.info(f"Scraping department: {dept.section}/{dept.slug}")
+                try:
+                    async for product in catalogue_api.iter_department_products(
+                        page, dept, page_size=args.page_size
+                    ):
+                        # Products sit in several categories at once, so the
+                        # same record arrives more than once across a full run.
+                        if product.get("id") in seen_ids:
+                            continue
+                        seen_ids.add(product.get("id"))
+
+                        if write_card_from_api(product, dept) == "scraped":
+                            scraped += 1
+                            logger.info(f"[{scraped} scraped] {product.get('name')}")
+                            if args.limit > 0 and scraped >= args.limit:
+                                logger.info(f"Reached limit of {args.limit} products.")
+                                reached_limit = True
+                                break
+                        await asyncio.sleep(random.uniform(0.2, 0.6))
+                except Exception as e:
+                    logger.error(f"Department {dept.slug} failed: {e}")
+
+            logger.info(f"Saw {len(seen_ids)} products, wrote {scraped} new cards.")
+
+            # Reaching the catalogue and reading nothing out of it is the same
+            # outcome as being refused: nothing was scraped and something
+            # upstream is wrong. Cards that already exist are not a failure.
+            if not seen_ids:
+                logger.error(
+                    "Read no products from any department. Treating this run as "
+                    "a failure."
+                )
+                return EXIT_BLOCKED
+
+            return EXIT_OK
+
+        except Exception as e:
+            logger.error(f"Scrape failed: {e}")
             return EXIT_BLOCKED
         finally:
             await browser.close()
