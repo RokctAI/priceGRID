@@ -31,6 +31,7 @@ Rich, tasty and versatileIt tastes delicious on toast with eggs or mashed potato
 - **Kosher**: Yes
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Spices   Nutritional Information  Per | 100g |  |

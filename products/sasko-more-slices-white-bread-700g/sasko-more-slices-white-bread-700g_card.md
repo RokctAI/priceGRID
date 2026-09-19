@@ -32,6 +32,7 @@ Fortified with essential vitamins & minerals Naturally high in energy Naturally 
 - **Sub Brand**: More Slices
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

@@ -7,6 +7,7 @@
 For all your morning cereal bowls to your cup of coffee and milk for fulfilling treat.
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

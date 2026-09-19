@@ -36,6 +36,7 @@ Contains 70% fat for rich flavour  Suitable for cooking, frying, and baking  Ric
 - **Kosher**: Yes
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

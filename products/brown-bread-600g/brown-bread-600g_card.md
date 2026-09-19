@@ -32,6 +32,7 @@ Pre-sliced for convenience Soft texture Versatile for various recipes Perfect fo
 - **Benefits & Features**: Pre-sliced for convenience Soft texture Versatile for various recipes Perfect for your favourite sandwich or snack Can be enjoyed toasted
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

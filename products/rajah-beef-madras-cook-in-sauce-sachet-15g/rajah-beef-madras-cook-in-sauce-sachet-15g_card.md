@@ -7,6 +7,7 @@
 Craft a vibrant beef madras feast for four with this authentic Rajah spice blend. Effortlessly create a trendy, flavour-rich Indian curry that delights family and friends.
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

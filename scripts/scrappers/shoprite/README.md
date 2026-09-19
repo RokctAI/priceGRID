@@ -43,7 +43,7 @@ python3 .rokct/scripts/scrappers/shoprite/update_prices.py
 
 The scraped data is stored in the `products/` directory:
 
-```
+```text
 products/
 └── {product-slug}/
     ├── images/
@@ -66,6 +66,7 @@ products/
 {description}
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | ...      | ...      | ...         |

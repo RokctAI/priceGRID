@@ -34,6 +34,7 @@ Smooth textureTangy taste Versatile condiment or ingredient Ideal for spreading 
 - **Kosher**: Yes
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | soya   Nutritional Information  Per | 100g |  |

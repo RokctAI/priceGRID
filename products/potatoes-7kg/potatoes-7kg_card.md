@@ -7,6 +7,7 @@
 Stock up on a versatile kitchen staple with Freshmark Potatoes, packed in a sturdy and easy-to-carry potato pocket. Suitable for boiling, roasting, mashing or baking, this pack offers convenient storage and freshness for family meals, gatherings or regular everyday use.
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Ingredients  Potatoes   Nutritional Information  Per | 100g |  |

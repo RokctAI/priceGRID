@@ -1,4 +1,4 @@
-# Olé 20% Fat Bread Spread 500g
+# OlÃ© 20% Fat Bread Spread 500g
 
 ## Price
 - **Current Price**: R12.99
@@ -10,7 +10,7 @@ Add flavour to fresh, fluffy slice of bread with this creamy bread spread. With 
 Water (78%), Vegetable Fats and Oil (20%) (Palm Fruit, Sunflower, Maize, Canola Seed - Antioxidant as an Additive: TBHQ [E319]), Salt, Emulsifiers [E471, E476], Preservative: Potassium Sorbate [E212], Flavouring, Citric Acid [E330], Beta Carotene [E160 a (ii)], Vitamin A, Moisture (78%)
 
 ## Specifications
-- **Product Brand**: Olé
+- **Product Brand**: OlÃ©
 - **Product Width (mm)**: 127
 - **Product Height (mm)**: 75
 - **Product Length (mm)**: 62
@@ -18,7 +18,7 @@ Water (78%), Vegetable Fats and Oil (20%) (Palm Fruit, Sunflower, Maize, Canola 
 - **Product Gross Weight (g)**: 500
 - **Product Volume**: 500g
 - **Product Depth (mm)**: 62
-- **What's in the box**: 1 x 500g Epic Olé 20% Fat Bread Spread
+- **What's in the box**: 1 x 500g Epic OlÃ© 20% Fat Bread Spread
 - **Unit of Measure**: EA
 - **Main Barcode**: 6001114000300
 - **Fat Content**: Low Fat
@@ -28,9 +28,10 @@ Water (78%), Vegetable Fats and Oil (20%) (Palm Fruit, Sunflower, Maize, Canola 
 - **Low Fat**: Yes
 - **Halaal**: Yes
 - **Kosher**: Yes
-- **Sub Brand**: Olé
+- **Sub Brand**: OlÃ©
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |
@@ -52,13 +53,13 @@ Water (78%), Vegetable Fats and Oil (20%) (Palm Fruit, Sunflower, Maize, Canola 
 | Serving Size |  | 20g |
 
 ## Images
-- images/olé-20-fat-bread-spread-500g_0.jpg
-- images/olé-20-fat-bread-spread-500g_1.jpg
-- images/olé-20-fat-bread-spread-500g_2.jpg
-- images/olé-20-fat-bread-spread-500g_3.jpg
-- images/olé-20-fat-bread-spread-500g_4.jpg
-- images/olé-20-fat-bread-spread-500g_5.jpg
-- images/olé-20-fat-bread-spread-500g_6.jpg
+- images/olÃ©-20-fat-bread-spread-500g_0.jpg
+- images/olÃ©-20-fat-bread-spread-500g_1.jpg
+- images/olÃ©-20-fat-bread-spread-500g_2.jpg
+- images/olÃ©-20-fat-bread-spread-500g_3.jpg
+- images/olÃ©-20-fat-bread-spread-500g_4.jpg
+- images/olÃ©-20-fat-bread-spread-500g_5.jpg
+- images/olÃ©-20-fat-bread-spread-500g_6.jpg
 
 ## Meta
 - **Source**: https://www.shoprite.co.za/All-Departments/Food/Fresh-Food/Milk%2C-Butter-and-Eggs/Ol%C3%A9-20%25-Fat-Bread-Spread-500g/p/10150754EA

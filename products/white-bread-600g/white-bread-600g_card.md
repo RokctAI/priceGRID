@@ -34,6 +34,7 @@ Soft texture Pre-sliced for convenience Ideal for sandwiches and toast A perfect
 - **Halaal**: Yes
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

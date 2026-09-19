@@ -5,13 +5,13 @@
 - **Was**: R21.99
 
 ## Description
-Coca-Cola Original Taste Less Sugar delivers the classic cola flavour you love with reduced sugar. Crisp, refreshing, and perfectly balanced, it’s a lighter way to enjoy timeless refreshment.
+Coca-Cola Original Taste Less Sugar delivers the classic cola flavour you love with reduced sugar. Crisp, refreshing, and perfectly balanced, itâ€™s a lighter way to enjoy timeless refreshment.
 
 ## Ingredients
 Carbonated Water, Sugar, Caramel, Phosphoric Acid, Flavouring and Caffeine
 
 ## Benefits & Features
-• Classic cola flavour with less sugar • Perfectly balanced taste • Crisp, refreshing fizz • Enjoy with snacks, meals or as a mixer
+â€¢ Classic cola flavour with less sugar â€¢ Perfectly balanced taste â€¢ Crisp, refreshing fizz â€¢ Enjoy with snacks, meals or as a mixer
 
 ## Specifications
 - **Product Brand**: Coca-Cola
@@ -27,11 +27,12 @@ Carbonated Water, Sugar, Caramel, Phosphoric Acid, Flavouring and Caffeine
 - **Pack Size**: Single
 - **Ingredients**: Carbonated Water, Sugar, Caramel, Phosphoric Acid, Flavouring and Caffeine
 - **Serving Size**: 250ml
-- **Benefits & Features**: • Classic cola flavour with less sugar • Perfectly balanced taste • Crisp, refreshing fizz • Enjoy with snacks, meals or as a mixer
+- **Benefits & Features**: â€¢ Classic cola flavour with less sugar â€¢ Perfectly balanced taste â€¢ Crisp, refreshing fizz â€¢ Enjoy with snacks, meals or as a mixer
 - **Low Sugar**: Yes
 - **Sub Brand**: Original Taste Less Sugar
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Flavouring and Caffeine   Nutritional Information  Per | 100g |  |

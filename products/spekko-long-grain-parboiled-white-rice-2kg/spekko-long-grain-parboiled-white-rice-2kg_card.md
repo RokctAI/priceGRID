@@ -33,6 +33,7 @@ May contain wheat and gluten
 - **Benefits & Features**: 100% Thai sourced grainsParboiled for enhanced nutrition and textureLong grain variety for distinct separationSeparate fluffy and white grainsEnsures a perfect cook with no sticky residueIdeal for a variety of dishes from stir-fries to rice bowls
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Ingredients  Parboiled Rice   Allergens  May contain wheat and gluten   Nutritional Information  Per | 100g |  |

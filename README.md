@@ -19,8 +19,8 @@ The repository implements an end-to-end data lifecycle:
 
 ## Project Structure
 
--   `.rokct/scripts/scrappers/{source}/`: Source-specific scraper implementations and maintenance tools.
--   `.rokct/scripts/publisher/`: The publication engine that builds the static JSON database.
+-   `scripts/scrappers/{source}/`: Source-specific scraper implementations and maintenance tools.
+-   `scripts/publisher/`: The publication engine that builds the static JSON database.
 -   `products/`: Hierarchical storage of product markdown cards and their corresponding JSON data and images.
 -   `published/`: Public-facing directory containing generated indices and documentation for API consumers.
 
@@ -39,14 +39,14 @@ playwright install chromium
 1.  **Scraping & Maintenance**:
     Execute the scrapers to fetch new data or update existing records.
     ```bash
-    python3 .rokct/scripts/scrappers/{source}/scraper.py --category <URL>
-    python3 .rokct/scripts/scrappers/{source}/maintain.py
+    python3 scripts/scrappers/{source}/scraper.py --category <URL>
+    python3 scripts/scrappers/{source}/maintain.py
     ```
 
 2.  **Publication**:
     Generate the static JSON indices.
     ```bash
-    python3 .rokct/scripts/publisher/publish.py
+    python3 scripts/publisher/publish.py
     ```
 
 ## Integration

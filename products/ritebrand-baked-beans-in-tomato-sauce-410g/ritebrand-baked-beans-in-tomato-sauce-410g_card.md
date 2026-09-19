@@ -34,6 +34,7 @@ Source of fibreIn smooth tomato sauce Tangy and savoury taste Delicious on its o
 - **Kosher**: Yes
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | wheat and gluten   Nutritional Information  Per | 100g |  |

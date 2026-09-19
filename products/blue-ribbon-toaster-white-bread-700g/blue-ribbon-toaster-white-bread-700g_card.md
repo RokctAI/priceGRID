@@ -7,6 +7,7 @@
 Combining taste and convenience for everyday meals or gatherings, Blue Ribbon Toaster White Bread is a versatile, sliced white bread ideal for toasting, offering a crisp texture and mild flavour. Perfect for breakfast, lunch, or snacks, this loaf is ample for family sharing and is a source of vitamin D.
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |

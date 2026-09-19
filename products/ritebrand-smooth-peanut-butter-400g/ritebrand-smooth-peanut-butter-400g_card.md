@@ -33,6 +33,7 @@ Smooth texture for easy spreadingSealed lid to maintain freshnessVersatile use i
 - **Kosher**: Yes
 
 ## Nutrition Information
+
 | Nutrient | Per 100g | Per Serving |
 |----------|----------|-------------|
 | Nutritional Information  Per | 100g |  |
