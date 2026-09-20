@@ -35,6 +35,7 @@ STORES = {
 
 BASE_URL = STORES["shoprite"]
 PRODUCTS_ENDPOINT = "/api/catalogue/get-products-filter"
+CATEGORY_TREE_ENDPOINT = "/api/catalogue/get-category-tree"
 
 
 def set_store(store: str) -> str:
@@ -58,15 +59,28 @@ DEPARTMENT_RE = re.compile(
 class Department:
     """One browsable category, as the nav and the API both describe it."""
 
-    def __init__(self, section: str, slug: str, level: int, category_id: str):
+    def __init__(
+        self,
+        section: str,
+        slug: str,
+        level: int,
+        category_id: str,
+        name: Optional[str] = None,
+    ):
         self.section = section
         self.slug = slug
         self.level = level
         self.category_id = category_id
+        # The tree gives the real display name. Recovering one from the slug is
+        # only a fallback for a Department parsed out of a URL, and it is lossy:
+        # "Airtime, Data &  Vouchers" does not survive the round trip.
+        self._name = name
 
     @property
     def name(self) -> str:
-        """The display name the API expects, recovered from the URL slug."""
+        """The display name the API expects."""
+        if self._name:
+            return self._name
         return self.slug.replace("-", " ").title()
 
     @property
@@ -75,6 +89,11 @@ class Department:
 
     def __repr__(self) -> str:
         return f"<Department {self.section}/{self.slug} id={self.category_id}>"
+
+
+def slugify(text: str) -> str:
+    """A URL-safe slug, used for the display paths departments are logged under."""
+    return re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
 
 
 def parse_department_url(href: str) -> Optional[Department]:
@@ -92,29 +111,54 @@ def parse_department_url(href: str) -> Optional[Department]:
 
 async def discover_departments(page) -> List[Department]:
     """
-    Every department the site links to, read from the "Shop by Department" menu.
+    Every department, read from the category tree the storefront publishes.
 
-    The menu is rendered client-side, so the links only exist once the menu has
-    been opened. Hard-coding the list instead would go stale the next time
-    the retailer reorganises its aisles, which is exactly how the old scraper
-    died.
+    ``POST /api/catalogue/get-category-tree`` with an empty body returns the
+    whole tree - the same data the "Shop by Department" menu renders - as nodes
+    carrying the id, name and level that fetch_products needs. Reading it here
+    rather than clicking the menu open and scraping its links matters: on a CI
+    runner the menu never rendered within fifteen seconds and discovery came
+    back empty, failing the run on a site that was answering perfectly well.
+
+    Only level-2 nodes are returned. Level 1 is the aisle heading, which holds
+    no products of its own.
     """
-    await page.goto(BASE_URL, wait_until="networkidle", timeout=90000)
-    try:
-        await page.click("text=Shop by Department", timeout=15000)
-        await page.wait_for_timeout(2500)
-    except Exception as e:
-        logger.warning(f"Could not open the department menu: {e}")
+    await page.goto(BASE_URL, wait_until="domcontentloaded", timeout=90000)
 
-    hrefs = await page.evaluate(
-        "[...document.querySelectorAll('a')].map(a => a.getAttribute('href')).filter(Boolean)"
+    result = await page.evaluate(
+        """async (endpoint) => {
+            const res = await fetch(endpoint, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: '{}',
+                credentials: 'include',
+            });
+            return {status: res.status, body: await res.text()};
+        }""",
+        CATEGORY_TREE_ENDPOINT,
     )
 
+    if result["status"] != 200:
+        raise RuntimeError(
+            f"Category tree returned {result['status']}; the catalogue could not "
+            "be read."
+        )
+
+    tree = json.loads(result["body"]).get("displayCategoryTree") or []
+
     departments: Dict[str, Department] = {}
-    for href in hrefs:
-        dept = parse_department_url(href)
-        if dept:
-            departments[dept.category_id] = dept
+    for section in tree:
+        section_slug = slugify(section.get("name") or "")
+        for child in section.get("displayCategories") or []:
+            if child.get("level") != 2 or not child.get("id"):
+                continue
+            departments[child["id"]] = Department(
+                section=section_slug,
+                slug=slugify(child.get("name") or ""),
+                level=2,
+                category_id=child["id"],
+                name=child.get("name"),
+            )
 
     logger.info(f"Discovered {len(departments)} departments.")
     return list(departments.values())
