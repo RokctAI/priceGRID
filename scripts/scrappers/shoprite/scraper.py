@@ -1,3 +1,4 @@
+import shutil
 import random
 import os
 import sys
@@ -845,7 +846,7 @@ def add_category_to_card(
     card_path: str,
     department: "catalogue_api.Department",
 ) -> None:
-    """Add a Shoprite category to an existing product card."""
+    """Add a Shoprite category to a product card and organise the product."""
     if not os.path.exists(card_path):
         return
 
@@ -853,6 +854,10 @@ def add_category_to_card(
 
     with open(card_path, "r", encoding="utf-8") as f:
         content = f.read()
+
+    # --------------------------------------------------------
+    # Update Categories in the card.
+    # --------------------------------------------------------
 
     pattern = r"(?m)^- \*\*Categories\*\*: (.*)$"
     match = re.search(pattern, content)
@@ -864,22 +869,20 @@ def add_category_to_card(
             if item.strip()
         ]
 
-        if category in existing:
-            return
+        if category not in existing:
+            existing.append(category)
 
-        existing.append(category)
-
-        content = re.sub(
-            pattern,
-            f"- **Categories**: {'; '.join(existing)}",
-            content,
-            count=1,
-        )
+            content = re.sub(
+                pattern,
+                lambda m: f"- **Categories**: {'; '.join(existing)}",
+                content,
+                count=1,
+            )
     else:
         store_pattern = r"(?m)^(- \*\*Store\*\*: .*)$"
 
         if not re.search(store_pattern, content):
-            raise ValueError(
+            raise RuntimeError(
                 f"Could not find Store field in {card_path}"
             )
 
@@ -893,11 +896,53 @@ def add_category_to_card(
             count=1,
         )
 
+    # Save updated canonical card.
     with open(card_path, "w", encoding="utf-8") as f:
         f.write(content)
 
+    # --------------------------------------------------------
+    # Category folder:
+    #
+    # products/<section>/<category>/<product>/
+    # --------------------------------------------------------
+
+    product_dir = os.path.dirname(card_path)
+    product_slug = os.path.basename(product_dir)
+
+    category_dir = os.path.join(
+        "products",
+        slugify(department.section),
+        slugify(department.slug),
+        product_slug,
+    )
+
+    os.makedirs(category_dir, exist_ok=True)
+
+    category_card = os.path.join(
+        category_dir,
+        f"{product_slug}_card.md",
+    )
+
+    # Copy card.
+    with open(category_card, "w", encoding="utf-8") as f:
+        f.write(content)
+
+    # Copy already-downloaded images.
+    source_images = os.path.join(product_dir, "images")
+    target_images = os.path.join(category_dir, "images")
+
+    if os.path.isdir(source_images):
+        os.makedirs(target_images, exist_ok=True)
+
+        for filename in os.listdir(source_images):
+            source = os.path.join(source_images, filename)
+            target = os.path.join(target_images, filename)
+
+            if os.path.isfile(source) and not os.path.exists(target):
+                shutil.copy2(source, target)
+
     logger.info(
-        f"Added category '{category}' to {card_path}"
+        f"Organised {product_slug} under category '{category}'"
     )
 
 
@@ -928,7 +973,7 @@ def write_card_from_api(
 
         logger.info(
             f"Skipping {product_slug}, card already exists; "
-            f"category recorded."
+            f"category recorded and organised."
         )
         return "skipped"
 
@@ -1006,6 +1051,9 @@ def write_card_from_api(
 """
     with open(card_path, "w", encoding="utf-8") as f:
         f.write(card_content)
+
+    if department:
+        add_category_to_card(card_path, department)
 
     logger.info(f"Successfully scraped {product_slug}")
     return "scraped"
@@ -1099,21 +1147,7 @@ async def main():
                     ):
                         # Products sit in several categories at once, so the
                         # same record arrives more than once across a full run.
-                        if product.get("id") in seen_ids:
-                            product_name = (
-                                product.get("displayName")
-                                or product.get("name")
-                            )
-
-                            if product_name:
-                                product_slug = slugify(product_name)
-                                card_path = (
-                                    f"products/{product_slug}/"
-                                    f"{product_slug}_card.md"
-                                )
-                                add_category_to_card(card_path, dept)
-
-                            continue
+                        # Products may belong to multiple categories. Process every occurrence.
                         seen_ids.add(product.get("id"))
 
                         if write_card_from_api(product, dept) == "scraped":
