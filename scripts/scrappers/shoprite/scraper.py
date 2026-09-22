@@ -841,6 +841,66 @@ async def main_html_legacy():
             await browser.close()
 
 
+def add_category_to_card(
+    card_path: str,
+    department: "catalogue_api.Department",
+) -> None:
+    """Add a Shoprite category to an existing product card."""
+    if not os.path.exists(card_path):
+        return
+
+    category = f"{department.section}/{department.slug}"
+
+    with open(card_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    pattern = r"(?m)^- \*\*Categories\*\*: (.*)$"
+    match = re.search(pattern, content)
+
+    if match:
+        existing = [
+            item.strip()
+            for item in match.group(1).split(";")
+            if item.strip()
+        ]
+
+        if category in existing:
+            return
+
+        existing.append(category)
+
+        content = re.sub(
+            pattern,
+            f"- **Categories**: {'; '.join(existing)}",
+            content,
+            count=1,
+        )
+    else:
+        store_pattern = r"(?m)^(- \*\*Store\*\*: .*)$"
+
+        if not re.search(store_pattern, content):
+            raise ValueError(
+                f"Could not find Store field in {card_path}"
+            )
+
+        content = re.sub(
+            store_pattern,
+            lambda m: (
+                f"{m.group(1)}\n"
+                f"- **Categories**: {category}"
+            ),
+            content,
+            count=1,
+        )
+
+    with open(card_path, "w", encoding="utf-8") as f:
+        f.write(content)
+
+    logger.info(
+        f"Added category '{category}' to {card_path}"
+    )
+
+
 def write_card_from_api(
     product: Dict[str, Any], department: Optional["catalogue_api.Department"] = None
 ) -> str:
@@ -863,7 +923,13 @@ def write_card_from_api(
     card_path = f"{product_dir}/{product_slug}_card.md"
 
     if os.path.exists(card_path):
-        logger.info(f"Skipping {product_slug}, card already exists.")
+        if department:
+            add_category_to_card(card_path, department)
+
+        logger.info(
+            f"Skipping {product_slug}, card already exists; "
+            f"category recorded."
+        )
         return "skipped"
 
     os.makedirs(f"{product_dir}/images", exist_ok=True)
@@ -935,6 +1001,7 @@ def write_card_from_api(
 - **Product ID**: {product.get("id")}
 - **Scraped**: {datetime.date.today().isoformat()}
 - **Store**: {catalogue_api.BASE_URL.split("//")[-1]}
+- **Categories**: {f"{department.section}/{department.slug}" if department else "Unknown"}
 - **Is Platform**: false
 """
     with open(card_path, "w", encoding="utf-8") as f:
@@ -1033,6 +1100,19 @@ async def main():
                         # Products sit in several categories at once, so the
                         # same record arrives more than once across a full run.
                         if product.get("id") in seen_ids:
+                            product_name = (
+                                product.get("displayName")
+                                or product.get("name")
+                            )
+
+                            if product_name:
+                                product_slug = slugify(product_name)
+                                card_path = (
+                                    f"products/{product_slug}/"
+                                    f"{product_slug}_card.md"
+                                )
+                                add_category_to_card(card_path, dept)
+
                             continue
                         seen_ids.add(product.get("id"))
 
