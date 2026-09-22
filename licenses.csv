@@ -75,7 +75,7 @@
 "sos","4.10.2","GPLv2+"
 "ssh-import-id","5.11","GPLv3"
 "systemd-python","235","GNU Lesser General Public License v2 or later (LGPLv2+)"
-"ty","0.0.82","MIT License"
+"ty","0.0.83","MIT License"
 "typing_extensions","4.10.0","Python Software Foundation License"
 "ubuntu-pro-client","8001","GPLv3"
 "ufw","0.36.2","GPL-3"
