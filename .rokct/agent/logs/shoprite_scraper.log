@@ -1,0 +1,642 @@
+2026-09-22 13:38:55,797 [INFO] Scraping shoprite at https://www.shoprite.co.za
+2026-09-22 13:38:58,067 [WARNING] Could not apply playwright-stealth: No module named 'playwright_stealth'
+2026-09-22 13:39:39,898 [INFO] Discovered 303 departments.
+2026-09-22 13:39:39,899 [INFO] Scraping department: airtime-data-vouchers/airtime
+2026-09-22 13:39:40,495 [INFO] Added category 'airtime-data-vouchers/airtime' to products/vodacom-r110-airtime-voucher-code/vodacom-r110-airtime-voucher-code_card.md
+2026-09-22 13:39:40,496 [INFO] Skipping vodacom-r110-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:41,060 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r30-airtime-voucher-code/mtn-r30-airtime-voucher-code_card.md
+2026-09-22 13:39:41,071 [INFO] Skipping mtn-r30-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:41,649 [INFO] Added category 'airtime-data-vouchers/airtime' to products/telkom-r250-airtime-direct-top-up/telkom-r250-airtime-direct-top-up_card.md
+2026-09-22 13:39:41,649 [INFO] Skipping telkom-r250-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:42,144 [INFO] Added category 'airtime-data-vouchers/airtime' to products/knect-mobile-r20-airtime-direct-top-up/knect-mobile-r20-airtime-direct-top-up_card.md
+2026-09-22 13:39:42,144 [INFO] Skipping knect-mobile-r20-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:42,518 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r129-airtime-voucher-code/mtn-r129-airtime-voucher-code_card.md
+2026-09-22 13:39:42,518 [INFO] Skipping mtn-r129-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:42,988 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r50-airtime-voucher-code/cell-c-r50-airtime-voucher-code_card.md
+2026-09-22 13:39:42,988 [INFO] Skipping cell-c-r50-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:43,363 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r10-airtime-direct-top-up/cell-c-r10-airtime-direct-top-up_card.md
+2026-09-22 13:39:43,363 [INFO] Skipping cell-c-r10-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:43,611 [INFO] Added category 'airtime-data-vouchers/airtime' to products/telkom-r5-airtime-voucher-code/telkom-r5-airtime-voucher-code_card.md
+2026-09-22 13:39:43,611 [INFO] Skipping telkom-r5-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:44,113 [INFO] Added category 'airtime-data-vouchers/airtime' to products/vodacom-r55-airtime-direct-top-up/vodacom-r55-airtime-direct-top-up_card.md
+2026-09-22 13:39:44,120 [INFO] Skipping vodacom-r55-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:44,518 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r100-airtime-direct-top-up/cell-c-r100-airtime-direct-top-up_card.md
+2026-09-22 13:39:44,532 [INFO] Skipping cell-c-r100-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:44,801 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r5-airtime-direct-top-up/cell-c-r5-airtime-direct-top-up_card.md
+2026-09-22 13:39:44,801 [INFO] Skipping cell-c-r5-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:45,036 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r5-airtime-direct-top-up/mtn-r5-airtime-direct-top-up_card.md
+2026-09-22 13:39:45,036 [INFO] Skipping mtn-r5-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:45,633 [INFO] Added category 'airtime-data-vouchers/airtime' to products/knect-mobile-r50-airtime-voucher-code/knect-mobile-r50-airtime-voucher-code_card.md
+2026-09-22 13:39:45,634 [INFO] Skipping knect-mobile-r50-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:46,176 [INFO] Added category 'airtime-data-vouchers/airtime' to products/knect-mobile-r10-airtime-voucher-code/knect-mobile-r10-airtime-voucher-code_card.md
+2026-09-22 13:39:46,176 [INFO] Skipping knect-mobile-r10-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:46,456 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r180-airtime-direct-top-up/mtn-r180-airtime-direct-top-up_card.md
+2026-09-22 13:39:46,456 [INFO] Skipping mtn-r180-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:46,978 [INFO] Added category 'airtime-data-vouchers/airtime' to products/vodacom-r5-airtime-voucher-code/vodacom-r5-airtime-voucher-code_card.md
+2026-09-22 13:39:46,978 [INFO] Skipping vodacom-r5-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:47,355 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r180-airtime-voucher-code/mtn-r180-airtime-voucher-code_card.md
+2026-09-22 13:39:47,355 [INFO] Skipping mtn-r180-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:47,693 [INFO] Added category 'airtime-data-vouchers/airtime' to products/knect-mobile-r10-airtime-direct-top-up/knect-mobile-r10-airtime-direct-top-up_card.md
+2026-09-22 13:39:47,693 [INFO] Skipping knect-mobile-r10-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:48,247 [INFO] Added category 'airtime-data-vouchers/airtime' to products/vodacom-r2-airtime-voucher-code/vodacom-r2-airtime-voucher-code_card.md
+2026-09-22 13:39:48,247 [INFO] Skipping vodacom-r2-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:48,553 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r15-airtime-direct-top-up/mtn-r15-airtime-direct-top-up_card.md
+2026-09-22 13:39:48,554 [INFO] Skipping mtn-r15-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:49,003 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r60-airtime-voucher-code/mtn-r60-airtime-voucher-code_card.md
+2026-09-22 13:39:49,004 [INFO] Skipping mtn-r60-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:49,566 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r150-airtime-voucher-code/cell-c-r150-airtime-voucher-code_card.md
+2026-09-22 13:39:49,566 [INFO] Skipping cell-c-r150-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:50,144 [INFO] Added category 'airtime-data-vouchers/airtime' to products/vodacom-r55-airtime-voucher-code/vodacom-r55-airtime-voucher-code_card.md
+2026-09-22 13:39:50,145 [INFO] Skipping vodacom-r55-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:50,721 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r70-airtime-direct-top-up/cell-c-r70-airtime-direct-top-up_card.md
+2026-09-22 13:39:50,721 [INFO] Skipping cell-c-r70-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:51,202 [INFO] Added category 'airtime-data-vouchers/airtime' to products/knect-mobile-r20-airtime-voucher-code/knect-mobile-r20-airtime-voucher-code_card.md
+2026-09-22 13:39:51,202 [INFO] Skipping knect-mobile-r20-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:51,634 [INFO] Added category 'airtime-data-vouchers/airtime' to products/vodacom-r12-airtime-direct-top-up/vodacom-r12-airtime-direct-top-up_card.md
+2026-09-22 13:39:51,634 [INFO] Skipping vodacom-r12-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:52,089 [INFO] Added category 'airtime-data-vouchers/airtime' to products/telkom-r20-airtime-direct-top-up/telkom-r20-airtime-direct-top-up_card.md
+2026-09-22 13:39:52,089 [INFO] Skipping telkom-r20-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:52,352 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r149-airtime-voucher-code/mtn-r149-airtime-voucher-code_card.md
+2026-09-22 13:39:52,352 [INFO] Skipping mtn-r149-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:52,961 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r200-airtime-voucher-code/cell-c-r200-airtime-voucher-code_card.md
+2026-09-22 13:39:52,962 [INFO] Skipping cell-c-r200-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:53,358 [INFO] Added category 'airtime-data-vouchers/airtime' to products/telkom-r10-airtime-voucher-code/telkom-r10-airtime-voucher-code_card.md
+2026-09-22 13:39:53,359 [INFO] Skipping telkom-r10-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:53,792 [INFO] Added category 'airtime-data-vouchers/airtime' to products/telkom-r100-airtime-direct-top-up/telkom-r100-airtime-direct-top-up_card.md
+2026-09-22 13:39:53,792 [INFO] Skipping telkom-r100-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:54,387 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r300-airtime-direct-top-up/cell-c-r300-airtime-direct-top-up_card.md
+2026-09-22 13:39:54,388 [INFO] Skipping cell-c-r300-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:54,847 [INFO] Added category 'airtime-data-vouchers/airtime' to products/telkom-r30-airtime-direct-top-up/telkom-r30-airtime-direct-top-up_card.md
+2026-09-22 13:39:54,848 [INFO] Skipping telkom-r30-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:55,408 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r20-airtime-voucher-code/mtn-r20-airtime-voucher-code_card.md
+2026-09-22 13:39:55,409 [INFO] Skipping mtn-r20-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:55,862 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r10-airtime-voucher-code/mtn-r10-airtime-voucher-code_card.md
+2026-09-22 13:39:55,862 [INFO] Skipping mtn-r10-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:56,385 [INFO] Added category 'airtime-data-vouchers/airtime' to products/vodacom-r275-airtime-direct-top-up/vodacom-r275-airtime-direct-top-up_card.md
+2026-09-22 13:39:56,385 [INFO] Skipping vodacom-r275-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:56,637 [INFO] Added category 'airtime-data-vouchers/airtime' to products/telkom-r20-airtime-voucher-code/telkom-r20-airtime-voucher-code_card.md
+2026-09-22 13:39:56,637 [INFO] Skipping telkom-r20-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:57,111 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r25-airtime-voucher-code/cell-c-r25-airtime-voucher-code_card.md
+2026-09-22 13:39:57,111 [INFO] Skipping cell-c-r25-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:57,409 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r50-airtime-voucher-code/mtn-r50-airtime-voucher-code_card.md
+2026-09-22 13:39:57,409 [INFO] Skipping mtn-r50-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:57,938 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r10-airtime-voucher-code/cell-c-r10-airtime-voucher-code_card.md
+2026-09-22 13:39:57,938 [INFO] Skipping cell-c-r10-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:58,190 [INFO] Added category 'airtime-data-vouchers/airtime' to products/vodacom-r10-airtime-voucher-code/vodacom-r10-airtime-voucher-code_card.md
+2026-09-22 13:39:58,190 [INFO] Skipping vodacom-r10-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:58,433 [INFO] Added category 'airtime-data-vouchers/airtime' to products/knect-mobile-r5-airtime-direct-top-up/knect-mobile-r5-airtime-direct-top-up_card.md
+2026-09-22 13:39:58,433 [INFO] Skipping knect-mobile-r5-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:39:58,910 [INFO] Added category 'airtime-data-vouchers/airtime' to products/telkom-r250-airtime-voucher-code/telkom-r250-airtime-voucher-code_card.md
+2026-09-22 13:39:58,911 [INFO] Skipping telkom-r250-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:59,364 [INFO] Added category 'airtime-data-vouchers/airtime' to products/knect-mobile-50-minutes-voice-direct-top-up-7-days/knect-mobile-50-minutes-voice-direct-top-up-7-days_card.md
+2026-09-22 13:39:59,365 [INFO] Skipping knect-mobile-50-minutes-voice-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:39:59,615 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r100-airtime-voucher-code/mtn-r100-airtime-voucher-code_card.md
+2026-09-22 13:39:59,618 [INFO] Skipping mtn-r100-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:39:59,937 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r70-airtime-voucher-code/cell-c-r70-airtime-voucher-code_card.md
+2026-09-22 13:39:59,937 [INFO] Skipping cell-c-r70-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:40:00,330 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r100-airtime-voucher-direct-top-up/mtn-r100-airtime-voucher-direct-top-up_card.md
+2026-09-22 13:40:00,330 [INFO] Skipping mtn-r100-airtime-voucher-direct-top-up, card already exists; category recorded.
+2026-09-22 13:40:00,577 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r2-airtime-voucher-code/mtn-r2-airtime-voucher-code_card.md
+2026-09-22 13:40:00,577 [INFO] Skipping mtn-r2-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:40:01,032 [INFO] Added category 'airtime-data-vouchers/airtime' to products/vodacom-r110-airtime-direct-top-up/vodacom-r110-airtime-direct-top-up_card.md
+2026-09-22 13:40:01,035 [INFO] Skipping vodacom-r110-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:40:01,491 [INFO] Added category 'airtime-data-vouchers/airtime' to products/vodacom-r5-airtime-direct-top-up/vodacom-r5-airtime-direct-top-up_card.md
+2026-09-22 13:40:01,491 [INFO] Skipping vodacom-r5-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:40:02,834 [INFO] Added category 'airtime-data-vouchers/airtime' to products/telkom-r10-airtime-direct-top-up/telkom-r10-airtime-direct-top-up_card.md
+2026-09-22 13:40:02,835 [INFO] Skipping telkom-r10-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:40:03,278 [INFO] Added category 'airtime-data-vouchers/airtime' to products/knect-mobile-r200-airtime-direct-top-up/knect-mobile-r200-airtime-direct-top-up_card.md
+2026-09-22 13:40:03,278 [INFO] Skipping knect-mobile-r200-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:40:03,798 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r10-airtime-direct-top-up/mtn-r10-airtime-direct-top-up_card.md
+2026-09-22 13:40:03,799 [INFO] Skipping mtn-r10-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:40:04,439 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r149-airtime-voucher-direct-top-up/mtn-r149-airtime-voucher-direct-top-up_card.md
+2026-09-22 13:40:04,439 [INFO] Skipping mtn-r149-airtime-voucher-direct-top-up, card already exists; category recorded.
+2026-09-22 13:40:04,983 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r35-airtime-voucher-code/cell-c-r35-airtime-voucher-code_card.md
+2026-09-22 13:40:04,983 [INFO] Skipping cell-c-r35-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:40:05,543 [INFO] Added category 'airtime-data-vouchers/airtime' to products/mtn-r50-airtime-voucher-direct-top-up/mtn-r50-airtime-voucher-direct-top-up_card.md
+2026-09-22 13:40:05,545 [INFO] Skipping mtn-r50-airtime-voucher-direct-top-up, card already exists; category recorded.
+2026-09-22 13:40:05,926 [INFO] Added category 'airtime-data-vouchers/airtime' to products/knect-mobile-r200-airtime-voucher-code/knect-mobile-r200-airtime-voucher-code_card.md
+2026-09-22 13:40:05,927 [INFO] Skipping knect-mobile-r200-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:40:06,274 [INFO] Added category 'airtime-data-vouchers/airtime' to products/telkom-r100-airtime-voucher-code/telkom-r100-airtime-voucher-code_card.md
+2026-09-22 13:40:06,274 [INFO] Skipping telkom-r100-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:40:06,641 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r50-airtime-direct-top-up/cell-c-r50-airtime-direct-top-up_card.md
+2026-09-22 13:40:06,642 [INFO] Skipping cell-c-r50-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:40:07,045 [INFO] Added category 'airtime-data-vouchers/airtime' to products/knect-mobile-r50-airtime-direct-top-up/knect-mobile-r50-airtime-direct-top-up_card.md
+2026-09-22 13:40:07,047 [INFO] Skipping knect-mobile-r50-airtime-direct-top-up, card already exists; category recorded.
+2026-09-22 13:40:07,640 [INFO] Added category 'airtime-data-vouchers/airtime' to products/cell-c-r100-airtime-voucher-code/cell-c-r100-airtime-voucher-code_card.md
+2026-09-22 13:40:07,640 [INFO] Skipping cell-c-r100-airtime-voucher-code, card already exists; category recorded.
+2026-09-22 13:40:07,930 [INFO] Scraping department: airtime-data-vouchers/data-bundles
+2026-09-22 13:40:08,767 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-75mb-all-networks-anytime-data-voucher-code-30-days-prepaid-only/telkom-75mb-all-networks-anytime-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:40:08,767 [INFO] Skipping telkom-75mb-all-networks-anytime-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:09,226 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-150mb150mb-data-direct-top-up-30-days/telkom-150mb150mb-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:09,226 [INFO] Skipping telkom-150mb150mb-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:09,724 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-15gb-anytime-data-direct-top-up-30-days/mtn-15gb-anytime-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:09,724 [INFO] Skipping mtn-15gb-anytime-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:10,239 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-250mb-anytime-data-direct-top-up-1-day/mtn-250mb-anytime-data-direct-top-up-1-day_card.md
+2026-09-22 13:40:10,239 [INFO] Skipping mtn-250mb-anytime-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:40:10,816 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-5gb-data-voucher-code-30-days/knect-mobile-5gb-data-voucher-code-30-days_card.md
+2026-09-22 13:40:10,816 [INFO] Skipping knect-mobile-5gb-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:11,313 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-35gb35gb-day-night-data-direct-top-up-30-days-prepaid-only/telkom-35gb35gb-day-night-data-direct-top-up-30-days-prepaid-only_card.md
+2026-09-22 13:40:11,314 [INFO] Skipping telkom-35gb35gb-day-night-data-direct-top-up-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:11,905 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-2gb-anytime-data-direct-top-up-1-day/telkom-2gb-anytime-data-direct-top-up-1-day_card.md
+2026-09-22 13:40:11,905 [INFO] Skipping telkom-2gb-anytime-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:40:12,152 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-2gb2gb-day-night-data-direct-top-up-14-days-prepaid-only/vodacom-2gb2gb-day-night-data-direct-top-up-14-days-prepaid-only_card.md
+2026-09-22 13:40:12,152 [INFO] Skipping vodacom-2gb2gb-day-night-data-direct-top-up-14-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:12,510 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-5gb5gb-day-night-data-direct-top-up-30-days-prepaid-only/vodacom-5gb5gb-day-night-data-direct-top-up-30-days-prepaid-only_card.md
+2026-09-22 13:40:12,510 [INFO] Skipping vodacom-5gb5gb-day-night-data-direct-top-up-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:13,055 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-500mb500mb-data-direct-top-up-30-days/telkom-500mb500mb-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:13,055 [INFO] Skipping telkom-500mb500mb-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:13,334 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-700mb-anytime-data-direct-top-up-30-days/vodacom-700mb-anytime-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:13,335 [INFO] Skipping vodacom-700mb-anytime-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:13,584 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-7gb-everydaygig-bundle-data-direct-top-up-7-days-prepaid-only/mtn-7gb-everydaygig-bundle-data-direct-top-up-7-days-prepaid-only_card.md
+2026-09-22 13:40:13,585 [INFO] Skipping mtn-7gb-everydaygig-bundle-data-direct-top-up-7-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:13,967 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-1gb-anytime-data-direct-top-up-7-days/cell-c-1gb-anytime-data-direct-top-up-7-days_card.md
+2026-09-22 13:40:13,967 [INFO] Skipping cell-c-1gb-anytime-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:40:14,543 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-375mb-anytime-data-direct-top-up-7-days/vodacom-375mb-anytime-data-direct-top-up-7-days_card.md
+2026-09-22 13:40:14,544 [INFO] Skipping vodacom-375mb-anytime-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:40:14,837 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-420mb-anytime-data-voucher-code-30-days/mtn-420mb-anytime-data-voucher-code-30-days_card.md
+2026-09-22 13:40:14,838 [INFO] Skipping mtn-420mb-anytime-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:15,288 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-1gb-data-direct-top-up-7-days/knect-mobile-1gb-data-direct-top-up-7-days_card.md
+2026-09-22 13:40:15,289 [INFO] Skipping knect-mobile-1gb-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:40:15,562 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-500mb-anytime-data-voucher-code-30-days/vodacom-500mb-anytime-data-voucher-code-30-days_card.md
+2026-09-22 13:40:15,562 [INFO] Skipping vodacom-500mb-anytime-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:16,002 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-15gb15gb-data-direct-top-up-30-days/telkom-15gb15gb-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:16,002 [INFO] Skipping telkom-15gb15gb-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:16,468 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-3gb-anytime-data-direct-top-up-7-days/vodacom-3gb-anytime-data-direct-top-up-7-days_card.md
+2026-09-22 13:40:16,468 [INFO] Skipping vodacom-3gb-anytime-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:40:17,040 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-250mb-anytime-data-voucher-code-7-days-prepaid-only/cell-c-250mb-anytime-data-voucher-code-7-days-prepaid-only_card.md
+2026-09-22 13:40:17,040 [INFO] Skipping cell-c-250mb-anytime-data-voucher-code-7-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:17,292 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-35gb-anytime-data-voucher-code-30-days/mtn-35gb-anytime-data-voucher-code-30-days_card.md
+2026-09-22 13:40:17,292 [INFO] Skipping mtn-35gb-anytime-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:17,860 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-12gb-freeme-anytime-data-voucher-code-30-days-prepaid-only/telkom-12gb-freeme-anytime-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:40:17,860 [INFO] Skipping telkom-12gb-freeme-anytime-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:18,474 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-10gb10gb-day-night-data-direct-top-up-30-days-prepaid-only/vodacom-10gb10gb-day-night-data-direct-top-up-30-days-prepaid-only_card.md
+2026-09-22 13:40:18,474 [INFO] Skipping vodacom-10gb10gb-day-night-data-direct-top-up-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:18,927 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-100mb-data-direct-top-up-1-day/knect-mobile-100mb-data-direct-top-up-1-day_card.md
+2026-09-22 13:40:18,927 [INFO] Skipping knect-mobile-100mb-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:40:19,232 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-15gb-anytime-data-voucher-code-1-day/mtn-15gb-anytime-data-voucher-code-1-day_card.md
+2026-09-22 13:40:19,232 [INFO] Skipping mtn-15gb-anytime-data-voucher-code-1-day, card already exists; category recorded.
+2026-09-22 13:40:19,624 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-65mb-anytime-data-voucher-code-30-days/mtn-65mb-anytime-data-voucher-code-30-days_card.md
+2026-09-22 13:40:19,625 [INFO] Skipping mtn-65mb-anytime-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:20,150 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-300mb-freeme-data-direct-top-up-14-days/telkom-300mb-freeme-data-direct-top-up-14-days_card.md
+2026-09-22 13:40:20,150 [INFO] Skipping telkom-300mb-freeme-data-direct-top-up-14-days, card already exists; category recorded.
+2026-09-22 13:40:20,648 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-50mb-data-voucher-code-1-day/knect-mobile-50mb-data-voucher-code-1-day_card.md
+2026-09-22 13:40:20,649 [INFO] Skipping knect-mobile-50mb-data-voucher-code-1-day, card already exists; category recorded.
+2026-09-22 13:40:20,942 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-100mb-data-direct-top-up-30-days/cell-c-100mb-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:20,942 [INFO] Skipping cell-c-100mb-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:22,044 [INFO] Successfully scraped mtn-120mb-anytime-data-voucher-code-30-days
+2026-09-22 13:40:22,047 [INFO] [1 scraped] MTN 120MB Anytime Data Voucher Code (30 Days)
+2026-09-22 13:40:22,645 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-12gb-anytime-data-voucher-code-7-days/mtn-12gb-anytime-data-voucher-code-7-days_card.md
+2026-09-22 13:40:22,645 [INFO] Skipping mtn-12gb-anytime-data-voucher-code-7-days, card already exists; category recorded.
+2026-09-22 13:40:23,203 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-150mb-anytime-data-direct-top-up-7-days/cell-c-150mb-anytime-data-direct-top-up-7-days_card.md
+2026-09-22 13:40:23,203 [INFO] Skipping cell-c-150mb-anytime-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:40:23,426 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-40gb-data-voucher-code-180-days/knect-mobile-40gb-data-voucher-code-180-days_card.md
+2026-09-22 13:40:23,426 [INFO] Skipping knect-mobile-40gb-data-voucher-code-180-days, card already exists; category recorded.
+2026-09-22 13:40:23,970 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-1gb-anytime-data-voucher-code-30-days-prepaid-only/cell-c-1gb-anytime-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:40:23,970 [INFO] Skipping cell-c-1gb-anytime-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:24,234 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-15gb-data-direct-top-up-1-day/knect-mobile-15gb-data-direct-top-up-1-day_card.md
+2026-09-22 13:40:24,234 [INFO] Skipping knect-mobile-15gb-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:40:24,569 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-200gb-data-voucher-code-180-days/knect-mobile-200gb-data-voucher-code-180-days_card.md
+2026-09-22 13:40:24,569 [INFO] Skipping knect-mobile-200gb-data-voucher-code-180-days, card already exists; category recorded.
+2026-09-22 13:40:25,160 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-2gb-anytime-data-direct-top-up-7-days/cell-c-2gb-anytime-data-direct-top-up-7-days_card.md
+2026-09-22 13:40:25,160 [INFO] Skipping cell-c-2gb-anytime-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:40:26,338 [INFO] Successfully scraped telkom-250mb-anytime-data-direct-top-up-7-days
+2026-09-22 13:40:26,341 [INFO] [2 scraped] Telkom 250MB Anytime Data Direct Top-Up (7 Days)
+2026-09-22 13:40:26,871 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-1gb-everydaygig-anytime-data-direct-top-up-1-day-prepaid-only/mtn-1gb-everydaygig-anytime-data-direct-top-up-1-day-prepaid-only_card.md
+2026-09-22 13:40:26,871 [INFO] Skipping mtn-1gb-everydaygig-anytime-data-direct-top-up-1-day-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:27,338 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-1gb-data-direct-top-up-7-days/telkom-1gb-data-direct-top-up-7-days_card.md
+2026-09-22 13:40:27,338 [INFO] Skipping telkom-1gb-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:40:27,699 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-500mb-anytime-data-direct-top-up-1-day/vodacom-500mb-anytime-data-direct-top-up-1-day_card.md
+2026-09-22 13:40:27,700 [INFO] Skipping vodacom-500mb-anytime-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:40:28,089 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-3gb-anytime-data-direct-top-up-30-days/vodacom-3gb-anytime-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:28,090 [INFO] Skipping vodacom-3gb-anytime-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:28,482 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-500mb-all-networks-anytime-data-voucher-code-30-days-prepaid-only/telkom-500mb-all-networks-anytime-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:40:28,483 [INFO] Skipping telkom-500mb-all-networks-anytime-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:29,306 [INFO] Successfully scraped knect-mobile-100gb-data-direct-top-up-180-days
+2026-09-22 13:40:29,309 [INFO] [3 scraped] k'nect mobile 100GB Data Direct Top-Up (180 Days)
+2026-09-22 13:40:29,828 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-80mb-anytime-data-direct-top-up-7-days/mtn-80mb-anytime-data-direct-top-up-7-days_card.md
+2026-09-22 13:40:29,828 [INFO] Skipping mtn-80mb-anytime-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:40:30,321 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-500mb-anytime-data-direct-top-up-1-day/telkom-500mb-anytime-data-direct-top-up-1-day_card.md
+2026-09-22 13:40:30,321 [INFO] Skipping telkom-500mb-anytime-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:40:30,639 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-100mb-anytime-data-voucher-code-1-day/mtn-100mb-anytime-data-voucher-code-1-day_card.md
+2026-09-22 13:40:30,640 [INFO] Skipping mtn-100mb-anytime-data-voucher-code-1-day, card already exists; category recorded.
+2026-09-22 13:40:31,108 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-1gb-anytime-data-voucher-code-30-days/mtn-1gb-anytime-data-voucher-code-30-days_card.md
+2026-09-22 13:40:31,108 [INFO] Skipping mtn-1gb-anytime-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:31,553 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-35gb-everydaygig-bundle-data-direct-top-up-7-days-prepaid-only/mtn-35gb-everydaygig-bundle-data-direct-top-up-7-days-prepaid-only_card.md
+2026-09-22 13:40:31,553 [INFO] Skipping mtn-35gb-everydaygig-bundle-data-direct-top-up-7-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:32,166 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-20gb20gb-day-night-data-voucher-code-30-days/vodacom-20gb20gb-day-night-data-voucher-code-30-days_card.md
+2026-09-22 13:40:32,166 [INFO] Skipping vodacom-20gb20gb-day-night-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:33,826 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-12gb-anytime-data-direct-top-up-7-days/mtn-12gb-anytime-data-direct-top-up-7-days_card.md
+2026-09-22 13:40:33,827 [INFO] Skipping mtn-12gb-anytime-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:40:34,341 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-1gb-day-by-day-anytime-data-voucher-code-7-days-prepaid-only/cell-c-1gb-day-by-day-anytime-data-voucher-code-7-days-prepaid-only_card.md
+2026-09-22 13:40:34,341 [INFO] Skipping cell-c-1gb-day-by-day-anytime-data-voucher-code-7-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:34,554 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-750mb-anytime-data-bundle-voucher-code-7-days/vodacom-750mb-anytime-data-bundle-voucher-code-7-days_card.md
+2026-09-22 13:40:34,554 [INFO] Skipping vodacom-750mb-anytime-data-bundle-voucher-code-7-days, card already exists; category recorded.
+2026-09-22 13:40:34,790 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-200gb-data-direct-top-up-180-days/knect-mobile-200gb-data-direct-top-up-180-days_card.md
+2026-09-22 13:40:34,790 [INFO] Skipping knect-mobile-200gb-data-direct-top-up-180-days, card already exists; category recorded.
+2026-09-22 13:40:35,070 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-2gb-data-direct-top-up-7-days/knect-mobile-2gb-data-direct-top-up-7-days_card.md
+2026-09-22 13:40:35,072 [INFO] Skipping knect-mobile-2gb-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:40:35,311 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-3gb-anytime-data-voucher-code-30-days/vodacom-3gb-anytime-data-voucher-code-30-days_card.md
+2026-09-22 13:40:35,311 [INFO] Skipping vodacom-3gb-anytime-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:35,552 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-2gb-data-voucher-code-30-days/knect-mobile-2gb-data-voucher-code-30-days_card.md
+2026-09-22 13:40:35,552 [INFO] Skipping knect-mobile-2gb-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:36,100 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-1gb-anytime-data-direct-top-up-30-days/cell-c-1gb-anytime-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:36,101 [INFO] Skipping cell-c-1gb-anytime-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:36,366 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-3gb-anytime-data-voucher-code-1-day/vodacom-3gb-anytime-data-voucher-code-1-day_card.md
+2026-09-22 13:40:36,366 [INFO] Skipping vodacom-3gb-anytime-data-voucher-code-1-day, card already exists; category recorded.
+2026-09-22 13:40:36,811 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-1gb-anytime-data-voucher-code-7-days-prepaid-only/cell-c-1gb-anytime-data-voucher-code-7-days-prepaid-only_card.md
+2026-09-22 13:40:36,811 [INFO] Skipping cell-c-1gb-anytime-data-voucher-code-7-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:37,224 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-2gb-data-200-voice-minutes-kombo-voucher-code-30-days/knect-mobile-2gb-data-200-voice-minutes-kombo-voucher-code-30-days_card.md
+2026-09-22 13:40:37,224 [INFO] Skipping knect-mobile-2gb-data-200-voice-minutes-kombo-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:37,513 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-10gb-data-direct-top-up-30-days/knect-mobile-10gb-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:37,513 [INFO] Skipping knect-mobile-10gb-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:37,754 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-100gb100gb-day-night-data-voucher-code-30-days-prepaid-only/mtn-100gb100gb-day-night-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:40:37,754 [INFO] Skipping mtn-100gb100gb-day-night-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:38,923 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-250mb-anytime-data-direct-top-up-7-days/cell-c-250mb-anytime-data-direct-top-up-7-days_card.md
+2026-09-22 13:40:38,924 [INFO] Skipping cell-c-250mb-anytime-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:40:39,320 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-10gb-data-voucher-code-30-days/knect-mobile-10gb-data-voucher-code-30-days_card.md
+2026-09-22 13:40:39,321 [INFO] Skipping knect-mobile-10gb-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:39,544 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-5gb-data-500-voice-minutes-kombo-direct-top-up-30-days/knect-mobile-5gb-data-500-voice-minutes-kombo-direct-top-up-30-days_card.md
+2026-09-22 13:40:39,544 [INFO] Skipping knect-mobile-5gb-data-500-voice-minutes-kombo-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:40,101 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-10gb-data-1000-voice-minutes-kombo-voucher-code-30-days/knect-mobile-10gb-data-1000-voice-minutes-kombo-voucher-code-30-days_card.md
+2026-09-22 13:40:40,101 [INFO] Skipping knect-mobile-10gb-data-1000-voice-minutes-kombo-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:40,673 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-120mb-anytime-data-direct-top-up-30-days/mtn-120mb-anytime-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:40,673 [INFO] Skipping mtn-120mb-anytime-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:41,224 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-1gb-data-voucher-code-7-days/knect-mobile-1gb-data-voucher-code-7-days_card.md
+2026-09-22 13:40:41,225 [INFO] Skipping knect-mobile-1gb-data-voucher-code-7-days, card already exists; category recorded.
+2026-09-22 13:40:41,636 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-80mb-anytime-data-voucher-code-1-day-prepaid-only/cell-c-80mb-anytime-data-voucher-code-1-day-prepaid-only_card.md
+2026-09-22 13:40:41,647 [INFO] Skipping cell-c-80mb-anytime-data-voucher-code-1-day-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:42,227 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-120mb-anytime-data-voucher-code-30-days/vodacom-120mb-anytime-data-voucher-code-30-days_card.md
+2026-09-22 13:40:42,227 [INFO] Skipping vodacom-120mb-anytime-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:42,753 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-150mb-anytime-data-voucher-code-7-days-prepaid-only/cell-c-150mb-anytime-data-voucher-code-7-days-prepaid-only_card.md
+2026-09-22 13:40:42,754 [INFO] Skipping cell-c-150mb-anytime-data-voucher-code-7-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:43,204 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-20gb-60-minutes-homeconnecta-anytime-data-voucher-code-30-days-prepaid-only/cell-c-20gb-60-minutes-homeconnecta-anytime-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:40:43,204 [INFO] Skipping cell-c-20gb-60-minutes-homeconnecta-anytime-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:43,653 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-40gb40gb-day-night-lte-data-voucher-code-30-days-prepaid-only/telkom-40gb40gb-day-night-lte-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:40:43,653 [INFO] Skipping telkom-40gb40gb-day-night-lte-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:44,091 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-150mb-data-direct-top-up-30-days/cell-c-150mb-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:44,092 [INFO] Skipping cell-c-150mb-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:44,513 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-75gb75gb-day-night-lte-data-direct-top-up-30-days-prepaid-only/telkom-75gb75gb-day-night-lte-data-direct-top-up-30-days-prepaid-only_card.md
+2026-09-22 13:40:44,513 [INFO] Skipping telkom-75gb75gb-day-night-lte-data-direct-top-up-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:45,036 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-15gb-data-voucher-code-1-day/knect-mobile-15gb-data-voucher-code-1-day_card.md
+2026-09-22 13:40:45,036 [INFO] Skipping knect-mobile-15gb-data-voucher-code-1-day, card already exists; category recorded.
+2026-09-22 13:40:45,489 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-220mb-anytime-data-direct-top-up-30-days/mtn-220mb-anytime-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:45,490 [INFO] Skipping mtn-220mb-anytime-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:45,917 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-500mb-data-direct-top-up-1-day/knect-mobile-500mb-data-direct-top-up-1-day_card.md
+2026-09-22 13:40:45,917 [INFO] Skipping knect-mobile-500mb-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:40:46,341 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-500mb-data-direct-top-up-7-days/knect-mobile-500mb-data-direct-top-up-7-days_card.md
+2026-09-22 13:40:46,342 [INFO] Skipping knect-mobile-500mb-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:40:46,701 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-1gb-data-100-voice-minutes-kombo-voucher-code-30-days/knect-mobile-1gb-data-100-voice-minutes-kombo-voucher-code-30-days_card.md
+2026-09-22 13:40:46,702 [INFO] Skipping knect-mobile-1gb-data-100-voice-minutes-kombo-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:47,115 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-20gb-data-voucher-code-180-days/knect-mobile-20gb-data-voucher-code-180-days_card.md
+2026-09-22 13:40:47,116 [INFO] Skipping knect-mobile-20gb-data-voucher-code-180-days, card already exists; category recorded.
+2026-09-22 13:40:47,583 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-10gb10gb-day-night-lte-data-direct-top-up-30-days-prepaid-only/telkom-10gb10gb-day-night-lte-data-direct-top-up-30-days-prepaid-only_card.md
+2026-09-22 13:40:47,584 [INFO] Skipping telkom-10gb10gb-day-night-lte-data-direct-top-up-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:48,649 [INFO] Successfully scraped cell-c-250mb-anytime-data-direct-top-up-30-days
+2026-09-22 13:40:48,652 [INFO] [4 scraped] Cell C 250MB Anytime Data Direct Top-Up (30 Days)
+2026-09-22 13:40:49,936 [INFO] Successfully scraped telkom-300mb-freeme-anytime-data-voucher-code-14-days-prepaid-only
+2026-09-22 13:40:49,939 [INFO] [5 scraped] Telkom 300MB FreeMe Anytime Data Voucher Code (14 Days) - Prepaid Only
+2026-09-22 13:40:50,287 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-2gb-data-200-voice-minutes-kombo-direct-top-up-30-days/knect-mobile-2gb-data-200-voice-minutes-kombo-direct-top-up-30-days_card.md
+2026-09-22 13:40:50,289 [INFO] Skipping knect-mobile-2gb-data-200-voice-minutes-kombo-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:50,572 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-1gb-data-voucher-code-30-days/knect-mobile-1gb-data-voucher-code-30-days_card.md
+2026-09-22 13:40:50,573 [INFO] Skipping knect-mobile-1gb-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:51,007 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-250mb-anytime-data-voucher-code-7-days/mtn-250mb-anytime-data-voucher-code-7-days_card.md
+2026-09-22 13:40:51,008 [INFO] Skipping mtn-250mb-anytime-data-voucher-code-7-days, card already exists; category recorded.
+2026-09-22 13:40:51,633 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-10gb10gb-day-night-lte-data-voucher-code-30-days-prepaid-only/telkom-10gb10gb-day-night-lte-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:40:51,633 [INFO] Skipping telkom-10gb10gb-day-night-lte-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:51,939 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-600mb-anytime-data-voucher-code-30-days/mtn-600mb-anytime-data-voucher-code-30-days_card.md
+2026-09-22 13:40:51,939 [INFO] Skipping mtn-600mb-anytime-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:52,206 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-25gb-all-in-one-data-direct-top-up-30-days/cell-c-25gb-all-in-one-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:52,206 [INFO] Skipping cell-c-25gb-all-in-one-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:52,671 [INFO] Skipping mtn-15gb-anytime-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:53,124 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-220mb-anytime-data-voucher-code-30-days/mtn-220mb-anytime-data-voucher-code-30-days_card.md
+2026-09-22 13:40:53,124 [INFO] Skipping mtn-220mb-anytime-data-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:40:53,689 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-2gb-everydaygig-anytime-data-direct-top-up-1-day-prepaid-only/mtn-2gb-everydaygig-anytime-data-direct-top-up-1-day-prepaid-only_card.md
+2026-09-22 13:40:53,690 [INFO] Skipping mtn-2gb-everydaygig-anytime-data-direct-top-up-1-day-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:53,950 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-175mb-anytime-data-bundle-voucher-code-7-days/vodacom-175mb-anytime-data-bundle-voucher-code-7-days_card.md
+2026-09-22 13:40:53,950 [INFO] Skipping vodacom-175mb-anytime-data-bundle-voucher-code-7-days, card already exists; category recorded.
+2026-09-22 13:40:54,472 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/mtn-600mb-anytime-data-voucher-code-1-day-prepaid-only/mtn-600mb-anytime-data-voucher-code-1-day-prepaid-only_card.md
+2026-09-22 13:40:54,473 [INFO] Skipping mtn-600mb-anytime-data-voucher-code-1-day-prepaid-only, card already exists; category recorded.
+2026-09-22 13:40:54,991 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-150mb-data-direct-top-up-1-days/cell-c-150mb-data-direct-top-up-1-days_card.md
+2026-09-22 13:40:54,991 [INFO] Skipping cell-c-150mb-data-direct-top-up-1-days, card already exists; category recorded.
+2026-09-22 13:40:55,255 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/vodacom-3gb-data-direct-top-up-1-day/vodacom-3gb-data-direct-top-up-1-day_card.md
+2026-09-22 13:40:55,255 [INFO] Skipping vodacom-3gb-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:40:56,713 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-1gb-anytime-data-direct-top-up-1-day/telkom-1gb-anytime-data-direct-top-up-1-day_card.md
+2026-09-22 13:40:56,713 [INFO] Skipping telkom-1gb-anytime-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:40:57,144 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/knect-mobile-5gb-data-direct-top-up-30-days/knect-mobile-5gb-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:57,144 [INFO] Skipping knect-mobile-5gb-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:57,663 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-1gb-all-networks-anytime-data-direct-top-up-30-days/telkom-1gb-all-networks-anytime-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:57,663 [INFO] Skipping telkom-1gb-all-networks-anytime-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:58,138 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/telkom-3gb3gb-all-networks-data-direct-top-up-30-days/telkom-3gb3gb-all-networks-data-direct-top-up-30-days_card.md
+2026-09-22 13:40:58,138 [INFO] Skipping telkom-3gb3gb-all-networks-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:40:58,593 [INFO] Added category 'airtime-data-vouchers/data-bundles' to products/cell-c-1gb-anytime-data-direct-top-up-1-day/cell-c-1gb-anytime-data-direct-top-up-1-day_card.md
+2026-09-22 13:40:58,594 [INFO] Skipping cell-c-1gb-anytime-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:40:58,843 [INFO] Scraping department: airtime-data-vouchers/social-bundles
+2026-09-22 13:40:59,544 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-300mb-whatsapp-social-bundle-data-direct-top-up-1-day/telkom-300mb-whatsapp-social-bundle-data-direct-top-up-1-day_card.md
+2026-09-22 13:40:59,555 [INFO] Skipping telkom-300mb-whatsapp-social-bundle-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:41:00,021 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-300mb-tik-tok-social-bundle-data-direct-top-up-7-days/telkom-300mb-tik-tok-social-bundle-data-direct-top-up-7-days_card.md
+2026-09-22 13:41:00,023 [INFO] Skipping telkom-300mb-tik-tok-social-bundle-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:00,518 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-25gb-tik-tok-social-bundle-data-direct-top-up-30-days/cell-c-25gb-tik-tok-social-bundle-data-direct-top-up-30-days_card.md
+2026-09-22 13:41:00,518 [INFO] Skipping cell-c-25gb-tik-tok-social-bundle-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:41:01,099 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-600mb-tik-tok-social-bundle-data-direct-top-up-7-days/telkom-600mb-tik-tok-social-bundle-data-direct-top-up-7-days_card.md
+2026-09-22 13:41:01,099 [INFO] Skipping telkom-600mb-tik-tok-social-bundle-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:01,450 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-300mb-whatsapp-10-minutes-voice-bundle-direct-top-up-7-days/telkom-300mb-whatsapp-10-minutes-voice-bundle-direct-top-up-7-days_card.md
+2026-09-22 13:41:01,450 [INFO] Skipping telkom-300mb-whatsapp-10-minutes-voice-bundle-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:02,680 [INFO] Successfully scraped telkom-unlimited-whatsapp-10-minutes-voice-bundle-voucher-code-1-day-prepaid-only
+2026-09-22 13:41:02,684 [INFO] [6 scraped] Telkom Unlimited WhatsApp + 10 Minutes Voice Bundle Voucher Code (1 Day) - Prepaid Only
+2026-09-22 13:41:03,106 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-25gb-youtube-social-bundle-data-voucher-code-30-days-prepaid-only/cell-c-25gb-youtube-social-bundle-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:41:03,107 [INFO] Skipping cell-c-25gb-youtube-social-bundle-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:03,404 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-1gb-tiktok-social-bundle-data-voucher-code-7-days-prepaid-only/cell-c-1gb-tiktok-social-bundle-data-voucher-code-7-days-prepaid-only_card.md
+2026-09-22 13:41:03,404 [INFO] Skipping cell-c-1gb-tiktok-social-bundle-data-voucher-code-7-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:03,873 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/vodacom-1gb-facebook-social-data-bundle-direct-top-up-30-days/vodacom-1gb-facebook-social-data-bundle-direct-top-up-30-days_card.md
+2026-09-22 13:41:03,874 [INFO] Skipping vodacom-1gb-facebook-social-data-bundle-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:41:04,993 [INFO] Successfully scraped vodacom-1gb-youtube-social-data-bundle-direct-top-up-7-days
+2026-09-22 13:41:04,996 [INFO] [7 scraped] Vodacom 1GB YouTube Social Data Bundle Direct Top-Up (7 Days)
+2026-09-22 13:41:05,453 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-300mb-whatsapp-10-minutes-voice-bundle-data-direct-top-up-1-day/telkom-300mb-whatsapp-10-minutes-voice-bundle-data-direct-top-up-1-day_card.md
+2026-09-22 13:41:05,454 [INFO] Skipping telkom-300mb-whatsapp-10-minutes-voice-bundle-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:41:05,749 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-25gb-tiktok-social-bundle-data-voucher-code-30-days-prepaid-only/cell-c-25gb-tiktok-social-bundle-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:41:05,749 [INFO] Skipping cell-c-25gb-tiktok-social-bundle-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:06,726 [INFO] Successfully scraped vodacom-12gb-whatsapp-social-data-bundle-voucher-code-30-days
+2026-09-22 13:41:06,729 [INFO] [8 scraped] Vodacom 1.2GB WhatsApp Social Data Bundle Voucher Code (30 Days)
+2026-09-22 13:41:07,748 [INFO] Successfully scraped mtn-550mb-whatsapp-social-bundle-data-voucher-code-7-days-prepaid-only
+2026-09-22 13:41:07,752 [INFO] [9 scraped] MTN 550MB WhatsApp Social Bundle Data Voucher Code (7 Days) - Prepaid Only
+2026-09-22 13:41:08,979 [INFO] Successfully scraped telkom-15gb-whatsapp-social-bundle-data-direct-top-up-30-days
+2026-09-22 13:41:08,982 [INFO] [10 scraped] Telkom 1.5GB WhatsApp Social Bundle Data Direct Top-Up (30 Days)
+2026-09-22 13:41:09,405 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/vodacom-250mb-whatsapp-social-data-bundle-direct-top-up-1-day/vodacom-250mb-whatsapp-social-data-bundle-direct-top-up-1-day_card.md
+2026-09-22 13:41:09,405 [INFO] Skipping vodacom-250mb-whatsapp-social-data-bundle-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:41:10,834 [INFO] Successfully scraped vodacom-500mb-whatsapp-social-data-bundle-voucher-code-7-days
+2026-09-22 13:41:10,838 [INFO] [11 scraped] Vodacom 500MB WhatsApp Social Data Bundle Voucher Code (7 Days)
+2026-09-22 13:41:11,950 [INFO] Successfully scraped mtn-1gb-whatsapp-social-bundle-data-direct-top-up-20-days
+2026-09-22 13:41:11,953 [INFO] [12 scraped] MTN 1GB WhatsApp Social Bundle Data Direct Top-up (20 Days)
+2026-09-22 13:41:12,920 [INFO] Successfully scraped telkom-unlimited-whatsapp-10-minutes-voice-bundle-direct-top-up-1-day
+2026-09-22 13:41:12,922 [INFO] [13 scraped] Telkom Unlimited WhatsApp + 10 Minutes Voice Bundle Direct Top-Up (1 Day)
+2026-09-22 13:41:13,908 [INFO] Successfully scraped vodacom-1gb-facebook-social-data-bundle-voucher-code-7-days
+2026-09-22 13:41:13,910 [INFO] [14 scraped] Vodacom 1GB Facebook Social Data Bundle Voucher Code (7 Days)
+2026-09-22 13:41:15,069 [INFO] Successfully scraped cell-c-25gb-youtube-social-bundle-data-direct-top-up-30-days
+2026-09-22 13:41:15,071 [INFO] [15 scraped] Cell C 2.5GB YouTube Social Bundle Data Direct Top-Up (30 Days)
+2026-09-22 13:41:15,292 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/vodacom-1gb-youtube-social-data-bundle-voucher-code-7-days/vodacom-1gb-youtube-social-data-bundle-voucher-code-7-days_card.md
+2026-09-22 13:41:15,293 [INFO] Skipping vodacom-1gb-youtube-social-data-bundle-voucher-code-7-days, card already exists; category recorded.
+2026-09-22 13:41:15,884 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-500mb-social-bundle-data-direct-top-up-1-day/telkom-500mb-social-bundle-data-direct-top-up-1-day_card.md
+2026-09-22 13:41:15,884 [INFO] Skipping telkom-500mb-social-bundle-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:41:16,966 [INFO] Successfully scraped telkom-150mb-tik-tok-social-bundle-data-direct-top-up-1-day
+2026-09-22 13:41:16,968 [INFO] [16 scraped] Telkom 150MB Tik-Tok Social Bundle Data Direct Top-Up (1 Day)
+2026-09-22 13:41:17,307 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-1gb-facebook-social-bundle-data-voucher-code-30-days-prepaid-only/cell-c-1gb-facebook-social-bundle-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:41:17,307 [INFO] Skipping cell-c-1gb-facebook-social-bundle-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:17,708 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-15gb-whatsapp-social-bundle-data-voucher-code-30-days-prepaid-only/telkom-15gb-whatsapp-social-bundle-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:41:17,709 [INFO] Skipping telkom-15gb-whatsapp-social-bundle-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:18,812 [INFO] Successfully scraped telkom-unlimited-whatsapp-50-minutes-voice-bundle-voucher-code-30-days-prepaid-only
+2026-09-22 13:41:18,820 [INFO] [17 scraped] Telkom Unlimited WhatsApp + 50 Minutes Voice Bundle Voucher Code (30 Days) - Prepaid Only
+2026-09-22 13:41:19,074 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/knect-mobile-500mb-whatsapp-social-bundle-data-direct-top-up-1-day/knect-mobile-500mb-whatsapp-social-bundle-data-direct-top-up-1-day_card.md
+2026-09-22 13:41:19,077 [INFO] Skipping knect-mobile-500mb-whatsapp-social-bundle-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:41:19,615 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-300mb-whatsapp-social-bundle-data-voucher-code-7-days-prepaid-only/telkom-300mb-whatsapp-social-bundle-data-voucher-code-7-days-prepaid-only_card.md
+2026-09-22 13:41:19,616 [INFO] Skipping telkom-300mb-whatsapp-social-bundle-data-voucher-code-7-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:19,882 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-1gb-facebook-social-bundle-data-direct-top-up-7-days/cell-c-1gb-facebook-social-bundle-data-direct-top-up-7-days_card.md
+2026-09-22 13:41:19,882 [INFO] Skipping cell-c-1gb-facebook-social-bundle-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:21,317 [INFO] Successfully scraped telkom-2gb-social-bundle-data-direct-top-up-7-days
+2026-09-22 13:41:21,320 [INFO] [18 scraped] Telkom 2GB Social Bundle Data Direct Top-Up (7 Days)
+2026-09-22 13:41:21,797 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/mtn-1gb-facebook-social-bundle-data-direct-top-up-7-days/mtn-1gb-facebook-social-bundle-data-direct-top-up-7-days_card.md
+2026-09-22 13:41:21,797 [INFO] Skipping mtn-1gb-facebook-social-bundle-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:22,336 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-1gb-tiktok-social-bundle-data-voucher-code-30-days-prepaid-only/cell-c-1gb-tiktok-social-bundle-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:41:22,336 [INFO] Skipping cell-c-1gb-tiktok-social-bundle-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:23,589 [INFO] Successfully scraped telkom-300mb-whatsapp-15-minutes-voice-bundle-voucher-code-7-days-prepaid-only
+2026-09-22 13:41:23,592 [INFO] [19 scraped] Telkom 300MB WhatsApp + 15 Minutes Voice Bundle Voucher Code (7 Days) - Prepaid Only
+2026-09-22 13:41:23,818 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-25gb-facebook-social-bundle-data-voucher-code-30-days-prepaid-only/cell-c-25gb-facebook-social-bundle-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:41:23,818 [INFO] Skipping cell-c-25gb-facebook-social-bundle-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:24,814 [INFO] Successfully scraped mtn-700mb-whatsapp-social-bundle-data-voucher-code-30-days-prepaid-only
+2026-09-22 13:41:24,816 [INFO] [20 scraped] MTN 700MB WhatsApp Social Bundle Data Voucher Code (30 Days) - Prepaid Only
+2026-09-22 13:41:25,266 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/vodacom-1gb-tiktok-social-data-bundle-direct-top-up-7-days/vodacom-1gb-tiktok-social-data-bundle-direct-top-up-7-days_card.md
+2026-09-22 13:41:25,266 [INFO] Skipping vodacom-1gb-tiktok-social-data-bundle-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:25,656 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-1gb-social-bundle-data-direct-top-up-7-days/telkom-1gb-social-bundle-data-direct-top-up-7-days_card.md
+2026-09-22 13:41:25,656 [INFO] Skipping telkom-1gb-social-bundle-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:25,935 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-300mb-whatsapp-10-minutes-voice-bundle-voucher-code-1-day-prepaid-only/telkom-300mb-whatsapp-10-minutes-voice-bundle-voucher-code-1-day-prepaid-only_card.md
+2026-09-22 13:41:25,935 [INFO] Skipping telkom-300mb-whatsapp-10-minutes-voice-bundle-voucher-code-1-day-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:26,416 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-1gb-whatsapp-social-bundle-data-direct-top-up-30-days/cell-c-1gb-whatsapp-social-bundle-data-direct-top-up-30-days_card.md
+2026-09-22 13:41:26,417 [INFO] Skipping cell-c-1gb-whatsapp-social-bundle-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:41:27,566 [INFO] Successfully scraped telkom-unlimited-whatsapp-social-bundle-data-voucher-code-1-day-prepaid-only
+2026-09-22 13:41:27,570 [INFO] [21 scraped] Telkom Unlimited WhatsApp Social Bundle Data Voucher Code (1 Day) - Prepaid Only
+2026-09-22 13:41:28,535 [INFO] Successfully scraped cell-c-25gb-facebook-social-bundle-data-direct-top-up-30-days
+2026-09-22 13:41:28,538 [INFO] [22 scraped] Cell C 2.5GB Facebook Social Bundle Data Direct Top-Up (30 Days)
+2026-09-22 13:41:29,080 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-250mb-tik-tok-social-bundle-data-direct-top-up-1-day/cell-c-250mb-tik-tok-social-bundle-data-direct-top-up-1-day_card.md
+2026-09-22 13:41:29,080 [INFO] Skipping cell-c-250mb-tik-tok-social-bundle-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:41:30,227 [INFO] Successfully scraped telkom-175mb-whatsapp-social-bundle-data-voucher-code-3-days-prepaid-only
+2026-09-22 13:41:30,229 [INFO] [23 scraped] Telkom 175MB WhatsApp Social Bundle Data Voucher Code (3 Days) - Prepaid Only
+2026-09-22 13:41:31,301 [INFO] Successfully scraped knect-mobile-500mb-whatsapp-social-bundle-data-voucher-code-1-day
+2026-09-22 13:41:31,304 [INFO] [24 scraped] k'nect mobile 500MB WhatsApp Social Bundle Data Voucher Code (1 Day)
+2026-09-22 13:41:31,828 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/knect-mobile-700mb-whatsapp-social-bundle-data-direct-top-up-7-days/knect-mobile-700mb-whatsapp-social-bundle-data-direct-top-up-7-days_card.md
+2026-09-22 13:41:31,828 [INFO] Skipping knect-mobile-700mb-whatsapp-social-bundle-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:32,274 [INFO] Skipping telkom-1gb-social-bundle-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:33,011 [INFO] Successfully scraped cell-c-unlimited-whatsapp-social-bundle-data-voucher-code-30-days-prepaid-only
+2026-09-22 13:41:33,013 [INFO] [25 scraped] Cell C Unlimited WhatsApp Social Bundle Data Voucher Code (30 Days) - Prepaid Only
+2026-09-22 13:41:33,918 [INFO] Successfully scraped vodacom-1gb-tiktok-social-data-bundle-voucher-code-7-days
+2026-09-22 13:41:33,923 [INFO] [26 scraped] Vodacom 1GB TikTok Social Data Bundle Voucher Code (7 Days)
+2026-09-22 13:41:34,421 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-250mb-social-bundle-data-direct-top-up-1-day/telkom-250mb-social-bundle-data-direct-top-up-1-day_card.md
+2026-09-22 13:41:34,421 [INFO] Skipping telkom-250mb-social-bundle-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:41:35,451 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/vodacom-unlimited-whatsapp-social-data-bundle-direct-top-up-30-days/vodacom-unlimited-whatsapp-social-data-bundle-direct-top-up-30-days_card.md
+2026-09-22 13:41:35,451 [INFO] Skipping vodacom-unlimited-whatsapp-social-data-bundle-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:41:35,761 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-unlimited-whatsapp-social-bundle-data-voucher-code-7-days-prepaid-only/telkom-unlimited-whatsapp-social-bundle-data-voucher-code-7-days-prepaid-only_card.md
+2026-09-22 13:41:35,761 [INFO] Skipping telkom-unlimited-whatsapp-social-bundle-data-voucher-code-7-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:36,249 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-150mb-whatsapp-social-bundle-data-voucher-code-1-day-prepaid-only/telkom-150mb-whatsapp-social-bundle-data-voucher-code-1-day-prepaid-only_card.md
+2026-09-22 13:41:36,249 [INFO] Skipping telkom-150mb-whatsapp-social-bundle-data-voucher-code-1-day-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:36,548 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-750mb-whatsapp-20-minutes-voice-bundle-voucher-code-7-days-prepaid-only/telkom-750mb-whatsapp-20-minutes-voice-bundle-voucher-code-7-days-prepaid-only_card.md
+2026-09-22 13:41:36,548 [INFO] Skipping telkom-750mb-whatsapp-20-minutes-voice-bundle-voucher-code-7-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:36,868 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/mtn-300mb-whatsapp-social-bundle-data-direct-top-up-7-days/mtn-300mb-whatsapp-social-bundle-data-direct-top-up-7-days_card.md
+2026-09-22 13:41:36,868 [INFO] Skipping mtn-300mb-whatsapp-social-bundle-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:38,179 [INFO] Successfully scraped telkom-1gb-whatsapp-social-bundle-data-direct-top-up-30-days
+2026-09-22 13:41:38,182 [INFO] [27 scraped] Telkom 1GB WhatsApp Social Bundle Data Direct Top-Up (30 Days)
+2026-09-22 13:41:38,444 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-1gb-whatsapp-social-bundle-data-voucher-code-30-days-prepaid-only/telkom-1gb-whatsapp-social-bundle-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:41:38,445 [INFO] Skipping telkom-1gb-whatsapp-social-bundle-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:38,812 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-unlimited-whatsapp-social-bundle-data-voucher-code-30-days-prepaid-only/telkom-unlimited-whatsapp-social-bundle-data-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:41:38,812 [INFO] Skipping telkom-unlimited-whatsapp-social-bundle-data-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:39,062 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-150mb-whatsapp-social-bundle-data-direct-top-up-1-day/telkom-150mb-whatsapp-social-bundle-data-direct-top-up-1-day_card.md
+2026-09-22 13:41:39,062 [INFO] Skipping telkom-150mb-whatsapp-social-bundle-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:41:39,569 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/vodacom-1gb-tiktok-social-data-bundle-voucher-code-30-days/vodacom-1gb-tiktok-social-data-bundle-voucher-code-30-days_card.md
+2026-09-22 13:41:39,574 [INFO] Skipping vodacom-1gb-tiktok-social-data-bundle-voucher-code-30-days, card already exists; category recorded.
+2026-09-22 13:41:39,993 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-750mb-whatsapp-social-bundle-data-direct-top-up-7-days/telkom-750mb-whatsapp-social-bundle-data-direct-top-up-7-days_card.md
+2026-09-22 13:41:39,993 [INFO] Skipping telkom-750mb-whatsapp-social-bundle-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:40,384 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/vodacom-unlimited-whatsapp-social-data-bundle-direct-top-up-7-days/vodacom-unlimited-whatsapp-social-data-bundle-direct-top-up-7-days_card.md
+2026-09-22 13:41:40,384 [INFO] Skipping vodacom-unlimited-whatsapp-social-data-bundle-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:40,695 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-1gb-tik-tok-social-bundle-data-direct-top-up-30-days/telkom-1gb-tik-tok-social-bundle-data-direct-top-up-30-days_card.md
+2026-09-22 13:41:40,696 [INFO] Skipping telkom-1gb-tik-tok-social-bundle-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:41:41,276 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/mtn-300mb-whatsapp-social-bundle-data-voucher-code-7-days-prepaid-only/mtn-300mb-whatsapp-social-bundle-data-voucher-code-7-days-prepaid-only_card.md
+2026-09-22 13:41:41,277 [INFO] Skipping mtn-300mb-whatsapp-social-bundle-data-voucher-code-7-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:41,524 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/mtn-250mb-social-pass-bundle-data-voucher-code-7-days-prepaid-only/mtn-250mb-social-pass-bundle-data-voucher-code-7-days-prepaid-only_card.md
+2026-09-22 13:41:41,524 [INFO] Skipping mtn-250mb-social-pass-bundle-data-voucher-code-7-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:41,966 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-1gb1gb-whatsapp-social-data-bundle-voucher-code-30-days-prepaid-only/cell-c-1gb1gb-whatsapp-social-data-bundle-voucher-code-30-days-prepaid-only_card.md
+2026-09-22 13:41:41,966 [INFO] Skipping cell-c-1gb1gb-whatsapp-social-data-bundle-voucher-code-30-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:42,407 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-unlimited-whatsapp-50-minutes-voice-bundle-direct-top-up-30-days/telkom-unlimited-whatsapp-50-minutes-voice-bundle-direct-top-up-30-days_card.md
+2026-09-22 13:41:42,408 [INFO] Skipping telkom-unlimited-whatsapp-50-minutes-voice-bundle-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:41:42,808 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-1gb-whatsapp-social-data-bundle-direct-top-up-30-days/cell-c-1gb-whatsapp-social-data-bundle-direct-top-up-30-days_card.md
+2026-09-22 13:41:42,808 [INFO] Skipping cell-c-1gb-whatsapp-social-data-bundle-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:41:43,138 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-unlimited-whatsapp-20-minutes-voice-bundle-direct-top-up-7-days/telkom-unlimited-whatsapp-20-minutes-voice-bundle-direct-top-up-7-days_card.md
+2026-09-22 13:41:43,138 [INFO] Skipping telkom-unlimited-whatsapp-20-minutes-voice-bundle-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:43,726 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/mtn-1gb-whatsapp-social-bundle-data-direct-top-up-7-days/mtn-1gb-whatsapp-social-bundle-data-direct-top-up-7-days_card.md
+2026-09-22 13:41:43,726 [INFO] Skipping mtn-1gb-whatsapp-social-bundle-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:44,333 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/telkom-750mb-whatsapp-social-bundle-data-voucher-code-7-days-prepaid-only/telkom-750mb-whatsapp-social-bundle-data-voucher-code-7-days-prepaid-only_card.md
+2026-09-22 13:41:44,334 [INFO] Skipping telkom-750mb-whatsapp-social-bundle-data-voucher-code-7-days-prepaid-only, card already exists; category recorded.
+2026-09-22 13:41:44,619 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/mtn-1gb-whatsapp-social-data-bundle-voucher-code-20-days/mtn-1gb-whatsapp-social-data-bundle-voucher-code-20-days_card.md
+2026-09-22 13:41:44,632 [INFO] Skipping mtn-1gb-whatsapp-social-data-bundle-voucher-code-20-days, card already exists; category recorded.
+2026-09-22 13:41:45,192 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/knect-mobile-1gb-whatsapp-social-bundle-data-direct-top-up-30-days/knect-mobile-1gb-whatsapp-social-bundle-data-direct-top-up-30-days_card.md
+2026-09-22 13:41:45,193 [INFO] Skipping knect-mobile-1gb-whatsapp-social-bundle-data-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:41:45,765 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-300mb-whatsapp-social-data-bundle-direct-top-up-7-days/cell-c-300mb-whatsapp-social-data-bundle-direct-top-up-7-days_card.md
+2026-09-22 13:41:45,801 [INFO] Skipping cell-c-300mb-whatsapp-social-data-bundle-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:46,486 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-1gb-tik-tok-social-bundle-data-direct-top-up-7-days/cell-c-1gb-tik-tok-social-bundle-data-direct-top-up-7-days_card.md
+2026-09-22 13:41:46,495 [INFO] Skipping cell-c-1gb-tik-tok-social-bundle-data-direct-top-up-7-days, card already exists; category recorded.
+2026-09-22 13:41:47,085 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/mtn-2gb-whatsapp-social-data-bundle-direct-top-up-30-days/mtn-2gb-whatsapp-social-data-bundle-direct-top-up-30-days_card.md
+2026-09-22 13:41:47,088 [INFO] Skipping mtn-2gb-whatsapp-social-data-bundle-direct-top-up-30-days, card already exists; category recorded.
+2026-09-22 13:41:47,528 [INFO] Added category 'airtime-data-vouchers/social-bundles' to products/cell-c-250mb-whatsapp-social-bundle-data-direct-top-up-1-day/cell-c-250mb-whatsapp-social-bundle-data-direct-top-up-1-day_card.md
+2026-09-22 13:41:47,529 [INFO] Skipping cell-c-250mb-whatsapp-social-bundle-data-direct-top-up-1-day, card already exists; category recorded.
+2026-09-22 13:41:48,669 [INFO] Scraping department: airtime-data-vouchers/voice-bundles
+2026-09-22 13:41:50,042 [INFO] Successfully scraped knect-mobile-10000-minutes-voice-direct-top-up-180-days
+2026-09-22 13:41:50,046 [INFO] [28 scraped] k'nect mobile 10000 Minutes Voice Direct Top-Up (180 Days)
+2026-09-22 13:41:51,019 [INFO] Successfully scraped cell-c-20-minutes-all-net-voice-bundle-voucher-code-1-day-prepaid-only
+2026-09-22 13:41:51,021 [INFO] [29 scraped] Cell C 20 Minutes All-Net Voice Bundle Voucher Code (1 Day) - Prepaid Only
+2026-09-22 13:41:52,090 [INFO] Successfully scraped cell-c-100-minutes-all-net-voice-bundle-voucher-code-7-days-prepaid-only
+2026-09-22 13:41:52,093 [INFO] [30 scraped] Cell C 100 Minutes All-Net Voice Bundle Voucher Code (7 Days) - Prepaid Only
+2026-09-22 13:41:53,026 [INFO] Successfully scraped telkom-50-minutes-all-networks-voice-voucher-code-30-days-prepaid-only
+2026-09-22 13:41:53,029 [INFO] [31 scraped] Telkom 50 Minutes All Networks Voice Voucher Code (30 Days) - Prepaid Only
+2026-09-22 13:41:54,342 [INFO] Successfully scraped mtn-120-minutes-all-net-voice-bundle-voucher-code-1-day-prepaid-only
+2026-09-22 13:41:54,345 [INFO] [32 scraped] MTN 120 Minutes All-Net Voice Bundle Voucher Code (1 Day) - Prepaid Only
+2026-09-22 13:41:55,271 [INFO] Successfully scraped knect-mobile-50-minutes-voice-voucher-code-30-days
+2026-09-22 13:41:55,273 [INFO] [33 scraped] k'nect mobile 50 Minutes Voice Voucher Code (30 Days)
+2026-09-22 13:41:56,694 [INFO] Successfully scraped knect-mobile-5000-minutes-voice-direct-top-up-180-days
+2026-09-22 13:41:56,697 [INFO] [34 scraped] k'nect mobile 5000 Minutes Voice Direct Top-Up (180 Days)
+2026-09-22 13:41:57,721 [INFO] Successfully scraped cell-c-30-minutes-all-net-voice-bundle-direct-top-up-30-days
+2026-09-22 13:41:57,724 [INFO] [35 scraped] Cell C 30 Minutes All-Net Voice Bundle Direct Top-Up (30 Days)
+2026-09-22 13:41:58,742 [INFO] Successfully scraped cell-c-50-minutes-all-net-voice-bundle-voucher-code-7-days-prepaid-only
+2026-09-22 13:41:58,745 [INFO] [36 scraped] Cell C 50 Minutes All-Net Voice Bundle Voucher Code (7 Days) - Prepaid Only
+2026-09-22 13:41:59,316 [INFO] Added category 'airtime-data-vouchers/voice-bundles' to products/vodacom-60-minutes-only-network-voice-bundle-data-voucher-code-1-day/vodacom-60-minutes-only-network-voice-bundle-data-voucher-code-1-day_card.md
+2026-09-22 13:41:59,316 [INFO] Skipping vodacom-60-minutes-only-network-voice-bundle-data-voucher-code-1-day, card already exists; category recorded.
+2026-09-22 13:42:00,177 [INFO] Successfully scraped knect-mobile-2000-minutes-voice-voucher-code-180-days
+2026-09-22 13:42:00,180 [INFO] [37 scraped] k'nect mobile 2000 Minutes Voice Voucher Code (180 Days)
+2026-09-22 13:42:01,116 [INFO] Successfully scraped cell-c-90-minutes-all-net-voice-bundle-voucher-code-30-days-prepaid-only
+2026-09-22 13:42:01,124 [INFO] [38 scraped] Cell C 90 Minutes All-Net Voice Bundle Voucher Code (30 Days) - Prepaid Only
+2026-09-22 13:42:02,123 [INFO] Successfully scraped knect-mobile-100-minutes-voice-direct-top-up-30-days
+2026-09-22 13:42:02,127 [INFO] [39 scraped] k'nect mobile 100 Minutes Voice Direct Top-Up (30 Days)
+2026-09-22 13:42:03,659 [INFO] Successfully scraped vodacom-500-minutes-voice-bundle-data-direct-top-up-1-day
+2026-09-22 13:42:03,663 [INFO] [40 scraped] Vodacom 500 Minutes Voice Bundle Data Direct Top-Up (1 Day)
+2026-09-22 13:42:04,495 [INFO] Successfully scraped cell-c-240-minutes-all-net-voice-bundle-direct-top-up-30-days
+2026-09-22 13:42:04,499 [INFO] [41 scraped] Cell C 240 Minutes All-Net Voice Bundle Direct Top-Up (30 Days)
+2026-09-22 13:42:05,501 [INFO] Successfully scraped vodacom-500-minutes-on-net-voice-bundle-data-direct-top-up-1-day
+2026-09-22 13:42:05,505 [INFO] [42 scraped] Vodacom 500 Minutes On-Net Voice Bundle Data Direct Top-Up (1 Day)
+2026-09-22 13:42:06,122 [INFO] Added category 'airtime-data-vouchers/voice-bundles' to products/vodacom-unlimited-minutes-only-network-voice-bundle-data-voucher-code-1-day/vodacom-unlimited-minutes-only-network-voice-bundle-data-voucher-code-1-day_card.md
+2026-09-22 13:42:06,122 [INFO] Skipping vodacom-unlimited-minutes-only-network-voice-bundle-data-voucher-code-1-day, card already exists; category recorded.
+2026-09-22 13:42:07,048 [INFO] Successfully scraped vodacom-900-minutes-all-net-voice-bundle-direct-top-up-30-days
+2026-09-22 13:42:07,050 [INFO] [43 scraped] Vodacom 900 Minutes All-Net Voice Bundle Direct Top-Up (30 Days)
+2026-09-22 13:42:07,909 [INFO] Successfully scraped knect-mobile-100-minutes-voice-voucher-code-30-days
+2026-09-22 13:42:07,912 [INFO] [44 scraped] k'nect mobile 100 Minutes Voice Voucher Code (30 Days)
+2026-09-22 13:42:08,946 [INFO] Successfully scraped knect-mobile-10000-minutes-voice-voucher-code-180-days
+2026-09-22 13:42:08,948 [INFO] [45 scraped] k'nect mobile 10000 Minutes Voice Voucher Code (180 Days)
+2026-09-22 13:42:09,764 [INFO] Successfully scraped telkom-25-minutes-all-net-voice-bundle-direct-top-up-30-days
+2026-09-22 13:42:09,768 [INFO] [46 scraped] Telkom 25 Minutes All-Net Voice Bundle Direct Top-Up (30 Days)
+2026-09-22 13:42:10,790 [INFO] Successfully scraped vodacom-unlimited-minutes-all-net-voice-bundle-voucher-code-1-day
+2026-09-22 13:42:10,794 [INFO] [47 scraped] Vodacom Unlimited Minutes All-Net Voice Bundle Voucher Code (1 Day)
+2026-09-22 13:42:11,807 [INFO] Successfully scraped telkom-300-minutes-voice-bundle-data-direct-top-up-30-days
+2026-09-22 13:42:11,810 [INFO] [48 scraped] Telkom 300 Minutes Voice Bundle Data Direct Top-Up (30 Days)
+2026-09-22 13:42:12,620 [INFO] Successfully scraped mtn-70-minutes-all-net-voice-bundle-direct-top-up-7-days
+2026-09-22 13:42:12,658 [INFO] [49 scraped] MTN 70 Minutes All-Net Voice Bundle Direct Top-Up (7 Days)
+2026-09-22 13:42:13,899 [INFO] Successfully scraped knect-mobile-1000-minutes-voice-direct-top-up-30-days
+2026-09-22 13:42:13,902 [INFO] [50 scraped] k'nect mobile 1000 Minutes Voice Direct Top-Up (30 Days)
+2026-09-22 13:42:14,842 [INFO] Successfully scraped cell-c-1000-minutes-all-net-voice-bundle-direct-top-up-30-days
+2026-09-22 13:42:14,844 [INFO] [51 scraped] Cell C 1000 Minutes All-Net Voice Bundle Direct Top-Up (30 Days)
+2026-09-22 13:42:15,792 [INFO] Successfully scraped vodacom-60-minutes-on-net-voice-bundle-data-direct-top-up-1-day
+2026-09-22 13:42:15,795 [INFO] [52 scraped] Vodacom 60 Minutes On-Net Voice Bundle Data Direct Top-Up (1 Day)
+2026-09-22 13:42:16,719 [INFO] Successfully scraped mtn-120-minutes-all-net-voice-bundle-direct-top-up-1-day
+2026-09-22 13:42:16,724 [INFO] [53 scraped] MTN 120 Minutes All-Net Voice Bundle Direct Top-Up (1 Day)
+2026-09-22 13:42:17,697 [INFO] Successfully scraped knect-mobile-2000-minutes-voice-direct-top-up-180-days
+2026-09-22 13:42:17,699 [INFO] [54 scraped] k'nect mobile 2000 Minutes Voice Direct Top-Up (180 Days)
+2026-09-22 13:42:18,920 [INFO] Successfully scraped mtn-60-minutes-all-net-voice-bundle-direct-top-up-1-day
+2026-09-22 13:42:18,922 [INFO] [55 scraped] MTN 60 Minutes All-Net Voice Bundle Direct Top-Up (1 Day)
+2026-09-22 13:42:32,609 [INFO] Successfully scraped vodacom-60-minutes-voice-bundle-data-direct-top-up-1-day
+2026-09-22 13:42:32,613 [INFO] [56 scraped] Vodacom 60 Minutes Voice Bundle Data Direct Top-Up (1 Day)
+2026-09-22 13:42:33,527 [INFO] Successfully scraped mtn-600-minutes-all-net-voice-bundle-direct-top-up-7-days
+2026-09-22 13:42:33,530 [INFO] [57 scraped] MTN 600 Minutes All-Net Voice Bundle Direct Top-Up (7 Days)
+2026-09-22 13:42:33,840 [INFO] Added category 'airtime-data-vouchers/voice-bundles' to products/knect-mobile-30-minutes-voice-voucher-code-1-day/knect-mobile-30-minutes-voice-voucher-code-1-day_card.md
+2026-09-22 13:42:33,840 [INFO] Skipping knect-mobile-30-minutes-voice-voucher-code-1-day, card already exists; category recorded.
+2026-09-22 13:42:34,495 [INFO] Successfully scraped telkom-200-minutes-voice-bundle-data-direct-top-up-30-days
+2026-09-22 13:42:34,498 [INFO] [58 scraped] Telkom 200 Minutes Voice Bundle Data Direct Top-Up (30 Days)
+2026-09-22 13:42:35,405 [INFO] Successfully scraped knect-mobile-500-minutes-voice-direct-top-up-30-days
+2026-09-22 13:42:35,407 [INFO] [59 scraped] k'nect mobile 500 Minutes Voice Direct Top-Up (30 Days)
+2026-09-22 13:42:36,442 [INFO] Successfully scraped knect-mobile-50-minutes-voice-direct-top-up-30-days
+2026-09-22 13:42:36,447 [INFO] [60 scraped] k'nect mobile 50 Minutes Voice Direct Top-Up (30 Days)
+2026-09-22 13:42:37,200 [INFO] Successfully scraped cell-c-10-minutes-voice-bundle-direct-top-up-1-day
+2026-09-22 13:42:37,206 [INFO] [61 scraped] Cell C 10 Minutes Voice Bundle Direct Top-Up (1 Day)
+2026-09-22 13:42:37,929 [INFO] Successfully scraped vodacom-300-minutes-all-net-voice-bundle-direct-top-up-30-days
+2026-09-22 13:42:37,932 [INFO] [62 scraped] Vodacom 300 Minutes All-Net Voice Bundle Direct Top-Up (30 Days)
+2026-09-22 13:42:38,741 [INFO] Successfully scraped knect-mobile-1000-minutes-voice-voucher-code-180-days
+2026-09-22 13:42:38,743 [INFO] [63 scraped] k'nect mobile 1000 Minutes Voice Voucher Code (180 Days)
+2026-09-22 13:42:39,717 [INFO] Successfully scraped cell-c-60-minutes-voice-bundle-direct-top-up-1-day
+2026-09-22 13:42:39,720 [INFO] [64 scraped] Cell C 60 Minutes Voice Bundle Direct Top-Up (1 Day)
+2026-09-22 13:42:40,528 [INFO] Successfully scraped knect-mobile-50-minutes-voice-voucher-code-7-days
+2026-09-22 13:42:40,530 [INFO] [65 scraped] k'nect mobile 50 Minutes Voice Voucher Code (7 Days)
+2026-09-22 13:42:41,212 [INFO] Successfully scraped telkom-25-minutes-all-networks-voice-voucher-code-30-days-prepaid-only
+2026-09-22 13:42:41,215 [INFO] [66 scraped] Telkom 25 Minutes All Networks Voice Voucher Code (30 Days) - Prepaid Only
+2026-09-22 13:42:41,930 [INFO] Successfully scraped telkom-50-minutes-all-net-voice-bundle-direct-top-up-30-days
+2026-09-22 13:42:41,965 [INFO] [67 scraped] Telkom 50 Minutes All-Net Voice Bundle Direct Top-Up (30 Days)
+2026-09-22 13:42:42,931 [INFO] Successfully scraped knect-mobile-60-minutes-voice-direct-top-up-1-day
+2026-09-22 13:42:42,935 [INFO] [68 scraped] k'nect mobile 60 Minutes Voice Direct Top-Up (1 Day)
+2026-09-22 13:42:43,820 [INFO] Successfully scraped mtn-70-minutes-all-net-voice-bundle-data-voucher-code-7-days-prepaid-only
+2026-09-22 13:42:43,823 [INFO] [69 scraped] MTN 70 Minutes All-Net Voice Bundle Data Voucher Code (7 Days) - Prepaid Only
+2026-09-22 13:42:44,683 [INFO] Successfully scraped knect-mobile-60-minutes-voice-voucher-code-1-day
+2026-09-22 13:42:44,685 [INFO] [70 scraped] k'nect mobile 60 Minutes Voice Voucher Code (1 Day)
+2026-09-22 13:42:45,542 [INFO] Successfully scraped knect-mobile-1000-minutes-voice-direct-top-up-180-days
+2026-09-22 13:42:45,547 [INFO] [71 scraped] k'nect mobile 1000 Minutes Voice Direct Top-Up (180 Days)
+2026-09-22 13:42:46,425 [INFO] Successfully scraped telkom-100-minutes-all-net-voice-bundle-direct-top-up-30-days
+2026-09-22 13:42:46,428 [INFO] [72 scraped] Telkom 100 Minutes All-Net Voice Bundle Direct Top-Up (30 Days)
+2026-09-22 13:42:47,384 [INFO] Successfully scraped cell-c-15-minutes-voice-bundle-direct-top-up-7-days
+2026-09-22 13:42:47,389 [INFO] [73 scraped] Cell C 15 Minutes Voice Bundle Direct Top-Up (7 Days)
+2026-09-22 13:42:48,254 [INFO] Successfully scraped cell-c-100-minutes-voice-bundle-direct-top-up-7-days
+2026-09-22 13:42:48,256 [INFO] [74 scraped] Cell C 100 Minutes Voice Bundle Direct Top-Up (7 Days)
+2026-09-22 13:42:50,097 [INFO] Successfully scraped cell-c-400-minutes-all-net-voice-bundle-voucher-code-30-days-prepaid-only
+2026-09-22 13:42:50,100 [INFO] [75 scraped] Cell C 400 Minutes All-Net Voice Bundle Voucher Code (30 Days) - Prepaid Only
+2026-09-22 13:42:50,712 [INFO] Successfully scraped cell-c-150-minutes-all-net-voice-bundle-voucher-code-7-days-prepaid-only
+2026-09-22 13:42:50,715 [INFO] [76 scraped] Cell C 150 Minutes All-Net Voice Bundle Voucher Code (7 Days) - Prepaid Only
+2026-09-22 13:42:51,588 [INFO] Successfully scraped knect-mobile-100-minutes-voice-direct-top-up-7-days
+2026-09-22 13:42:51,591 [INFO] [77 scraped] k'nect mobile 100 Minutes Voice Direct Top-Up (7 Days)
+2026-09-22 13:42:52,965 [INFO] Successfully scraped mtn-600-minutes-all-net-voice-bundle-voucher-code-7-days
+2026-09-22 13:42:52,967 [INFO] [78 scraped] MTN 600 Minutes All-Net Voice Bundle Voucher Code (7 Days)
+2026-09-22 13:42:53,939 [INFO] Successfully scraped telkom-100-minutes-all-networks-voice-voucher-code-30-days-prepaid-only
+2026-09-22 13:42:53,942 [INFO] [79 scraped] Telkom 100 Minutes All Networks Voice Voucher Code (30 Days) - Prepaid Only
+2026-09-22 13:42:54,712 [INFO] Successfully scraped knect-mobile-100-minutes-voice-voucher-code-7-days
+2026-09-22 13:42:54,715 [INFO] [80 scraped] k'nect mobile 100 Minutes Voice Voucher Code (7 Days)
+2026-09-22 13:42:55,984 [INFO] Successfully scraped cell-c-35-minutes-all-net-voice-bundle-voucher-code-7-days-prepaid-only
+2026-09-22 13:42:55,987 [INFO] [81 scraped] Cell C 35 Minutes All-Net Voice Bundle Voucher Code (7 Days) - Prepaid Only
+2026-09-22 13:42:56,754 [INFO] Successfully scraped mtn-60-minutes-all-net-voice-bundle-voucher-code-1-day
+2026-09-22 13:42:56,756 [INFO] [82 scraped] MTN 60 Minutes All-Net Voice Bundle Voucher Code (1 Day)
+2026-09-22 13:42:57,365 [INFO] Scraping department: airtime-data-vouchers/vouchers
+2026-09-22 13:42:58,258 [INFO] Successfully scraped blu-voucher-r100-prepaid-digital-voucher-code-south-africa
+2026-09-22 13:42:58,261 [INFO] [83 scraped] Blu Voucher R100 Prepaid Digital Voucher Code (South Africa)
+2026-09-22 13:42:58,806 [INFO] Successfully scraped roblox-r250-digital-voucher-code-south-africa
+2026-09-22 13:42:58,815 [INFO] [84 scraped] Roblox R250 Digital Voucher Code (South Africa)
+2026-09-22 13:42:59,318 [INFO] Successfully scraped uber-rider-eats-r500-digital-voucher-code-south-africa
+2026-09-22 13:42:59,322 [INFO] [85 scraped] Uber Rider & Eats R500 Digital Voucher Code (South Africa)
+2026-09-22 13:42:59,885 [INFO] Successfully scraped ott-r200-prepaid-digital-voucher-code-south-africa
+2026-09-22 13:42:59,888 [INFO] [86 scraped] OTT R200 Prepaid Digital Voucher Code (South Africa)
+2026-09-22 13:43:00,342 [INFO] Successfully scraped 1voucher-r100-prepaid-digital-voucher-code-south-africa
+2026-09-22 13:43:00,345 [INFO] [87 scraped] 1Voucher R100 Prepaid Digital Voucher Code (South Africa)
+2026-09-22 13:43:01,544 [INFO] Successfully scraped app-store-itunes-r500-digital-voucher-code-south-africa
+2026-09-22 13:43:01,579 [INFO] [88 scraped] App Store & iTunes R500 Digital Voucher Code (South Africa)
+2026-09-22 13:43:02,285 [INFO] Successfully scraped netflix-r250-digital-voucher-code-south-africa
+2026-09-22 13:43:02,290 [INFO] [89 scraped] Netflix R250 Digital Voucher Code (South Africa)
+2026-09-22 13:43:03,308 [INFO] Successfully scraped blu-voucher-r200-prepaid-digital-voucher-code-south-africa
+2026-09-22 13:43:03,311 [INFO] [90 scraped] Blu Voucher R200 Prepaid Digital Voucher Code (South Africa)
+2026-09-22 13:43:03,874 [INFO] Successfully scraped ott-r100-prepaid-digital-voucher-code-south-africa
+2026-09-22 13:43:03,878 [INFO] [91 scraped] OTT R100 Prepaid Digital Voucher Code (South Africa)
+2026-09-22 13:43:04,639 [INFO] Successfully scraped blu-voucher-r1000-prepaid-digital-voucher-code-south-africa
+2026-09-22 13:43:04,641 [INFO] [92 scraped] Blu Voucher R1000 Prepaid Digital Voucher Code (South Africa)
+2026-09-22 13:43:05,410 [INFO] Successfully scraped 1voucher-r10-prepaid-digital-voucher-code-south-africa
+2026-09-22 13:43:05,414 [INFO] [93 scraped] 1Voucher R10 Prepaid Digital Voucher Code (South Africa)
+2026-09-22 13:43:06,190 [INFO] Successfully scraped uber-rider-eats-r250-digital-voucher-code-south-africa
+2026-09-22 13:43:06,192 [INFO] [94 scraped] Uber Rider & Eats R250 Digital Voucher Code (South Africa)
+2026-09-22 13:43:06,953 [INFO] Successfully scraped uber-rider-eats-r150-digital-voucher-code-south-africa
+2026-09-22 13:43:06,956 [INFO] [95 scraped] Uber Rider & Eats R150 Digital Voucher Code (South Africa)
+2026-09-22 13:43:08,378 [INFO] Successfully scraped netflix-r850-digital-voucher-code-south-africa
+2026-09-22 13:43:08,380 [INFO] [96 scraped] Netflix R850 Digital Voucher Code (South Africa)
+2026-09-22 13:43:09,001 [INFO] Successfully scraped 1voucher-r500-prepaid-digital-voucher-code-south-africa
+2026-09-22 13:43:09,004 [INFO] [97 scraped] 1Voucher R500 Prepaid Digital Voucher Code (South Africa)
+2026-09-22 13:43:09,422 [INFO] Successfully scraped ott-r1000-prepaid-digital-voucher-code-south-africa
+2026-09-22 13:43:09,424 [INFO] [98 scraped] OTT R1000 Prepaid Digital Voucher Code (South Africa)
+2026-09-22 13:43:10,271 [INFO] Successfully scraped 1voucher-r200-prepaid-digital-voucher-code-south-africa
+2026-09-22 13:43:10,274 [INFO] [99 scraped] 1Voucher R200 Prepaid Digital Voucher Code (South Africa)
+2026-09-22 13:43:10,989 [INFO] Successfully scraped blu-voucher-r20-prepaid-digital-voucher-code-south-africa
+2026-09-22 13:43:10,992 [INFO] [100 scraped] Blu Voucher R20 Prepaid Digital Voucher Code (South Africa)
+2026-09-22 13:43:10,992 [INFO] Reached limit of 100 products.
+2026-09-22 13:43:10,993 [INFO] Saw 317 products, wrote 100 new cards.
