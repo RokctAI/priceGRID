@@ -1240,46 +1240,54 @@ def organise_product_into_category(
 
 def migrate_flat_products() -> None:
     """
-    Migrate old products/<slug>/ folders into their categories.
+    Safely migrate old products/<slug>/ folders into their categories.
 
-    Existing cards already contain their Categories metadata, so
-    this cleans up products created before the category layout fix.
+    Files are copied individually rather than using shutil.copytree().
+    The original flat folder is removed only after every category copy
+    succeeds and the destination cards are verified.
     """
-
     products_root = "products"
 
     if not os.path.isdir(products_root):
         return
 
-    # Only inspect direct children of products/.
-    # Category folders are deeper and therefore ignored.
-    for entry in list(os.listdir(products_root)):
+    try:
+        entries = [
+            name
+            for name in os.listdir(products_root)
+            if os.path.isdir(os.path.join(products_root, name))
+        ]
+    except OSError as e:
+        logger.error(
+            f"Could not scan products directory for migration: {e}"
+        )
+        return
+
+    for entry in entries:
         source_dir = os.path.join(products_root, entry)
-
-        if not os.path.isdir(source_dir):
-            continue
-
         card_path = os.path.join(
             source_dir,
             f"{entry}_card.md",
         )
 
+        # Only process old flat product folders.
         if not os.path.isfile(card_path):
             continue
 
         try:
             with open(card_path, "r", encoding="utf-8") as f:
-                content = f.read()
+                card_text = f.read()
         except Exception as e:
             logger.warning(
-                f"Could not read old product card "
-                f"{card_path}: {e}"
+                f"Could not read {card_path}: {e}. "
+                f"Leaving original untouched."
             )
             continue
 
         match = re.search(
-            r"(?m)^- \*\*Categories\*\*: (.*)$",
-            content,
+            r"^- \*\*Categories\*\*: (.+)$",
+            card_text,
+            re.MULTILINE,
         )
 
         if not match:
@@ -1290,73 +1298,154 @@ def migrate_flat_products() -> None:
             continue
 
         categories = [
-            item.strip()
-            for item in match.group(1).split(";")
-            if item.strip()
+            category.strip()
+            for category in match.group(1).strip().split(";")
+            if category.strip()
         ]
 
-        if not categories:
-            continue
-
-        # Keep the original folder as the source until all
-        # category copies have been created.
-        first_target = None
+        target_dirs = []
 
         for category in categories:
-            if "/" in category:
-                section, department_slug = category.split(
-                    "/",
-                    1,
+            parts = category.split("/", 1)
+
+            if len(parts) != 2:
+                logger.warning(
+                    f"Could not migrate {source_dir}: "
+                    f"invalid category '{category}'."
                 )
-            else:
-                section = "uncategorized"
-                department_slug = category
+                continue
+
+            section, department = parts
 
             target_dir = os.path.join(
                 products_root,
                 slugify(section),
-                slugify(department_slug),
+                slugify(department),
                 entry,
             )
 
-            os.makedirs(
-                os.path.dirname(target_dir),
-                exist_ok=True,
+            if target_dir not in target_dirs:
+                target_dirs.append(target_dir)
+
+        if not target_dirs:
+            logger.warning(
+                f"Could not migrate {source_dir}: "
+                f"no valid category locations."
             )
+            continue
 
-            if first_target is None:
-                first_target = target_dir
+        migration_ok = True
 
-                if os.path.exists(target_dir):
-                    shutil.copytree(
+        for target_dir in target_dirs:
+            try:
+                source_abs = os.path.normcase(
+                    os.path.abspath(source_dir)
+                )
+                target_abs = os.path.normcase(
+                    os.path.abspath(target_dir)
+                )
+
+                # Already in the correct location.
+                if source_abs == target_abs:
+                    continue
+
+                os.makedirs(
+                    target_dir,
+                    exist_ok=True,
+                )
+
+                # Copy every directory and file explicitly.
+                for root, dirs, files in os.walk(source_dir):
+                    relative_root = os.path.relpath(
+                        root,
                         source_dir,
-                        target_dir,
-                        dirs_exist_ok=True,
-                    )
-                else:
-                    shutil.move(
-                        source_dir,
-                        target_dir,
-                    )
-            else:
-                if not os.path.exists(target_dir):
-                    shutil.copytree(
-                        first_target,
-                        target_dir,
                     )
 
-        # If the first target already existed, the old flat
-        # source still exists and must now be removed.
-        if os.path.isdir(source_dir):
-            shutil.rmtree(
-                source_dir,
-                ignore_errors=True,
+                    if relative_root == ".":
+                        destination_root = target_dir
+                    else:
+                        destination_root = os.path.join(
+                            target_dir,
+                            relative_root,
+                        )
+
+                    os.makedirs(
+                        destination_root,
+                        exist_ok=True,
+                    )
+
+                    for filename in files:
+                        source_file = os.path.join(
+                            root,
+                            filename,
+                        )
+
+                        destination_file = os.path.join(
+                            destination_root,
+                            filename,
+                        )
+
+                        if not os.path.isfile(source_file):
+                            raise FileNotFoundError(
+                                f"Source file disappeared during "
+                                f"migration: {source_file}"
+                            )
+
+                        os.makedirs(
+                            os.path.dirname(destination_file),
+                            exist_ok=True,
+                        )
+
+                        shutil.copy2(
+                            source_file,
+                            destination_file,
+                        )
+
+                # Verify the card was actually copied.
+                target_card = os.path.join(
+                    target_dir,
+                    f"{entry}_card.md",
+                )
+
+                if not os.path.isfile(target_card):
+                    raise RuntimeError(
+                        f"Migration verification failed: "
+                        f"{target_card}"
+                    )
+
+                logger.info(
+                    f"Migrated '{entry}' to '{target_dir}'."
+                )
+
+            except Exception as e:
+                migration_ok = False
+
+                logger.error(
+                    f"Could not migrate '{entry}' to "
+                    f"'{target_dir}': {e}"
+                )
+
+                break
+
+        if migration_ok:
+            try:
+                shutil.rmtree(source_dir)
+
+                logger.info(
+                    f"Migrated existing product '{entry}' "
+                    f"into {len(target_dirs)} category location(s)."
+                )
+
+            except Exception as e:
+                logger.error(
+                    f"Category copies completed for '{entry}', "
+                    f"but could not remove original '{source_dir}': {e}"
+                )
+        else:
+            logger.warning(
+                f"Migration incomplete for '{entry}'. "
+                f"Original product was preserved."
             )
-
-        logger.info(
-            f"Migrated existing product '{entry}' "
-            f"into {len(categories)} category location(s)."
-        )
 
 
 def write_card_from_api(
