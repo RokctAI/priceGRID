@@ -140,12 +140,23 @@ async def discover_departments(page) -> List[Department]:
                 body: '{}',
                 credentials: 'include',
             });
-            return {status: res.status, body: await res.text()};
+            const body = await res.text();
+            const headers = {};
+            for (const [key, value] of res.headers.entries()) {
+                headers[key] = value;
+            }
+            return {status: res.status, body: body, headers: headers};
         }""",
         CATEGORY_TREE_ENDPOINT,
     )
 
     if result["status"] != 200:
+        logger.error(
+            "Shoprite API response: status=%s headers=%s body=%r",
+            result["status"],
+            result.get("headers"),
+            result.get("body", "")[:2000],
+        )
         raise RuntimeError(
             f"Category tree returned {result['status']}; the catalogue could not "
             "be read."
@@ -225,6 +236,12 @@ async def fetch_products(
     )
 
     if result["status"] != 200:
+        logger.error(
+            "Shoprite API response: status=%s headers=%s body=%r",
+            result["status"],
+            result.get("headers"),
+            result.get("body", "")[:2000],
+        )
         raise RuntimeError(
             f"Catalogue API returned {result['status']} for {department.slug} "
             f"page {page_no}."
