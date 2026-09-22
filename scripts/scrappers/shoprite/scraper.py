@@ -1,4 +1,5 @@
 import shutil
+import json
 import random
 import os
 import sys
@@ -842,22 +843,202 @@ async def main_html_legacy():
             await browser.close()
 
 
-def add_category_to_card(
-    card_path: str,
+def load_shoprite_exclusions() -> set:
+    """Load Shoprite brand/product exclusions from shoprite_exclusions.json."""
+    path = "shoprite_exclusions.json"
+
+    if not os.path.exists(path):
+        return set()
+
+    try:
+        with open(path, "r", encoding="utf-8-sig") as f:
+            data = json.load(f)
+    except Exception as e:
+        logger.error(f"Could not read {path}: {e}")
+        return set()
+
+    values = data.get("exclude", [])
+
+    if not isinstance(values, list):
+        logger.error(f"{path}: 'exclude' must be a list.")
+        return set()
+
+    return {
+        str(value).strip().lower()
+        for value in values
+        if str(value).strip()
+    }
+
+
+def product_matches_exclusion(
+    product: Dict[str, Any],
     department: "catalogue_api.Department",
-) -> None:
-    """Add a Shoprite category to a product card and organise the product."""
-    if not os.path.exists(card_path):
+    exclusions: set,
+) -> bool:
+    """Return True when a product matches an excluded ID or brand."""
+
+    if not exclusions:
+        return False
+
+    product_id = str(
+        product.get("id") or ""
+    ).strip().lower()
+
+    if product_id and product_id in exclusions:
+        return True
+
+    # This MUST use the same resolver/signature used by the
+    # product card writer.
+    try:
+        brand = str(
+            catalogue_api.brand_of(product, department) or ""
+        ).strip().lower()
+    except Exception as e:
+        logger.warning(
+            f"Could not resolve Shoprite brand for "
+            f"{product.get('displayName') or product.get('name')}: {e}"
+        )
+        brand = ""
+
+    return bool(brand and brand in exclusions)
+
+
+def delete_product_from_disk(product: Dict[str, Any]) -> None:
+    """Delete every local copy of a product."""
+
+    name = product.get("displayName") or product.get("name")
+
+    if not name:
         return
 
-    category = f"{department.section}/{department.slug}"
+    product_slug = slugify(name)
+    products_root = "products"
+
+    if not os.path.isdir(products_root):
+        return
+
+    matches = []
+
+    for root, dirs, files in os.walk(products_root):
+        if os.path.basename(root) != product_slug:
+            continue
+
+        card_name = f"{product_slug}_card.md"
+
+        if card_name in files:
+            matches.append(root)
+
+    for product_dir in matches:
+        shutil.rmtree(product_dir, ignore_errors=True)
+        logger.info(
+            f"Deleted excluded product folder: {product_dir}"
+        )
+
+
+def delete_existing_exclusions(exclusions: set) -> None:
+    """
+    Remove products already on disk whose card contains an
+    excluded Product ID or Product Brand.
+
+    This works even when the product is not returned by the
+    current API run or when --limit prevents it being reached.
+    """
+
+    if not exclusions:
+        return
+
+    products_root = "products"
+
+    if not os.path.isdir(products_root):
+        return
+
+    folders_to_delete = set()
+
+    product_id_pattern = re.compile(
+        r"(?m)^- \*\*Product ID\*\*: (.*)$"
+    )
+
+    brand_pattern = re.compile(
+        r"(?m)^- \*\*Product Brand\*\*: (.*)$"
+    )
+
+    for root, dirs, files in os.walk(products_root):
+        for filename in files:
+            if not filename.endswith("_card.md"):
+                continue
+
+            card_path = os.path.join(root, filename)
+
+            try:
+                with open(card_path, "r", encoding="utf-8") as f:
+                    content = f.read()
+            except Exception as e:
+                logger.warning(
+                    f"Could not read existing product card "
+                    f"{card_path}: {e}"
+                )
+                continue
+
+            id_match = product_id_pattern.search(content)
+            brand_match = brand_pattern.search(content)
+
+            product_id = (
+                id_match.group(1).strip().lower()
+                if id_match
+                else ""
+            )
+
+            brand = (
+                brand_match.group(1).strip().lower()
+                if brand_match
+                else ""
+            )
+
+            if (
+                (product_id and product_id in exclusions)
+                or
+                (brand and brand in exclusions)
+            ):
+                folders_to_delete.add(root)
+
+    for product_dir in sorted(folders_to_delete):
+        shutil.rmtree(product_dir, ignore_errors=True)
+        logger.info(
+            f"Deleted existing excluded product: {product_dir}"
+        )
+
+
+def find_product_dirs(product_slug: str) -> list:
+    """
+    Find every physical copy of a product.
+
+    Products can now exist under multiple category paths, so
+    checking only products/<slug> is no longer sufficient.
+    """
+
+    products_root = "products"
+    matches = []
+
+    if not os.path.isdir(products_root):
+        return matches
+
+    card_name = f"{product_slug}_card.md"
+
+    for root, dirs, files in os.walk(products_root):
+        if os.path.basename(root) == product_slug and card_name in files:
+            matches.append(root)
+
+    return matches
+
+
+def update_product_card_categories(
+    card_path: str,
+    category: str,
+) -> str:
+    """Add a category to a product card and return the updated content."""
 
     with open(card_path, "r", encoding="utf-8") as f:
         content = f.read()
-
-    # --------------------------------------------------------
-    # Update Categories in the card.
-    # --------------------------------------------------------
 
     pattern = r"(?m)^- \*\*Categories\*\*: (.*)$"
     match = re.search(pattern, content)
@@ -874,7 +1055,9 @@ def add_category_to_card(
 
             content = re.sub(
                 pattern,
-                lambda m: f"- **Categories**: {'; '.join(existing)}",
+                lambda m: (
+                    f"- **Categories**: {'; '.join(existing)}"
+                ),
                 content,
                 count=1,
             )
@@ -896,18 +1079,34 @@ def add_category_to_card(
             count=1,
         )
 
-    # Save updated canonical card.
     with open(card_path, "w", encoding="utf-8") as f:
         f.write(content)
 
-    # --------------------------------------------------------
-    # Category folder:
-    #
-    # products/<section>/<category>/<product>/
-    # --------------------------------------------------------
+    return content
 
-    product_dir = os.path.dirname(card_path)
-    product_slug = os.path.basename(product_dir)
+
+def organise_product_into_category(
+    product_slug: str,
+    department: "catalogue_api.Department",
+) -> None:
+    """
+    Ensure the product exists under the requested category.
+
+    First occurrence:
+        products/<slug>/
+            -> products/<section>/<category>/<slug>/
+
+    Later category occurrences:
+        existing category copy
+            -> copied to the new category.
+
+    This means:
+    - images are downloaded only once
+    - products can belong to multiple categories
+    - the old flat product folder disappears
+    """
+
+    category = f"{department.section}/{department.slug}"
 
     category_dir = os.path.join(
         "products",
@@ -916,34 +1115,248 @@ def add_category_to_card(
         product_slug,
     )
 
-    os.makedirs(category_dir, exist_ok=True)
-
     category_card = os.path.join(
         category_dir,
         f"{product_slug}_card.md",
     )
 
-    # Copy card.
-    with open(category_card, "w", encoding="utf-8") as f:
-        f.write(content)
+    existing_dirs = find_product_dirs(product_slug)
 
-    # Copy already-downloaded images.
-    source_images = os.path.join(product_dir, "images")
-    target_images = os.path.join(category_dir, "images")
+    if not existing_dirs:
+        return
 
-    if os.path.isdir(source_images):
-        os.makedirs(target_images, exist_ok=True)
+    # If this category already exists, update its card and stop.
+    if os.path.isdir(category_dir):
+        if os.path.isfile(category_card):
+            content = update_product_card_categories(
+                category_card,
+                category,
+            )
 
-        for filename in os.listdir(source_images):
-            source = os.path.join(source_images, filename)
-            target = os.path.join(target_images, filename)
+            # Keep every existing copy's metadata synchronized.
+            for existing_dir in existing_dirs:
+                existing_card = os.path.join(
+                    existing_dir,
+                    f"{product_slug}_card.md",
+                )
 
-            if os.path.isfile(source) and not os.path.exists(target):
-                shutil.copy2(source, target)
+                if os.path.isfile(existing_card):
+                    with open(
+                        existing_card,
+                        "w",
+                        encoding="utf-8",
+                    ) as f:
+                        f.write(content)
 
-    logger.info(
-        f"Organised {product_slug} under category '{category}'"
+        logger.info(
+            f"Product already organised under category '{category}'"
+        )
+        return
+
+    # Prefer an existing category copy as the source.
+    source_dir = None
+
+    for existing_dir in existing_dirs:
+        relative = os.path.relpath(
+            existing_dir,
+            "products",
+        )
+
+        parts = relative.split(os.sep)
+
+        if len(parts) >= 3:
+            source_dir = existing_dir
+            break
+
+    # Otherwise use the old flat product directory.
+    if source_dir is None:
+        source_dir = existing_dirs[0]
+
+    source_card = os.path.join(
+        source_dir,
+        f"{product_slug}_card.md",
     )
+
+    if not os.path.isfile(source_card):
+        return
+
+    # Add the new category to the source card first.
+    content = update_product_card_categories(
+        source_card,
+        category,
+    )
+
+    # Synchronise metadata across all existing copies.
+    for existing_dir in find_product_dirs(product_slug):
+        existing_card = os.path.join(
+            existing_dir,
+            f"{product_slug}_card.md",
+        )
+
+        if os.path.isfile(existing_card):
+            with open(
+                existing_card,
+                "w",
+                encoding="utf-8",
+            ) as f:
+                f.write(content)
+
+    os.makedirs(
+        os.path.dirname(category_dir),
+        exist_ok=True,
+    )
+
+    source_is_flat = (
+        os.path.abspath(source_dir)
+        == os.path.abspath(
+            os.path.join("products", product_slug)
+        )
+    )
+
+    if source_is_flat:
+        # True move for the first category.
+        shutil.move(
+            source_dir,
+            category_dir,
+        )
+
+        logger.info(
+            f"Moved {product_slug} to category "
+            f"'{department.section}/{department.slug}'"
+        )
+    else:
+        # Additional categories need their own physical copy.
+        shutil.copytree(
+            source_dir,
+            category_dir,
+        )
+
+        logger.info(
+            f"Added {product_slug} to category "
+            f"'{department.section}/{department.slug}' "
+            f"without re-downloading"
+        )
+
+
+def migrate_flat_products() -> None:
+    """
+    Migrate old products/<slug>/ folders into their categories.
+
+    Existing cards already contain their Categories metadata, so
+    this cleans up products created before the category layout fix.
+    """
+
+    products_root = "products"
+
+    if not os.path.isdir(products_root):
+        return
+
+    # Only inspect direct children of products/.
+    # Category folders are deeper and therefore ignored.
+    for entry in list(os.listdir(products_root)):
+        source_dir = os.path.join(products_root, entry)
+
+        if not os.path.isdir(source_dir):
+            continue
+
+        card_path = os.path.join(
+            source_dir,
+            f"{entry}_card.md",
+        )
+
+        if not os.path.isfile(card_path):
+            continue
+
+        try:
+            with open(card_path, "r", encoding="utf-8") as f:
+                content = f.read()
+        except Exception as e:
+            logger.warning(
+                f"Could not read old product card "
+                f"{card_path}: {e}"
+            )
+            continue
+
+        match = re.search(
+            r"(?m)^- \*\*Categories\*\*: (.*)$",
+            content,
+        )
+
+        if not match:
+            logger.warning(
+                f"Could not migrate {source_dir}: "
+                f"no Categories field."
+            )
+            continue
+
+        categories = [
+            item.strip()
+            for item in match.group(1).split(";")
+            if item.strip()
+        ]
+
+        if not categories:
+            continue
+
+        # Keep the original folder as the source until all
+        # category copies have been created.
+        first_target = None
+
+        for category in categories:
+            if "/" in category:
+                section, department_slug = category.split(
+                    "/",
+                    1,
+                )
+            else:
+                section = "uncategorized"
+                department_slug = category
+
+            target_dir = os.path.join(
+                products_root,
+                slugify(section),
+                slugify(department_slug),
+                entry,
+            )
+
+            os.makedirs(
+                os.path.dirname(target_dir),
+                exist_ok=True,
+            )
+
+            if first_target is None:
+                first_target = target_dir
+
+                if os.path.exists(target_dir):
+                    shutil.copytree(
+                        source_dir,
+                        target_dir,
+                        dirs_exist_ok=True,
+                    )
+                else:
+                    shutil.move(
+                        source_dir,
+                        target_dir,
+                    )
+            else:
+                if not os.path.exists(target_dir):
+                    shutil.copytree(
+                        first_target,
+                        target_dir,
+                    )
+
+        # If the first target already existed, the old flat
+        # source still exists and must now be removed.
+        if os.path.isdir(source_dir):
+            shutil.rmtree(
+                source_dir,
+                ignore_errors=True,
+            )
+
+        logger.info(
+            f"Migrated existing product '{entry}' "
+            f"into {len(categories)} category location(s)."
+        )
 
 
 def write_card_from_api(
@@ -967,13 +1380,21 @@ def write_card_from_api(
     product_dir = f"products/{product_slug}"
     card_path = f"{product_dir}/{product_slug}_card.md"
 
-    if os.path.exists(card_path):
+    # A product may already have been moved into a category folder.
+    # Therefore never use only the old flat card path to detect
+    # existing products.
+    existing_dirs = find_product_dirs(product_slug)
+
+    if existing_dirs:
         if department:
-            add_category_to_card(card_path, department)
+            organise_product_into_category(
+                product_slug,
+                department,
+            )
 
         logger.info(
-            f"Skipping {product_slug}, card already exists; "
-            f"category recorded and organised."
+            f"Skipping {product_slug}, product already exists; "
+            f"category recorded without re-downloading."
         )
         return "skipped"
 
@@ -1053,13 +1474,31 @@ def write_card_from_api(
         f.write(card_content)
 
     if department:
-        add_category_to_card(card_path, department)
+        organise_product_into_category(
+            product_slug,
+            department,
+        )
 
     logger.info(f"Successfully scraped {product_slug}")
     return "scraped"
 
 
 async def main():
+    exclusions = load_shoprite_exclusions()
+
+    if exclusions:
+        logger.info(
+            f"Loaded {len(exclusions)} Shoprite exclusions."
+        )
+
+        # Remove excluded products that already exist locally,
+        # even if they are not returned during this API run.
+        delete_existing_exclusions(exclusions)
+
+    # Clean up products created by the previous flat-folder
+    # implementation before scraping new category occurrences.
+    migrate_flat_products()
+
     parser = argparse.ArgumentParser(description="PriceGrid Product Scraper")
     parser.add_argument(
         "--category",
@@ -1147,8 +1586,20 @@ async def main():
                     ):
                         # Products sit in several categories at once, so the
                         # same record arrives more than once across a full run.
-                        # Products may belong to multiple categories. Process every occurrence.
+                        # Products may belong to multiple categories.
                         seen_ids.add(product.get("id"))
+
+                        if product_matches_exclusion(
+                            product,
+                            dept,
+                            exclusions,
+                        ):
+                            delete_product_from_disk(product)
+                            logger.info(
+                                f"Excluded product: "
+                                f"{product.get('displayName') or product.get('name')}"
+                            )
+                            continue
 
                         if write_card_from_api(product, dept) == "scraped":
                             scraped += 1
