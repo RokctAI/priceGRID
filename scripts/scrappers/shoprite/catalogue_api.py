@@ -125,6 +125,13 @@ async def discover_departments(page) -> List[Department]:
     """
     await page.goto(BASE_URL, wait_until="domcontentloaded", timeout=90000)
 
+    # Allow Shoprite's browser/WAF JavaScript challenge to complete.
+    try:
+        await page.wait_for_load_state("networkidle", timeout=30000)
+    except Exception:
+        logger.info("Shoprite did not reach networkidle; continuing.")
+
+    await page.wait_for_timeout(5000)
     result = await page.evaluate(
         """async (endpoint) => {
             const res = await fetch(endpoint, {
@@ -408,3 +415,4 @@ def brand_of(
             return None
 
     return brand
+
