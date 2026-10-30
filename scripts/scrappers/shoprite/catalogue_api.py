@@ -432,4 +432,3 @@ def brand_of(
             return None
 
     return brand
-
