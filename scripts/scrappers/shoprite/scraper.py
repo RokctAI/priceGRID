@@ -863,11 +863,7 @@ def load_shoprite_exclusions() -> set:
         logger.error(f"{path}: 'exclude' must be a list.")
         return set()
 
-    return {
-        str(value).strip().lower()
-        for value in values
-        if str(value).strip()
-    }
+    return {str(value).strip().lower() for value in values if str(value).strip()}
 
 
 def product_matches_exclusion(
@@ -880,9 +876,7 @@ def product_matches_exclusion(
     if not exclusions:
         return False
 
-    product_id = str(
-        product.get("id") or ""
-    ).strip().lower()
+    product_id = str(product.get("id") or "").strip().lower()
 
     if product_id and product_id in exclusions:
         return True
@@ -890,9 +884,7 @@ def product_matches_exclusion(
     # This MUST use the same resolver/signature used by the
     # product card writer.
     try:
-        brand = str(
-            catalogue_api.brand_of(product, department) or ""
-        ).strip().lower()
+        brand = str(catalogue_api.brand_of(product, department) or "").strip().lower()
     except Exception as e:
         logger.warning(
             f"Could not resolve Shoprite brand for "
@@ -930,9 +922,7 @@ def delete_product_from_disk(product: Dict[str, Any]) -> None:
 
     for product_dir in matches:
         shutil.rmtree(product_dir, ignore_errors=True)
-        logger.info(
-            f"Deleted excluded product folder: {product_dir}"
-        )
+        logger.info(f"Deleted excluded product folder: {product_dir}")
 
 
 def delete_existing_exclusions(exclusions: set) -> None:
@@ -954,13 +944,9 @@ def delete_existing_exclusions(exclusions: set) -> None:
 
     folders_to_delete = set()
 
-    product_id_pattern = re.compile(
-        r"(?m)^- \*\*Product ID\*\*: (.*)$"
-    )
+    product_id_pattern = re.compile(r"(?m)^- \*\*Product ID\*\*: (.*)$")
 
-    brand_pattern = re.compile(
-        r"(?m)^- \*\*Product Brand\*\*: (.*)$"
-    )
+    brand_pattern = re.compile(r"(?m)^- \*\*Product Brand\*\*: (.*)$")
 
     for root, dirs, files in os.walk(products_root):
         for filename in files:
@@ -973,39 +959,24 @@ def delete_existing_exclusions(exclusions: set) -> None:
                 with open(card_path, "r", encoding="utf-8") as f:
                     content = f.read()
             except Exception as e:
-                logger.warning(
-                    f"Could not read existing product card "
-                    f"{card_path}: {e}"
-                )
+                logger.warning(f"Could not read existing product card {card_path}: {e}")
                 continue
 
             id_match = product_id_pattern.search(content)
             brand_match = brand_pattern.search(content)
 
-            product_id = (
-                id_match.group(1).strip().lower()
-                if id_match
-                else ""
-            )
+            product_id = id_match.group(1).strip().lower() if id_match else ""
 
-            brand = (
-                brand_match.group(1).strip().lower()
-                if brand_match
-                else ""
-            )
+            brand = brand_match.group(1).strip().lower() if brand_match else ""
 
-            if (
-                (product_id and product_id in exclusions)
-                or
-                (brand and brand in exclusions)
+            if (product_id and product_id in exclusions) or (
+                brand and brand in exclusions
             ):
                 folders_to_delete.add(root)
 
     for product_dir in sorted(folders_to_delete):
         shutil.rmtree(product_dir, ignore_errors=True)
-        logger.info(
-            f"Deleted existing excluded product: {product_dir}"
-        )
+        logger.info(f"Deleted existing excluded product: {product_dir}")
 
 
 def find_product_dirs(product_slug: str) -> list:
@@ -1044,20 +1015,14 @@ def update_product_card_categories(
     match = re.search(pattern, content)
 
     if match:
-        existing = [
-            item.strip()
-            for item in match.group(1).split(";")
-            if item.strip()
-        ]
+        existing = [item.strip() for item in match.group(1).split(";") if item.strip()]
 
         if category not in existing:
             existing.append(category)
 
             content = re.sub(
                 pattern,
-                lambda m: (
-                    f"- **Categories**: {'; '.join(existing)}"
-                ),
+                lambda m: f"- **Categories**: {'; '.join(existing)}",
                 content,
                 count=1,
             )
@@ -1065,16 +1030,11 @@ def update_product_card_categories(
         store_pattern = r"(?m)^(- \*\*Store\*\*: .*)$"
 
         if not re.search(store_pattern, content):
-            raise RuntimeError(
-                f"Could not find Store field in {card_path}"
-            )
+            raise RuntimeError(f"Could not find Store field in {card_path}")
 
         content = re.sub(
             store_pattern,
-            lambda m: (
-                f"{m.group(1)}\n"
-                f"- **Categories**: {category}"
-            ),
+            lambda m: f"{m.group(1)}\n- **Categories**: {category}",
             content,
             count=1,
         )
@@ -1148,9 +1108,7 @@ def organise_product_into_category(
                     ) as f:
                         f.write(content)
 
-        logger.info(
-            f"Product already organised under category '{category}'"
-        )
+        logger.info(f"Product already organised under category '{category}'")
         return
 
     # Prefer an existing category copy as the source.
@@ -1206,11 +1164,8 @@ def organise_product_into_category(
         exist_ok=True,
     )
 
-    source_is_flat = (
-        os.path.abspath(source_dir)
-        == os.path.abspath(
-            os.path.join("products", product_slug)
-        )
+    source_is_flat = os.path.abspath(source_dir) == os.path.abspath(
+        os.path.join("products", product_slug)
     )
 
     if source_is_flat:
@@ -1221,8 +1176,7 @@ def organise_product_into_category(
         )
 
         logger.info(
-            f"Moved {product_slug} to category "
-            f"'{department.section}/{department.slug}'"
+            f"Moved {product_slug} to category '{department.section}/{department.slug}'"
         )
     else:
         # Additional categories need their own physical copy.
@@ -1258,9 +1212,7 @@ def migrate_flat_products() -> None:
             if os.path.isdir(os.path.join(products_root, name))
         ]
     except OSError as e:
-        logger.error(
-            f"Could not scan products directory for migration: {e}"
-        )
+        logger.error(f"Could not scan products directory for migration: {e}")
         return
 
     for entry in entries:
@@ -1279,8 +1231,7 @@ def migrate_flat_products() -> None:
                 card_text = f.read()
         except Exception as e:
             logger.warning(
-                f"Could not read {card_path}: {e}. "
-                f"Leaving original untouched."
+                f"Could not read {card_path}: {e}. Leaving original untouched."
             )
             continue
 
@@ -1291,10 +1242,7 @@ def migrate_flat_products() -> None:
         )
 
         if not match:
-            logger.warning(
-                f"Could not migrate {source_dir}: "
-                f"no Categories field."
-            )
+            logger.warning(f"Could not migrate {source_dir}: no Categories field.")
             continue
 
         categories = [
@@ -1310,8 +1258,7 @@ def migrate_flat_products() -> None:
 
             if len(parts) != 2:
                 logger.warning(
-                    f"Could not migrate {source_dir}: "
-                    f"invalid category '{category}'."
+                    f"Could not migrate {source_dir}: invalid category '{category}'."
                 )
                 continue
 
@@ -1329,8 +1276,7 @@ def migrate_flat_products() -> None:
 
         if not target_dirs:
             logger.warning(
-                f"Could not migrate {source_dir}: "
-                f"no valid category locations."
+                f"Could not migrate {source_dir}: no valid category locations."
             )
             continue
 
@@ -1338,12 +1284,8 @@ def migrate_flat_products() -> None:
 
         for target_dir in target_dirs:
             try:
-                source_abs = os.path.normcase(
-                    os.path.abspath(source_dir)
-                )
-                target_abs = os.path.normcase(
-                    os.path.abspath(target_dir)
-                )
+                source_abs = os.path.normcase(os.path.abspath(source_dir))
+                target_abs = os.path.normcase(os.path.abspath(target_dir))
 
                 # Already in the correct location.
                 if source_abs == target_abs:
@@ -1408,22 +1350,14 @@ def migrate_flat_products() -> None:
                 )
 
                 if not os.path.isfile(target_card):
-                    raise RuntimeError(
-                        f"Migration verification failed: "
-                        f"{target_card}"
-                    )
+                    raise RuntimeError(f"Migration verification failed: {target_card}")
 
-                logger.info(
-                    f"Migrated '{entry}' to '{target_dir}'."
-                )
+                logger.info(f"Migrated '{entry}' to '{target_dir}'.")
 
             except Exception as e:
                 migration_ok = False
 
-                logger.error(
-                    f"Could not migrate '{entry}' to "
-                    f"'{target_dir}': {e}"
-                )
+                logger.error(f"Could not migrate '{entry}' to '{target_dir}': {e}")
 
                 break
 
@@ -1443,8 +1377,7 @@ def migrate_flat_products() -> None:
                 )
         else:
             logger.warning(
-                f"Migration incomplete for '{entry}'. "
-                f"Original product was preserved."
+                f"Migration incomplete for '{entry}'. Original product was preserved."
             )
 
 
@@ -1576,9 +1509,7 @@ async def main():
     exclusions = load_shoprite_exclusions()
 
     if exclusions:
-        logger.info(
-            f"Loaded {len(exclusions)} Shoprite exclusions."
-        )
+        logger.info(f"Loaded {len(exclusions)} Shoprite exclusions.")
 
         # Remove excluded products that already exist locally,
         # even if they are not returned during this API run.
